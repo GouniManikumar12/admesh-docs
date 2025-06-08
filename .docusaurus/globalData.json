@@ -1,0 +1,83 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "ai-integration/overview",
+              "path": "/ai-integration/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/authentication",
+              "path": "/api/authentication",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "examples/ai-assistant",
+              "path": "/examples/ai-assistant",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/ad-formats",
+              "path": "/getting-started/ad-formats",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/admesh-vs-traditional",
+              "path": "/getting-started/admesh-vs-traditional",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/api-keys",
+              "path": "/getting-started/api-keys",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/overview",
+              "path": "/getting-started/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/quick-start",
+              "path": "/getting-started/quick-start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "python-sdk/installation",
+              "path": "/python-sdk/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ui-sdk/installation",
+              "path": "/ui-sdk/installation",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

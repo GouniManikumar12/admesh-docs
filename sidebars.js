@@ -40,13 +40,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'TypeScript SDK',
-      items: [
-        'typescript-sdk/installation',
-      ],
-    },
-    {
-      type: 'category',
       label: 'UI SDK',
       items: [
         'ui-sdk/installation',
@@ -71,13 +64,6 @@ const sidebars = {
       label: 'Examples',
       items: [
         'examples/ai-assistant',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'About',
-      items: [
-        'about/docusaurus',
       ],
     },
   ],

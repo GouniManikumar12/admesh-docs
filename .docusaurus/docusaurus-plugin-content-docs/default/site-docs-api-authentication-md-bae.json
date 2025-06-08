@@ -1,0 +1,27 @@
+{
+  "id": "api/authentication",
+  "title": "Authentication",
+  "description": "Learn how to authenticate with the AdMesh API using API keys and handle authentication errors.",
+  "source": "@site/docs/api/authentication.md",
+  "sourceDirName": "api",
+  "slug": "/api/authentication",
+  "permalink": "/api/authentication",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/api/authentication.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Agent Integration Overview",
+    "permalink": "/ai-integration/overview"
+  },
+  "next": {
+    "title": "AI Assistant Integration",
+    "permalink": "/examples/ai-assistant"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/admesh-vs-traditional",
+  "title": "AdMesh vs Traditional Advertising",
+  "description": "A comprehensive comparison showing how AdMesh's contextual intelligence model differs from traditional push and pull advertising approaches.",
+  "source": "@site/docs/getting-started/admesh-vs-traditional.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/admesh-vs-traditional",
+  "permalink": "/getting-started/admesh-vs-traditional",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/getting-started/admesh-vs-traditional.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AdMesh Ad Formats",
+    "permalink": "/getting-started/ad-formats"
+  },
+  "next": {
+    "title": "Python SDK Installation",
+    "permalink": "/python-sdk/installation"
+  }
+}

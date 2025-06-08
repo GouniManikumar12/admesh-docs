@@ -1,0 +1,24 @@
+{
+  "id": "intro",
+  "title": "AdMesh SDK Documentation",
+  "description": "Welcome to the AdMesh SDK Documentation - your comprehensive guide to integrating AI-powered product recommendations into your applications.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Overview",
+    "permalink": "/getting-started/overview"
+  }
+}

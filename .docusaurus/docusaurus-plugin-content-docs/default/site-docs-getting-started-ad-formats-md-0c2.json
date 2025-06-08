@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/ad-formats",
+  "title": "AdMesh Ad Formats",
+  "description": "Learn about AdMesh's unique approach to advertising through conversational, citation-based, and contextual ad formats that differ fundamentally from traditional push/pull advertising models.",
+  "source": "@site/docs/getting-started/ad-formats.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/ad-formats",
+  "permalink": "/getting-started/ad-formats",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/getting-started/ad-formats.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quick Start Guide",
+    "permalink": "/getting-started/quick-start"
+  },
+  "next": {
+    "title": "AdMesh vs Traditional Advertising",
+    "permalink": "/getting-started/admesh-vs-traditional"
+  }
+}

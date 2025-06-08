@@ -1,0 +1,27 @@
+{
+  "id": "getting-started/api-keys",
+  "title": "Getting Your API Key",
+  "description": "To use AdMesh APIs and SDKs, you'll need an API key. This guide walks you through the process of creating an account and obtaining your API key.",
+  "source": "@site/docs/getting-started/api-keys.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/api-keys",
+  "permalink": "/getting-started/api-keys",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/getting-started/api-keys.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/getting-started/overview"
+  },
+  "next": {
+    "title": "Quick Start Guide",
+    "permalink": "/getting-started/quick-start"
+  }
+}

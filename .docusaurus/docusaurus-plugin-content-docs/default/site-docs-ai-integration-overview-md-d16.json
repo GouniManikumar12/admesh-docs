@@ -1,0 +1,27 @@
+{
+  "id": "ai-integration/overview",
+  "title": "AI Agent Integration Overview",
+  "description": "AdMesh is specifically designed for AI applications, chatbots, and intelligent agents. This guide covers how to integrate AdMesh into various AI platforms and create intelligent recommendation systems.",
+  "source": "@site/docs/ai-integration/overview.md",
+  "sourceDirName": "ai-integration",
+  "slug": "/ai-integration/overview",
+  "permalink": "/ai-integration/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/ai-integration/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UI SDK Installation",
+    "permalink": "/ui-sdk/installation"
+  },
+  "next": {
+    "title": "Authentication",
+    "permalink": "/api/authentication"
+  }
+}

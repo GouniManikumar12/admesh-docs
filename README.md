@@ -1,38 +1,6 @@
-# 📚 AdMesh Documentation
+# AdMesh Documentation
 
-> **Official documentation for AdMesh SDKs and AI agent integration**
-
-This repository contains the complete documentation site for AdMesh, **built with [Docusaurus](https://docusaurus.io/)** 🦖 as an open-source alternative to Mintlify. It provides comprehensive guides for AI agents to integrate AdMesh's revolutionary storybook-style advertising format.
-
-## 🦖 **Powered by Docusaurus**
-
-This documentation site leverages [Docusaurus](https://docusaurus.io/) for:
-- ⚡ **Fast static site generation** with React
-- 📱 **Mobile-responsive design** out of the box
-- 🔍 **Built-in search** functionality
-- 🎨 **Customizable themes** and styling
-- 📝 **MDX support** for interactive documentation
-- 🚀 **Easy deployment** to GitHub Pages
-
-## 🎯 What is AdMesh?
-
-AdMesh transforms advertising from intrusive interruptions into helpful, contextual suggestions that enhance user experience. Our **storybook advertising format** displays recommendations as academic-style citations within narratives, similar to footnotes in research papers.
-
-### Traditional vs AdMesh Advertising
-
-**Traditional Push Ads** (Intrusive):
-```
-[🚨 URGENT! CRM SOFTWARE SALE! 🚨]
-[⚡ 50% OFF TODAY ONLY! ⚡]
-```
-
-**AdMesh Citations** (Contextual):
-```
-For customer management, consider HubSpot¹ for its
-excellent free tier and user-friendly interface.
-
-¹ HubSpot CRM - Perfect for growing businesses
-```
+This is the official documentation site for AdMesh SDKs and AI agent integration, built with [Docusaurus](https://docusaurus.io/).
 
 ## 🚀 Quick Start
 
@@ -48,153 +16,180 @@ npm install
 npm start
 ```
 
-Opens `http://localhost:3000` with live reload.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build for Production
+### Build
 
 ```bash
 npm run build
 ```
 
-### Deploy
-
-```bash
-./deploy.sh
-```
-
-Choose from GitHub Pages, Vercel, Netlify, or custom server.
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## 📚 Documentation Structure
 
-### 🎯 **Core Sections**
+- **Getting Started** - Setup and basic concepts
+- **Python SDK** - Complete Python integration guide
+- **TypeScript SDK** - Complete TypeScript integration guide
+- **UI SDK** - React components and UI integration
+- **AI Integration** - Guides for AI agents and chatbots
+- **API Reference** - Detailed API documentation
+- **Examples** - Real-world implementation examples
+- **Troubleshooting** - Common issues and solutions
 
-- **[Getting Started](/getting-started/overview)** - Setup, API keys, and basic concepts
-- **[Ad Formats](/getting-started/ad-formats)** - Storybook advertising philosophy
-- **[Python SDK](/python-sdk/installation)** - Complete Python integration guide
-- **[UI SDK](/ui-sdk/installation)** - React components and theming
-- **[AI Integration](/ai-integration/overview)** - AI agent integration guides
-- **[API Reference](/api/authentication)** - Detailed API documentation
-- **[Examples](/examples/ai-assistant)** - Real-world implementation examples
+## 🛠 Development
 
-### 🎭 **Key Features for AI Agents**
+### Adding New Documentation
 
-1. **Storybook Ad Formats** - Citation-based recommendations
-2. **AI Integration Guides** - ChatGPT, Claude, Replica.io integration
-3. **Conversational Components** - Chat interface integration
-4. **Auto-Recommendations** - Context-triggered suggestions
-5. **Performance Comparisons** - 300% ROI vs traditional advertising
+1. Create new `.md` files in the `docs/` directory
+2. Update `sidebars.js` to include new pages in navigation
+3. Use frontmatter for page metadata:
 
-## 🎨 Revolutionary Ad Format
+```markdown
+---
+sidebar_position: 1
+title: Page Title
+---
 
-### Citation-Based Integration
-
-```tsx
-import { AdMeshCitationUnit } from 'admesh-ui-sdk';
-
-<AdMeshCitationUnit
-  recommendations={recommendations}
-  conversationText={storyContent}
-  citationStyle="numbered"
-  showCitationList={true}
-  onRecommendationClick={(adId, link) => {
-    window.open(link, '_blank');
-  }}
-/>
+# Page Content
 ```
 
-### Performance Benefits
+### Code Examples
 
-| Metric | Traditional Ads | AdMesh Citations |
-|--------|----------------|------------------|
-| **Engagement Rate** | 0.05% | 8-12% |
-| **User Experience** | Negative | Positive |
-| **ROI** | -95% | +300% |
+Use language-specific code blocks with syntax highlighting:
 
-## 📊 Storybook Integration
+````markdown
+```python
+from admesh import Admesh
+client = Admesh(api_key="your-api-key")
+```
+````
 
-The documentation showcases AdMesh's integration with **Storybook** (the component development tool) for the admesh-ui-sdk:
+### Interactive Components
 
-### Access Interactive Examples
+Use Docusaurus components for enhanced documentation:
 
-```bash
-# Clone UI SDK repository
-git clone https://github.com/GouniManikumar12/admesh-ui-sdk.git
-cd admesh-ui-sdk
+```markdown
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-# Start Storybook
-npm run storybook
+<Tabs>
+<TabItem value="python" label="Python">
+
+```python
+# Python code here
 ```
 
-**Storybook Features**:
-- 📚 **Storybook Ad Formats** - Interactive narrative examples
-- 📝 **Citation Components** - Different styling options
-- 💬 **Conversational Ads** - Chat interface integration
-- 📊 **Format Comparisons** - Traditional vs AdMesh demos
+</TabItem>
+<TabItem value="typescript" label="TypeScript">
 
-## 🚀 Deployment Options
+```typescript
+// TypeScript code here
+```
 
-### GitHub Pages (Free)
+</TabItem>
+</Tabs>
+```
+
+### Admonitions
+
+Use admonitions for important information:
+
+```markdown
+:::tip
+This is a helpful tip!
+:::
+
+:::warning
+This is a warning!
+:::
+
+:::danger
+This is dangerous!
+:::
+```
+
+## 🎨 Customization
+
+### Styling
+
+- Edit `src/css/custom.css` for global styles
+- Use CSS custom properties for theming
+- Follow the existing design system
+
+### Configuration
+
+- Edit `docusaurus.config.js` for site configuration
+- Update `sidebars.js` for navigation structure
+- Modify `package.json` for dependencies
+
+## 🚀 Deployment
+
+### GitHub Pages
 
 ```bash
 npm run deploy
 ```
 
-### Vercel (Recommended)
+### Vercel
 
-1. Connect GitHub repository to Vercel
-2. Build command: `npm run build`
-3. Output directory: `build`
+1. Connect your GitHub repository to Vercel
+2. Set build command: `npm run build`
+3. Set output directory: `build`
 
 ### Netlify
 
-1. Connect GitHub repository to Netlify
-2. Build command: `npm run build`
-3. Publish directory: `build`
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `build`
 
-## 🎯 AI Agent Focus
+## 📝 Writing Guidelines
 
-This documentation is specifically designed for AI agents and includes:
+### Content Structure
 
-### Integration Patterns
-- **ChatGPT Plugins** - Product recommendations in AI responses
-- **Claude Integration** - Contextual suggestions in conversations
-- **Replica.io** - AI companion integration
-- **Custom AI Apps** - Advanced integration patterns
+1. **Start with overview** - Explain what the page covers
+2. **Provide examples** - Show practical implementations
+3. **Include troubleshooting** - Address common issues
+4. **Link to related content** - Help users navigate
 
-### Citation Examples
-- **Business Narratives** - Startup growth stories with tool recommendations
-- **Technical Tutorials** - Developer workflows with contextual suggestions
-- **Educational Content** - Academic-style references
+### Code Examples
 
-### Performance Data
-- **Engagement Metrics** - 8-12% vs 0.05% traditional CTR
-- **ROI Comparisons** - 300% profit vs 95% loss
-- **User Experience** - Enhancement vs interruption
+1. **Complete examples** - Show full working code
+2. **Explain key concepts** - Don't just show code
+3. **Multiple languages** - Provide Python, TypeScript, and React examples
+4. **Real-world scenarios** - Use practical use cases
+
+### AI Agent Focus
+
+Since this documentation is for AI agents:
+
+1. **Emphasize integration patterns** - Show how to integrate with AI platforms
+2. **Provide conversation examples** - Show realistic AI interactions
+3. **Explain intent detection** - Help AI understand user needs
+4. **Show citation patterns** - Demonstrate academic-style references
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create feature branch: `git checkout -b feature/new-docs`
-3. Make changes and test locally: `npm start`
-4. Submit pull request with clear description
+2. Create a feature branch
+3. Make your changes
+4. Test locally with `npm start`
+5. Submit a pull request
 
-## 📞 Support & Resources
+### Content Guidelines
 
-- **📖 Documentation**: [docs.useadmesh.com](https://docs.useadmesh.com)
-- **🐛 Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-docs/issues)
-- **💬 Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
-- **🌐 Dashboard**: [useadmesh.com](https://useadmesh.com)
+- Use clear, concise language
+- Provide working code examples
+- Include screenshots where helpful
+- Test all code examples
+- Follow the existing style and structure
 
-### Related Repositories
+## 📞 Support
 
-- **[admesh-python](https://github.com/GouniManikumar12/admesh-python)** - Python SDK
-- **[admesh-typescript](https://github.com/GouniManikumar12/admesh-typescript)** - TypeScript SDK
-- **[admesh-ui-sdk](https://github.com/GouniManikumar12/admesh-ui-sdk)** - React UI components
+- 📖 **Documentation**: You're reading it!
+- 🐛 **Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-protocol/issues)
+- 💬 **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
 
 ## 📄 License
 
 This documentation is licensed under the MIT License.
-
----
-
-**AdMesh Documentation** - Transforming advertising through contextual intelligence and storybook-style integration. Built for AI agents, by developers. 🚀

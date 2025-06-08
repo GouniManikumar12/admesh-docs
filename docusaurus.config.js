@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/GouniManikumar12/admesh-protocol/tree/main/docs/',
+            'https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/',
         },
         blog: false, // Disable blog
         theme: {
@@ -97,16 +97,6 @@ const config = {
           {
             href: 'https://github.com/GouniManikumar12/admesh-ui-sdk',
             label: 'UI SDK',
-            position: 'right',
-          },
-          {
-            href: 'https://gounimanikumar12.github.io/admesh-ui-sdk/storybook/',
-            label: 'Storybook',
-            position: 'right',
-          },
-          {
-            href: 'https://docusaurus.io/',
-            label: 'Docusaurus 🦖',
             position: 'right',
           },
         ],
@@ -167,18 +157,10 @@ const config = {
                 label: 'Support',
                 href: 'mailto:support@useadmesh.com',
               },
-              {
-                label: 'Storybook',
-                href: 'https://gounimanikumar12.github.io/admesh-ui-sdk/storybook/',
-              },
-              {
-                label: 'Docusaurus 🦖',
-                href: 'https://docusaurus.io/',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AdMesh. Built with ❤️ using <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus 🦖</a>.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AdMesh. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

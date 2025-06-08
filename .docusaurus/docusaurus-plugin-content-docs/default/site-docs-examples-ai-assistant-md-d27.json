@@ -1,0 +1,23 @@
+{
+  "id": "examples/ai-assistant",
+  "title": "AI Assistant Integration",
+  "description": "Learn how to build an AI assistant with intelligent product recommendations using AdMesh. This example shows how to create a conversational AI that provides contextual product suggestions.",
+  "source": "@site/docs/examples/ai-assistant.md",
+  "sourceDirName": "examples",
+  "slug": "/examples/ai-assistant",
+  "permalink": "/examples/ai-assistant",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/examples/ai-assistant.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Authentication",
+    "permalink": "/api/authentication"
+  }
+}
