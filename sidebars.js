@@ -66,6 +66,13 @@ const sidebars = {
         'examples/ai-assistant',
       ],
     },
+    {
+      type: 'category',
+      label: 'About',
+      items: [
+        'about/docusaurus',
+      ],
+    },
   ],
 };
 

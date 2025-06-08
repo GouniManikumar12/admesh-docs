@@ -2,7 +2,17 @@
 
 > **Official documentation for AdMesh SDKs and AI agent integration**
 
-This repository contains the complete documentation site for AdMesh, built with [Docusaurus](https://docusaurus.io/) as an open-source alternative to Mintlify. It provides comprehensive guides for AI agents to integrate AdMesh's revolutionary storybook-style advertising format.
+This repository contains the complete documentation site for AdMesh, **built with [Docusaurus](https://docusaurus.io/)** 🦖 as an open-source alternative to Mintlify. It provides comprehensive guides for AI agents to integrate AdMesh's revolutionary storybook-style advertising format.
+
+## 🦖 **Powered by Docusaurus**
+
+This documentation site leverages [Docusaurus](https://docusaurus.io/) for:
+- ⚡ **Fast static site generation** with React
+- 📱 **Mobile-responsive design** out of the box
+- 🔍 **Built-in search** functionality
+- 🎨 **Customizable themes** and styling
+- 📝 **MDX support** for interactive documentation
+- 🚀 **Easy deployment** to GitHub Pages
 
 ## 🎯 What is AdMesh?
 

@@ -7,6 +7,10 @@ slug: /
 
 Welcome to the **AdMesh SDK Documentation** - your comprehensive guide to integrating AI-powered product recommendations into your applications.
 
+:::info Built with Docusaurus 🦖
+This documentation is powered by [**Docusaurus**](https://docusaurus.io/), Meta's modern documentation platform. Experience fast, responsive, and developer-friendly documentation with built-in search, dark mode, and mobile optimization. [Learn more about our Docusaurus setup →](/about/docusaurus)
+:::
+
 ## 🚀 What is AdMesh?
 
 AdMesh is an AI-powered recommendation engine that helps developers integrate intelligent product suggestions into their applications. Whether you're building chatbots, AI assistants, or e-commerce platforms, AdMesh provides the tools you need to deliver personalized product recommendations.

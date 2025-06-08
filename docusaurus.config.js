@@ -99,6 +99,16 @@ const config = {
             label: 'UI SDK',
             position: 'right',
           },
+          {
+            href: 'https://gounimanikumar12.github.io/admesh-ui-sdk/storybook/',
+            label: 'Storybook',
+            position: 'right',
+          },
+          {
+            href: 'https://docusaurus.io/',
+            label: 'Docusaurus 🦖',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -157,10 +167,18 @@ const config = {
                 label: 'Support',
                 href: 'mailto:support@useadmesh.com',
               },
+              {
+                label: 'Storybook',
+                href: 'https://gounimanikumar12.github.io/admesh-ui-sdk/storybook/',
+              },
+              {
+                label: 'Docusaurus 🦖',
+                href: 'https://docusaurus.io/',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AdMesh. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AdMesh. Built with ❤️ using <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus 🦖</a>.`,
       },
       prism: {
         theme: prismThemes.github,
