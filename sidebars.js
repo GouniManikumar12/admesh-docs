@@ -40,6 +40,13 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'TypeScript SDK',
+      items: [
+        'typescript-sdk/installation',
+      ],
+    },
+    {
+      type: 'category',
       label: 'UI SDK',
       items: [
         'ui-sdk/installation',
