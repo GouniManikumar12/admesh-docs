@@ -125,23 +125,18 @@ This is dangerous!
 
 ## 🚀 Deployment
 
-### GitHub Pages
-
-```bash
-npm run deploy
-```
-
-### Vercel
+### Vercel (Recommended)
 
 1. Connect your GitHub repository to Vercel
-2. Set build command: `npm run build`
-3. Set output directory: `build`
+2. Vercel automatically detects Docusaurus configuration
+3. Deploy with automatic builds on push to main branch
 
-### Netlify
+### Manual Deployment
 
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `build`
+```bash
+npm run build
+# Upload the `build` directory to your hosting provider
+```
 
 ## 📝 Writing Guidelines
 

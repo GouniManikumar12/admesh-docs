@@ -1,6 +1,6 @@
 # AdMesh Documentation Deployment Guide
 
-This guide covers deploying the AdMesh documentation to Vercel.
+This guide covers deploying the AdMesh documentation to Vercel (recommended platform).
 
 ## 🚀 Vercel Deployment
 
@@ -8,7 +8,7 @@ This guide covers deploying the AdMesh documentation to Vercel.
 
 1. GitHub repository with the admesh-docs code
 2. Vercel account (free tier available)
-3. Domain name (optional, for custom domain)
+3. Domain name (optional, for custom domain setup)
 
 ### Step 1: Prepare Repository
 
