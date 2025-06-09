@@ -98,19 +98,19 @@ export default {
           "items": [
             {
               "label": "Getting Started",
-              "to": "/getting-started"
+              "to": "/getting-started/overview"
             },
             {
               "label": "Python SDK",
-              "to": "/python-sdk"
+              "to": "/python-sdk/installation"
             },
             {
               "label": "TypeScript SDK",
-              "to": "/typescript-sdk"
+              "to": "/typescript-sdk/installation"
             },
             {
               "label": "UI SDK",
-              "to": "/ui-sdk"
+              "to": "/ui-sdk/installation"
             }
           ]
         },

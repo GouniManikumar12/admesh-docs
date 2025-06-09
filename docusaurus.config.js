@@ -15,13 +15,11 @@ const config = {
   // Set the production url of your site here
   url: 'https://docs.useadmesh.com',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'GouniManikumar12', // Usually your GitHub org/user name.
-  projectName: 'admesh-docs', // Usually your repo name.
+  // Vercel deployment config
+  organizationName: 'GouniManikumar12',
+  projectName: 'admesh-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -109,19 +107,19 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/getting-started',
+                to: '/getting-started/overview',
               },
               {
                 label: 'Python SDK',
-                to: '/python-sdk',
+                to: '/python-sdk/installation',
               },
               {
                 label: 'TypeScript SDK',
-                to: '/typescript-sdk',
+                to: '/typescript-sdk/installation',
               },
               {
                 label: 'UI SDK',
-                to: '/ui-sdk',
+                to: '/ui-sdk/installation',
               },
             ],
           },

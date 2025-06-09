@@ -261,22 +261,22 @@ Each recommendation includes:
 
 <div className="feature-box feature-box--tip">
 
-**For Web Applications**: Explore our [UI SDK Components](/ui-sdk/components) for rich recommendation displays.
+**For Web Applications**: Explore our [UI SDK Installation](/ui-sdk/installation) for rich recommendation displays.
 
 </div>
 
 <div className="feature-box feature-box--tip">
 
-**For Backend Services**: Learn about [error handling](/python-sdk/error-handling) and [async usage](/python-sdk/async-usage).
+**For Backend Services**: Learn about [Python SDK](/python-sdk/installation) and [TypeScript SDK](/typescript-sdk/installation).
 
 </div>
 
 ### 📚 Explore More Features
 
-- **[Conversational Ads](/ui-sdk/conversational-ads)** - Citation-based recommendations for AI assistants
-- **[Auto-Recommendations](/ui-sdk/auto-recommendations)** - Trigger suggestions without user input
-- **[Chat Components](/ui-sdk/chat-components)** - Floating chat widgets and interfaces
-- **[Tracking & Analytics](/ui-sdk/tracking)** - Monitor performance and revenue
+- **[AI Integration](/ai-integration/overview)** - Citation-based recommendations for AI assistants
+- **[API Reference](/api/authentication)** - Complete API documentation
+- **[Examples](/examples/ai-assistant)** - Implementation examples
+- **[UI SDK](/ui-sdk/installation)** - Frontend component integration
 
 ### 🛠 Advanced Configuration
 

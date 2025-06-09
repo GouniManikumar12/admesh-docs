@@ -225,8 +225,8 @@ If an API key is compromised:
 ### Getting Help
 
 If you're having trouble with API keys:
-- Check the [troubleshooting guide](/troubleshooting/common-issues)
 - Contact support at [support@useadmesh.com](mailto:support@useadmesh.com)
+- Check our [GitHub Issues](https://github.com/GouniManikumar12/admesh-python/issues)
 - Join our community discussions
 
 ---

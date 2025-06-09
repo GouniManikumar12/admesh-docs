@@ -361,14 +361,14 @@ async def proactive_recommendation_system(conversation_history):
 
 ## Next Steps
 
-Explore specific integration guides:
+Explore integration resources:
 
-- **[ChatGPT Plugins](/ai-integration/chatgpt-plugins)** - Build ChatGPT plugins with AdMesh
-- **[Claude Integration](/ai-integration/claude-integration)** - Integrate with Anthropic's Claude
-- **[Custom AI Apps](/ai-integration/custom-ai-apps)** - Build custom AI applications
-- **[Replica.io](/ai-integration/replica-io)** - AI companion integration
-- **[Best Practices](/ai-integration/best-practices)** - Advanced tips and patterns
+- **[Python SDK](/python-sdk/installation)** - Backend SDK implementation
+- **[TypeScript SDK](/typescript-sdk/installation)** - Node.js SDK implementation
+- **[UI SDK](/ui-sdk/installation)** - Frontend component integration
+- **[Examples](/examples/ai-assistant)** - Complete implementation examples
+- **[API Reference](/api/authentication)** - Complete API documentation
 
 ---
 
-Ready to build intelligent recommendation systems? Choose your AI platform and start integrating!
+Ready to build intelligent recommendation systems? Start with our [Getting Started Guide](/getting-started/overview)!
