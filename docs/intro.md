@@ -5,44 +5,44 @@ slug: /
 
 # AdMesh SDK Documentation
 
-Welcome to the **AdMesh SDK Documentation** - your comprehensive guide to integrating AI-powered product recommendations into your applications.
+AdMesh SDK Documentation provides comprehensive technical guidance for integrating AI-powered product recommendation capabilities into enterprise applications and AI systems.
 
-## 🚀 What is AdMesh?
+## What is AdMesh?
 
-AdMesh is an AI-powered recommendation engine that helps developers integrate intelligent product suggestions into their applications. Whether you're building chatbots, AI assistants, or e-commerce platforms, AdMesh provides the tools you need to deliver personalized product recommendations.
+AdMesh is an enterprise-grade recommendation engine that enables developers to integrate intelligent product suggestions into applications. The platform supports chatbots, AI assistants, e-commerce platforms, and business applications requiring contextual product recommendations.
 
-## 📦 Available SDKs
+## Available SDKs
 
-AdMesh offers three powerful SDKs to fit your development needs:
+AdMesh provides three production-ready SDKs for different development environments:
 
-### 🐍 Python SDK
-Perfect for backend services, AI applications, and data processing pipelines.
+### Python SDK
+Backend integration for AI applications, data processing pipelines, and server-side implementations.
 
 ```python
 from admesh import Admesh
 
 client = Admesh(api_key="your-api-key")
 response = client.recommend.get_recommendations(
-    query="Best CRM for remote teams",
+    query="Enterprise CRM solutions for distributed teams",
     format="auto"
 )
 ```
 
-### 🟦 TypeScript SDK
-Ideal for Node.js applications, serverless functions, and modern web backends.
+### TypeScript SDK
+Node.js integration for serverless functions, API services, and modern web backends.
 
 ```typescript
 import Admesh from 'admesh';
 
 const client = new Admesh({ apiKey: 'your-api-key' });
 const response = await client.recommend.getRecommendations({
-  query: 'Best CRM for remote teams',
+  query: 'Enterprise CRM solutions for distributed teams',
   format: 'auto'
 });
 ```
 
-### ⚛️ UI SDK
-React components for displaying recommendations with built-in tracking and theming.
+### UI SDK
+React component library for frontend recommendation display with integrated analytics and tracking.
 
 ```tsx
 import { AdMeshLayout } from 'admesh-ui-sdk';
@@ -56,74 +56,73 @@ import { AdMeshLayout } from 'admesh-ui-sdk';
 />
 ```
 
-## 🤖 AI Agent Integration
+## AI Agent Integration
 
-AdMesh is designed specifically for AI applications and agents. Our SDKs provide:
+AdMesh provides enterprise-grade integration capabilities for AI applications and intelligent agents:
 
-- **Intelligent Intent Detection** - Automatically understand user queries
-- **Contextual Recommendations** - Relevant suggestions based on conversation context
-- **Citation-Based Ads** - Display recommendations as numbered references
-- **Auto-Recommendations** - Trigger suggestions without user input
-- **Conversational UI** - Chat-friendly components and layouts
+- **Intent Detection Engine** - Automated query analysis and categorization
+- **Contextual Recommendations** - Context-aware product suggestions
+- **Citation Integration** - Numbered reference system for conversational interfaces
+- **Automated Recommendations** - Trigger-based suggestion generation
+- **Conversational Components** - Chat-optimized UI elements
 
-## 🎯 Key Features
+## Key Features
 
-### 🔍 Smart Recommendations
-- AI-powered intent detection
-- Semantic matching with cosine similarity
-- Trust score-based filtering
-- Real-time recommendation generation
+### Smart Recommendation Engine
+- Machine learning-powered intent detection
+- Semantic matching using cosine similarity algorithms
+- Trust score-based quality filtering
+- Real-time recommendation processing
 
-### 📊 Built-in Analytics
-- Automatic view and click tracking
-- Conversion monitoring
-- Performance metrics
-- Revenue attribution
+### Analytics and Tracking
+- Automated view and interaction tracking
+- Conversion monitoring and attribution
+- Performance metrics and reporting
+- Revenue analytics and insights
 
-### 🎨 Flexible UI Components
-- Pre-built React components
-- Citation-based conversation ads
-- Sidebar and floating chat widgets
-- Auto-recommendation widgets
-- Dark/light theme support
+### UI Component Library
+- Production-ready React components
+- Citation-based conversational interfaces
+- Sidebar and floating chat implementations
+- Automated recommendation widgets
+- Theme customization support
 
-### 🔧 Developer-Friendly
-- TypeScript support with full type safety
-- Comprehensive error handling
-- Async/await support
-- Extensive documentation and examples
+### Developer Experience
+- Full TypeScript support with type safety
+- Comprehensive error handling and validation
+- Asynchronous operation support
+- Complete documentation and implementation examples
 
-## 🚀 Quick Start
+## Quick Start
 
-1. **Get your API key** from the [AdMesh Dashboard](https://useadmesh.com/agent)
-2. **Choose your SDK** based on your technology stack
-3. **Install the SDK** using your preferred package manager
-4. **Start building** with our comprehensive guides and examples
+1. **Obtain API credentials** from the [AdMesh Dashboard](https://useadmesh.com/agent)
+2. **Select appropriate SDK** based on your technology stack
+3. **Install SDK** using your package manager
+4. **Implement integration** following our technical guides
 
-## 📚 Documentation Structure
+## Documentation Structure
 
-- **[Getting Started](/getting-started/overview)** - Setup and basic concepts
-- **[Python SDK](/python-sdk/installation)** - Complete Python integration guide
-- **[TypeScript SDK](/typescript-sdk/installation)** - Complete TypeScript integration guide
-- **[UI SDK](/ui-sdk/installation)** - React components and UI integration
-- **[AI Integration](/ai-integration/overview)** - Guides for AI agents and chatbots
-- **[API Reference](/api/authentication)** - Detailed API documentation
-- **[Examples](/examples/react-app)** - Real-world implementation examples
+- **[Getting Started](/getting-started/overview)** - Setup and configuration
+- **[Python SDK](/python-sdk/installation)** - Python integration guide
+- **[UI SDK](/ui-sdk/installation)** - React component integration
+- **[AI Integration](/ai-integration/overview)** - AI agent implementation guides
+- **[API Reference](/api/authentication)** - Complete API documentation
+- **[Examples](/examples/ai-assistant)** - Implementation examples
 
-## 🆘 Need Help?
+## Support Resources
 
-- 📖 **Documentation**: You're reading it!
-- 🐛 **Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-python/issues)
-- 💬 **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
-- 🌐 **Dashboard**: [useadmesh.com](https://useadmesh.com)
+- **Documentation**: Complete technical documentation
+- **Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-python/issues)
+- **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **Dashboard**: [useadmesh.com](https://useadmesh.com)
 
-## 🔗 Useful Links
+## Resources
 
-- [AdMesh Dashboard](https://useadmesh.com) - Manage your API keys and view analytics
+- [AdMesh Dashboard](https://useadmesh.com) - API key management and analytics
 - [Python SDK Repository](https://github.com/GouniManikumar12/admesh-python)
 - [TypeScript SDK Repository](https://github.com/GouniManikumar12/admesh-typescript)
 - [UI SDK Repository](https://github.com/GouniManikumar12/admesh-ui-sdk)
 
 ---
 
-Ready to get started? Head over to our [Getting Started Guide](/getting-started/overview) to begin integrating AdMesh into your application!
+Begin integration by following our [Getting Started Guide](/getting-started/overview).

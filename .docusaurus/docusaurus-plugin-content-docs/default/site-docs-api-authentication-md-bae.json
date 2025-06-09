@@ -1,7 +1,7 @@
 {
   "id": "api/authentication",
   "title": "Authentication",
-  "description": "Learn how to authenticate with the AdMesh API using API keys and handle authentication errors.",
+  "description": "Technical documentation for AdMesh API authentication using API keys and error handling procedures.",
   "source": "@site/docs/api/authentication.md",
   "sourceDirName": "api",
   "slug": "/api/authentication",

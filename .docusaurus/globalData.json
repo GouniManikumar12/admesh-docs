@@ -61,6 +61,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "typescript-sdk/installation",
+              "path": "/typescript-sdk/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "ui-sdk/installation",
               "path": "/ui-sdk/installation",
               "sidebar": "tutorialSidebar"

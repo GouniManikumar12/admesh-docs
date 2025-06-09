@@ -1,7 +1,7 @@
 {
   "id": "examples/ai-assistant",
   "title": "AI Assistant Integration",
-  "description": "Learn how to build an AI assistant with intelligent product recommendations using AdMesh. This example shows how to create a conversational AI that provides contextual product suggestions.",
+  "description": "Technical implementation guide for building AI assistants with intelligent product recommendation capabilities using AdMesh. This example demonstrates production-ready conversational AI with contextual product suggestions.",
   "source": "@site/docs/examples/ai-assistant.md",
   "sourceDirName": "examples",
   "slug": "/examples/ai-assistant",

@@ -48,17 +48,17 @@
       "plugin": "plugin---searchc-14-0ea"
     }
   },
-  "/-45e": {
+  "/-642": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-4de": {
+  "/-06c": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-6da": {
+  "/-a17": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/ai-integration/overview-037": {
@@ -96,6 +96,10 @@
   "/python-sdk/installation-08c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---python-sdk-installationa-0-e-fb4"
+  },
+  "/typescript-sdk/installation-9b2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---typescript-sdk-installation-6-d-2-a71"
   },
   "/ui-sdk/installation-3ac": {
     "__comp": "__comp---theme-doc-item-178-a40",

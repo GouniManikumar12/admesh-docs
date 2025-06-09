@@ -1,7 +1,7 @@
 {
   "id": "getting-started/overview",
   "title": "Overview",
-  "description": "Welcome to AdMesh! This guide will help you understand the core concepts and get started with integrating AI-powered product recommendations into your applications.",
+  "description": "This guide provides technical overview and core concepts for integrating AdMesh AI-powered product recommendation capabilities into enterprise applications.",
   "source": "@site/docs/getting-started/overview.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/overview",

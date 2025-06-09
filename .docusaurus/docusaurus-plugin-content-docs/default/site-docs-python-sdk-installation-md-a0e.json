@@ -1,7 +1,7 @@
 {
   "id": "python-sdk/installation",
   "title": "Python SDK Installation",
-  "description": "The AdMesh Python SDK provides convenient access to the AdMesh REST API from any Python 3.8+ application. It includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients.",
+  "description": "The AdMesh Python SDK provides programmatic access to the AdMesh REST API for Python 3.8+ applications. The SDK includes comprehensive type definitions for all request parameters and response fields, with support for both synchronous and asynchronous operations.",
   "source": "@site/docs/python-sdk/installation.md",
   "sourceDirName": "python-sdk",
   "slug": "/python-sdk/installation",
@@ -21,7 +21,7 @@
     "permalink": "/getting-started/admesh-vs-traditional"
   },
   "next": {
-    "title": "UI SDK Installation",
-    "permalink": "/ui-sdk/installation"
+    "title": "TypeScript SDK Installation",
+    "permalink": "/typescript-sdk/installation"
   }
 }

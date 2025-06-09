@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # UI SDK Installation
 
-The AdMesh UI SDK is a React + TypeScript component library for displaying product recommendations with built-in tracking, theming, and conversational ad support.
+The AdMesh UI SDK is a production-ready React + TypeScript component library for displaying product recommendations with integrated tracking, theming, and conversational interface support.
 
 ## Requirements
 
@@ -437,17 +437,17 @@ const MemoizedRecommendations = memo(function Recommendations({ recommendations 
 
 ## Next Steps
 
-Now that you have the UI SDK installed:
+After completing UI SDK installation:
 
-1. **[Quick Start](/ui-sdk/quick-start)** - Build your first recommendation display
-2. **[Components](/ui-sdk/components)** - Explore all available components
-3. **[Conversational Ads](/ui-sdk/conversational-ads)** - Learn about citation-based recommendations
-4. **[Theming](/ui-sdk/theming)** - Customize the appearance
+1. **[Getting Started](/getting-started/overview)** - Core concepts and setup
+2. **[Python SDK](/python-sdk/installation)** - Backend SDK integration
+3. **[TypeScript SDK](/typescript-sdk/installation)** - Node.js SDK integration
+4. **[Examples](/examples/ai-assistant)** - Implementation examples
 
-## Getting Help
+## Support Resources
 
-If you encounter installation issues:
+For installation assistance:
 
-- 📖 Check our [troubleshooting guide](/troubleshooting/common-issues)
-- 🐛 [Report issues on GitHub](https://github.com/GouniManikumar12/admesh-ui-sdk/issues)
-- 💬 Contact support at [support@useadmesh.com](mailto:support@useadmesh.com)
+- **GitHub Issues**: [Report issues](https://github.com/GouniManikumar12/admesh-ui-sdk/issues)
+- **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **Documentation**: Complete technical documentation

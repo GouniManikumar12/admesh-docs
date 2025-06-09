@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Python SDK Installation
 
-The AdMesh Python SDK provides convenient access to the AdMesh REST API from any Python 3.8+ application. It includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients.
+The AdMesh Python SDK provides programmatic access to the AdMesh REST API for Python 3.8+ applications. The SDK includes comprehensive type definitions for all request parameters and response fields, with support for both synchronous and asynchronous operations.
 
 ## Requirements
 
@@ -290,17 +290,17 @@ mypy your_script.py
 
 ## Next Steps
 
-Now that you have the Python SDK installed:
+After completing Python SDK installation:
 
-1. **[Basic Usage](/python-sdk/basic-usage)** - Learn the fundamentals
-2. **[Async Usage](/python-sdk/async-usage)** - Use async/await patterns
-3. **[Error Handling](/python-sdk/error-handling)** - Handle errors gracefully
-4. **[Examples](/python-sdk/examples)** - See real-world examples
+1. **[Getting Started](/getting-started/overview)** - Core concepts and setup
+2. **[API Reference](/api/authentication)** - Complete API documentation
+3. **[Examples](/examples/ai-assistant)** - Implementation examples
+4. **[TypeScript SDK](/typescript-sdk/installation)** - Node.js SDK alternative
 
-## Getting Help
+## Support Resources
 
-If you encounter any installation issues:
+For installation assistance:
 
-- 📖 Check our [troubleshooting guide](/troubleshooting/common-issues)
-- 🐛 [Report issues on GitHub](https://github.com/GouniManikumar12/admesh-python/issues)
-- 💬 Contact support at [support@useadmesh.com](mailto:support@useadmesh.com)
+- **GitHub Issues**: [Report issues](https://github.com/GouniManikumar12/admesh-python/issues)
+- **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **Documentation**: Complete technical documentation

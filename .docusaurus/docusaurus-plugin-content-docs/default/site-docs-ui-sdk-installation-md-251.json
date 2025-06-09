@@ -1,7 +1,7 @@
 {
   "id": "ui-sdk/installation",
   "title": "UI SDK Installation",
-  "description": "The AdMesh UI SDK is a React + TypeScript component library for displaying product recommendations with built-in tracking, theming, and conversational ad support.",
+  "description": "The AdMesh UI SDK is a production-ready React + TypeScript component library for displaying product recommendations with integrated tracking, theming, and conversational interface support.",
   "source": "@site/docs/ui-sdk/installation.md",
   "sourceDirName": "ui-sdk",
   "slug": "/ui-sdk/installation",
@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Python SDK Installation",
-    "permalink": "/python-sdk/installation"
+    "title": "TypeScript SDK Installation",
+    "permalink": "/typescript-sdk/installation"
   },
   "next": {
     "title": "AI Agent Integration Overview",

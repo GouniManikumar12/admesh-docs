@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '45e'),
+    component: ComponentCreator('/', '642'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '4de'),
+        component: ComponentCreator('/', '06c'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '6da'),
+            component: ComponentCreator('/', 'a17'),
             routes: [
               {
                 path: '/ai-integration/overview',
@@ -105,6 +105,12 @@ export default [
               {
                 path: '/python-sdk/installation',
                 component: ComponentCreator('/python-sdk/installation', '08c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/typescript-sdk/installation',
+                component: ComponentCreator('/typescript-sdk/installation', '9b2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

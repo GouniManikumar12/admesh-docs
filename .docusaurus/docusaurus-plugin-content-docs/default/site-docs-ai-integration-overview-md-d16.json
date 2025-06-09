@@ -1,7 +1,7 @@
 {
   "id": "ai-integration/overview",
   "title": "AI Agent Integration Overview",
-  "description": "AdMesh is specifically designed for AI applications, chatbots, and intelligent agents. This guide covers how to integrate AdMesh into various AI platforms and create intelligent recommendation systems.",
+  "description": "AdMesh provides enterprise-grade integration capabilities for AI applications, conversational interfaces, and intelligent agent systems. This guide covers technical implementation patterns for integrating AdMesh into AI platforms.",
   "source": "@site/docs/ai-integration/overview.md",
   "sourceDirName": "ai-integration",
   "slug": "/ai-integration/overview",

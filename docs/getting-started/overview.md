@@ -4,34 +4,34 @@ sidebar_position: 1
 
 # Overview
 
-Welcome to AdMesh! This guide will help you understand the core concepts and get started with integrating AI-powered product recommendations into your applications.
+This guide provides technical overview and core concepts for integrating AdMesh AI-powered product recommendation capabilities into enterprise applications.
 
 ## What is AdMesh?
 
-AdMesh is an intelligent recommendation engine designed specifically for AI applications, chatbots, and modern web experiences. It uses advanced machine learning to understand user intent and provide contextually relevant product suggestions.
+AdMesh is an enterprise recommendation engine designed for AI applications, conversational interfaces, and modern web platforms. The system uses machine learning algorithms to analyze user intent and deliver contextually relevant product recommendations.
 
 ## Core Concepts
 
-### 🎯 Intent Detection
-AdMesh automatically analyzes user queries to understand what they're looking for:
+### Intent Detection
+AdMesh analyzes user queries to categorize intent types:
 
-- **compare_products** - User wants to compare different options
-- **best_for_use_case** - User needs recommendations for specific scenarios
-- **trial_demo** - User is interested in trying products
-- **budget_conscious** - User is price-sensitive
+- **compare_products** - Comparative analysis requests
+- **best_for_use_case** - Scenario-specific recommendations
+- **trial_demo** - Product evaluation inquiries
+- **budget_conscious** - Cost-optimized suggestions
 
-### 🔍 Semantic Matching
-Our recommendation engine uses:
-- **Text embeddings** with OpenAI's text-embedding-3-small model
-- **Cosine similarity** for semantic matching
-- **Trust scores** for quality filtering
-- **Keyword matching** for precise targeting
+### Semantic Matching
+The recommendation engine implements:
+- **Text embeddings** using OpenAI's text-embedding-3-small model
+- **Cosine similarity** algorithms for semantic matching
+- **Trust scores** for quality assurance
+- **Keyword matching** for precision targeting
 
-### 📊 Recommendation Scoring
-Each recommendation includes:
-- **Intent match score** (0-1) - How well it matches the user's intent
-- **Trust score** - Quality and reliability indicator
-- **Reason** - AI-generated explanation for the recommendation
+### Recommendation Scoring
+Each recommendation provides:
+- **Intent match score** (0-1) - Query relevance measurement
+- **Trust score** - Quality and reliability metrics
+- **Reason** - AI-generated recommendation rationale
 
 ## Architecture Overview
 
@@ -56,119 +56,118 @@ graph TD
 
 ## Integration Patterns
 
-### 1. AI Assistant Integration
-Perfect for chatbots and AI assistants that need to provide product recommendations:
+### AI Assistant Integration
+Implementation for conversational interfaces and AI assistants:
 
 ```python
-# Detect user intent and get recommendations
+# Intent detection and recommendation retrieval
 response = client.recommend.get_recommendations(
-    query="I need a CRM for my startup",
+    query="Enterprise CRM solution requirements",
     format="auto"
 )
 
-# Display recommendations in chat interface
+# Process recommendations for chat interface
 for rec in response.response.recommendations:
-    print(f"💡 {rec.title}: {rec.reason}")
+    print(f"Recommendation: {rec.title} - {rec.reason}")
 ```
 
-### 2. E-commerce Integration
-Enhance product discovery with AI-powered suggestions:
+### E-commerce Integration
+Product discovery enhancement for e-commerce platforms:
 
 ```typescript
-// Get recommendations based on user behavior
+// User behavior-based recommendations
 const recommendations = await client.recommend.getRecommendations({
   query: userQuery,
   format: 'auto'
 });
 
-// Display using UI components
+// UI component integration
 <AdMeshLayout recommendations={recommendations} />
 ```
 
-### 3. Content-Based Integration
-Add contextual product recommendations to articles and content:
+### Content-Based Integration
+Contextual product recommendations for content platforms:
 
 ```tsx
-// Citation-based recommendations in content
+// Citation-based recommendation display
 <AdMeshCitationUnit
   recommendations={recommendations}
-  conversationText="For project management, I recommend Asana..."
+  conversationText="For project management solutions..."
   citationStyle="numbered"
 />
 ```
 
 ## Key Features
 
-### 🤖 AI-First Design
-- Built specifically for AI applications
-- Intelligent intent detection
-- Contextual understanding
-- Natural language processing
+### AI-First Architecture
+- Purpose-built for AI applications
+- Advanced intent detection algorithms
+- Contextual analysis capabilities
+- Natural language processing integration
 
-### 📱 Flexible UI Components
-- Pre-built React components
-- Citation-based conversation ads
-- Floating chat widgets
-- Sidebar components
-- Auto-recommendation widgets
+### UI Component Library
+- Production-ready React components
+- Citation-based conversational interfaces
+- Floating chat widget implementations
+- Sidebar component options
+- Automated recommendation widgets
 
-### 📊 Built-in Analytics
-- Automatic view tracking
-- Click-through monitoring
+### Analytics and Tracking
+- Automated view tracking
+- Click-through rate monitoring
 - Conversion attribution
 - Revenue analytics
 
-### 🎨 Customizable Theming
-- Light and dark mode support
-- Custom accent colors
-- Responsive design
+### Customization Options
+- Light and dark theme support
+- Custom accent color configuration
+- Responsive design implementation
 - Accessibility compliance
 
-## Getting Started Checklist
+## Implementation Checklist
 
-- [ ] Create an account at [useadmesh.com/agent](https://useadmesh.com/agent)
-- [ ] Get your API key from the dashboard
-- [ ] Choose your SDK (Python, TypeScript, or UI)
-- [ ] Install the SDK in your project
-- [ ] Make your first API call
+- [ ] Register account at [useadmesh.com/agent](https://useadmesh.com/agent)
+- [ ] Obtain API credentials from dashboard
+- [ ] Select appropriate SDK (Python or UI)
+- [ ] Install SDK in development environment
+- [ ] Execute initial API integration
 - [ ] Implement recommendation display
-- [ ] Set up tracking and analytics
+- [ ] Configure tracking and analytics
 
 ## Next Steps
 
-1. **[Get your API key](/getting-started/api-keys)** - Set up authentication
-2. **[Quick Start Guide](/getting-started/quick-start)** - Make your first API call
-3. **Choose your SDK**:
+1. **[Configure API Authentication](/getting-started/api-keys)** - Set up credentials
+2. **[Quick Start Implementation](/getting-started/quick-start)** - Execute first API call
+3. **SDK Selection**:
    - [Python SDK](/python-sdk/installation) for backend applications
-   - [TypeScript SDK](/typescript-sdk/installation) for Node.js applications
    - [UI SDK](/ui-sdk/installation) for React frontend components
 
-## Common Use Cases
+## Use Cases
 
-### AI Chatbots
-Integrate product recommendations into conversational interfaces:
-- Customer support bots
-- Shopping assistants
-- Business advisory bots
+### AI Conversational Interfaces
+Product recommendation integration for conversational systems:
+- Customer support automation
+- Shopping assistance platforms
+- Business advisory systems
 
 ### E-commerce Platforms
-Enhance product discovery and conversion:
-- Product recommendation engines
+Product discovery and conversion optimization:
+- Recommendation engine implementation
 - Search result enhancement
-- Personalized shopping experiences
+- Personalized user experiences
 
 ### Content Platforms
-Add contextual product suggestions:
-- Blog post recommendations
+Contextual product suggestion integration:
+- Editorial content recommendations
 - Tutorial tool suggestions
-- Review site integrations
+- Review platform integrations
 
 ### SaaS Applications
-Help users discover relevant tools:
-- Workflow optimization suggestions
-- Integration recommendations
-- Feature discovery
+Tool discovery and optimization:
+- Workflow optimization recommendations
+- Integration suggestions
+- Feature discovery systems
 
 ---
 
-Ready to start building? Let's [get your API key](/getting-started/api-keys) and make your first recommendation request!
+Begin implementation by [configuring API authentication](/getting-started/api-keys) and executing your first recommendation request.

@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Authentication
 
-Learn how to authenticate with the AdMesh API using API keys and handle authentication errors.
+Technical documentation for AdMesh API authentication using API keys and error handling procedures.
 
 ## Overview
 
-AdMesh uses API key authentication for all requests. API keys are tied to your account and provide access to the recommendation engine and tracking features.
+AdMesh implements API key-based authentication for all requests. API keys are account-specific and provide access to the recommendation engine and tracking capabilities.
 
 ## API Key Format
 
@@ -379,7 +379,7 @@ Expected response:
 
 ## Next Steps
 
-- **[Rate Limits](/api/rate-limits)** - Understand API rate limiting
-- **[Recommendations API](/api/recommendations)** - Make your first API call
-- **[Error Handling](/api/errors)** - Handle API errors gracefully
-- **[Getting API Keys](/getting-started/api-keys)** - Get your API key from the dashboard
+- **[API Keys Setup](/getting-started/api-keys)** - Obtain API credentials from dashboard
+- **[Python SDK](/python-sdk/installation)** - Backend SDK implementation
+- **[UI SDK](/ui-sdk/installation)** - Frontend component integration
+- **[Quick Start](/getting-started/quick-start)** - Execute first API call
