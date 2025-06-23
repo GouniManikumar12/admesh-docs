@@ -11,6 +11,46 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "ad-units/citation",
+              "path": "/ad-units/citation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/conversation-summary",
+              "path": "/ad-units/conversation-summary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/floating-recommendations",
+              "path": "/ad-units/floating-recommendations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/layout",
+              "path": "/ad-units/layout",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/one-line-ad",
+              "path": "/ad-units/one-line-ad",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/overview",
+              "path": "/ad-units/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/product-card",
+              "path": "/ad-units/product-card",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ad-units/sidebar",
+              "path": "/ad-units/sidebar",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "api/authentication",
               "path": "/api/authentication",
               "sidebar": "tutorialSidebar"
@@ -18,11 +58,6 @@
             {
               "id": "examples/ai-assistant",
               "path": "/examples/ai-assistant",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "getting-started/ad-formats",
-              "path": "/getting-started/ad-formats",
               "sidebar": "tutorialSidebar"
             },
             {

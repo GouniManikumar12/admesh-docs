@@ -27,7 +27,20 @@ const sidebars = {
         'getting-started/overview',
         'getting-started/api-keys',
         'getting-started/quick-start',
-        'getting-started/ad-formats',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'AdMesh Ad Units',
+      items: [
+        'ad-units/overview',
+        'ad-units/one-line-ad',
+        'ad-units/product-card',
+        'ad-units/conversation-summary',
+        'ad-units/citation',
+        'ad-units/floating-recommendations',
+        'ad-units/sidebar',
+        'ad-units/layout',
       ],
     },
     {

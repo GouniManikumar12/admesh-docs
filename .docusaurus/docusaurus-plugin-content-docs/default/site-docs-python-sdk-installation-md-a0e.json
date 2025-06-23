@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "AdMesh Ad Formats",
-    "permalink": "/getting-started/ad-formats"
+    "title": "Layout",
+    "permalink": "/ad-units/layout"
   },
   "next": {
     "title": "TypeScript SDK Installation",

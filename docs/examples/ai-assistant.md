@@ -599,7 +599,7 @@ ADMESH_BASE_URL=https://api.useadmesh.com
 
 ## Next Steps
 
-- **[Ad Formats Guide](/getting-started/ad-formats)** - Complete AI integration guide
+- **[Ad Units Guide](/ad-units/overview)** - Complete AI integration guide
 - **[Python SDK](/python-sdk/installation)** - Backend SDK implementation
 - **[UI SDK](/ui-sdk/installation)** - Frontend component integration
 - **[API Reference](/api/authentication)** - Complete API documentation

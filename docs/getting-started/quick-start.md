@@ -255,7 +255,7 @@ Each recommendation includes:
 
 <div className="feature-box feature-box--tip">
 
-**For AI Applications**: Check out our [Ad Formats Guide](./ad-formats) for chatbots and AI assistants.
+**For AI Applications**: Check out our [Ad Units Guide](/ad-units/overview) for chatbots and AI assistants.
 
 </div>
 
@@ -273,7 +273,7 @@ Each recommendation includes:
 
 ### 📚 Explore More Features
 
-- **[Ad Formats](./ad-formats)** - Citation-based recommendations for AI assistants
+- **[Ad Units](/ad-units/overview)** - Citation-based recommendations for AI assistants
 - **[API Reference](/api/authentication)** - Complete API documentation
 - **[Examples](/examples/ai-assistant)** - Implementation examples
 - **[UI SDK](/ui-sdk/installation)** - Frontend component integration

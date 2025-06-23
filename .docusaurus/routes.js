@@ -3,22 +3,105 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
     path: '/search',
     component: ComponentCreator('/search', '5de'),
     exact: true
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'a9b'),
+    component: ComponentCreator('/', 'd40'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '0a5'),
+        component: ComponentCreator('/', '63d'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '7ed'),
+            component: ComponentCreator('/', '1ab'),
             routes: [
+              {
+                path: '/ad-units/citation',
+                component: ComponentCreator('/ad-units/citation', '1ec'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/conversation-summary',
+                component: ComponentCreator('/ad-units/conversation-summary', 'f6a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/floating-recommendations',
+                component: ComponentCreator('/ad-units/floating-recommendations', 'ff8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/layout',
+                component: ComponentCreator('/ad-units/layout', 'dc4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/one-line-ad',
+                component: ComponentCreator('/ad-units/one-line-ad', '8ff'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/overview',
+                component: ComponentCreator('/ad-units/overview', 'de0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/product-card',
+                component: ComponentCreator('/ad-units/product-card', 'e9c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/sidebar',
+                component: ComponentCreator('/ad-units/sidebar', '234'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/api/authentication',
                 component: ComponentCreator('/api/authentication', '255'),
@@ -28,12 +111,6 @@ export default [
               {
                 path: '/examples/ai-assistant',
                 component: ComponentCreator('/examples/ai-assistant', 'bb8'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/getting-started/ad-formats',
-                component: ComponentCreator('/getting-started/ad-formats', 'd89'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

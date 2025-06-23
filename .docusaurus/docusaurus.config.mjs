@@ -56,10 +56,6 @@ export default {
     "image": "img/admesh-social-card.jpg",
     "navbar": {
       "title": "AdMesh",
-      "logo": {
-        "alt": "AdMesh Logo",
-        "src": "img/logo.svg"
-      },
       "items": [
         {
           "type": "docSidebar",
@@ -69,7 +65,7 @@ export default {
         },
         {
           "href": "https://storybook.useadmesh.com",
-          "label": "Storybook",
+          "label": "Live Examples",
           "position": "left",
           "target": "_blank"
         },
@@ -155,7 +151,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 AdMesh. Built with Docusaurus."
+      "copyright": "Copyright © 2025 AdMesh. All rights reserved."
     },
     "prism": {
       "theme": {

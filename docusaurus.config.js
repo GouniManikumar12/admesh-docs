@@ -66,10 +66,10 @@ const config = {
       image: 'img/admesh-social-card.jpg',
       navbar: {
         title: 'AdMesh',
-        logo: {
-          alt: 'AdMesh Logo',
-          src: 'img/logo.svg',
-        },
+        // logo: {
+        //   alt: 'AdMesh Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             type: 'docSidebar',
@@ -79,7 +79,7 @@ const config = {
           },
           {
             href: 'https://storybook.useadmesh.com',
-            label: 'Storybook',
+            label: 'Live Examples',
             position: 'left',
             target: '_blank',
           },
@@ -164,7 +164,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AdMesh. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AdMesh. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,
