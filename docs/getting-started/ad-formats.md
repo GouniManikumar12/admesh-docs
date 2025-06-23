@@ -20,41 +20,48 @@ Choose the right ad format based on your integration needs:
 | **Sidebar** | Dashboard interfaces | Low | Persistent visibility |
 | **Layout** | Comprehensive displays | High | Flexible arrangement |
 
-## Real-World AI Platform Examples
+## Platform Integration Examples
 
-### ChatGPT-style Interfaces
-Perfect for conversational flows with natural product mentions:
-```tsx
-<AdMeshSimpleAd variation="question" />
-<AdMeshConversationSummary showTopRecommendations={2} />
-```
-
-### Perplexity-style Research Tools
-Ideal for academic-style citations and research contexts:
-```tsx
-<AdMeshCitationUnit citationNumber={1} showSource={true} />
-<AdMeshLayout intentType="research_tools" />
-```
-
-### Claude-style AI Assistants
-Great for contextual suggestions and helpful recommendations:
-```tsx
-<AdMeshAutoRecommendationWidget trigger="contextual" />
-<AdMeshProductCard showFeatures={true} />
-```
-
-### Notion AI-style Productivity Tools
-Perfect for sidebar recommendations and workspace integration:
-```tsx
-<AdMeshSidebar title="Suggested Tools" persistentDisplay={true} />
-<AdMeshLayout autoLayout={true} maxDisplayed={4} />
-```
-
-### GitHub Copilot-style Developer Tools
-Optimized for developer-focused recommendations:
+### Code Editors (VS Code, Cursor, Replit)
+Minimal, non-intrusive recommendations for development tools:
 ```tsx
 <AdMeshSimpleAd variation="statement" />
 <AdMeshCitationUnit academicStyle={false} />
+```
+
+### Design Tools (Figma, Canva, Adobe)
+Visual product cards for design assets and tools:
+```tsx
+<AdMeshProductCard showFeatures={true} />
+<AdMeshLayout autoLayout={true} maxDisplayed={3} />
+```
+
+### Business Intelligence (Tableau, PowerBI, Looker)
+Academic-style citations for data tools and analytics:
+```tsx
+<AdMeshCitationUnit citationNumber={1} showSource={true} />
+<AdMeshLayout intentType="analytics" />
+```
+
+### E-commerce Platforms (Shopify, WooCommerce, Magento)
+Sidebar recommendations for store enhancement tools:
+```tsx
+<AdMeshSidebar title="Store Tools" persistentDisplay={true} />
+<AdMeshFloatingRecommendations trigger="contextual" />
+```
+
+### CRM Systems (Salesforce, HubSpot, Pipedrive)
+Conversation summaries for sales and marketing tools:
+```tsx
+<AdMeshConversationSummary showTopRecommendations={3} />
+<AdMeshProductCard showPricing={true} />
+```
+
+### Project Management (Asana, Monday.com, Linear)
+Contextual floating widgets for productivity tools:
+```tsx
+<AdMeshFloatingRecommendations position="bottom-right" />
+<AdMeshLayout autoLayout={true} maxDisplayed={4} />
 ```
 
 ## Performance Metrics
@@ -65,20 +72,25 @@ Each format provides detailed analytics:
 - **User engagement metrics** - Measure interaction quality
 - **Revenue attribution** - Calculate earnings per format
 
-## Ad Format Specifications
+## Ad Format Components
 
-### 1. One Line Ad Format
+AdMesh provides seven distinct ad formats, each optimized for different integration scenarios and user experiences.
 
-The most minimal and unobtrusive ad format - perfect for clean, natural product recommendations that blend seamlessly into content.
+### Component Overview
 
-**Key Features**:
-- **Ultra-minimal**: Single line of text with product name and simple description
-- **Two variations**: Question format ("Looking for X? Try Y") or statement format ("Y offers X, visit")
-- **Clean integration**: Blends naturally into any content
-- **Powered by branding**: Optional "powered by AdMesh" attribution
-- **Perfect for**: ChatGPT-style interfaces, content feeds, minimal UI designs
+| Component | Use Case | Integration Level | Best For |
+|-----------|----------|------------------|----------|
+| **One Line Ad** | Minimal recommendations | Low | Code editors, minimal interfaces |
+| **Product Card** | Detailed product info | Medium | Design tools, e-commerce platforms |
+| **Conversation Summary** | End-of-session recommendations | Medium | CRM systems, chat interfaces |
+| **Citation** | Academic-style references | Low | Business intelligence, research tools |
+| **Floating Recommendations** | Context-aware suggestions | Medium | Project management, productivity tools |
+| **Sidebar** | Persistent recommendations | Low | Dashboard interfaces, workspace apps |
+| **Layout** | Comprehensive displays | High | Multi-product showcases, comparison tools |
 
-**Code Example**:
+### Implementation Examples
+
+#### One Line Ad - Minimal Integration
 ```tsx
 import { AdMeshSimpleAd } from 'admesh-ui-sdk';
 
@@ -86,24 +98,11 @@ import { AdMeshSimpleAd } from 'admesh-ui-sdk';
   recommendation={recommendation}
   variation="question" // "question" or "statement"
   showPoweredBy={true}
-  onClick={(adId, admeshLink) => {
-    window.open(admeshLink, '_blank');
-  }}
+  onClick={(adId, admeshLink) => window.open(admeshLink, '_blank')}
 />
 ```
 
-### 2. Product Card Format
-
-Comprehensive product recommendation cards with detailed information, features, and pricing.
-
-**Key Features**:
-- **Rich information**: Product details, features, pricing, and match scores
-- **Visual appeal**: Clean card design with proper spacing and typography
-- **Interactive elements**: Clickable cards with hover effects
-- **Customizable display**: Show/hide features, pricing, and match scores
-- **Perfect for**: Perplexity-style research tools, detailed AI recommendations
-
-**Code Example**:
+#### Product Card - Rich Information Display
 ```tsx
 import { AdMeshProductCard } from 'admesh-ui-sdk';
 
@@ -112,49 +111,23 @@ import { AdMeshProductCard } from 'admesh-ui-sdk';
   showFeatures={true}
   showPricing={true}
   showMatchScore={true}
-  onClick={(adId, admeshLink) => {
-    window.open(admeshLink, '_blank');
-  }}
+  onClick={(adId, admeshLink) => window.open(admeshLink, '_blank')}
 />
 ```
 
-### 3. Conversation Summary Format
-
-End-of-conversation summaries with top recommendations based on the discussion.
-
-**Key Features**:
-- **Natural conclusion**: Appears at the end of conversations
-- **Contextual summary**: Summarizes the conversation and provides relevant recommendations
-- **Top recommendations**: Shows the most relevant products based on discussion
-- **Conversation flow**: Maintains natural chat interface flow
-- **Perfect for**: ChatGPT-style interfaces, AI assistants, conversational tools
-
-**Code Example**:
+#### Conversation Summary - End-of-Session Recommendations
 ```tsx
 import { AdMeshConversationSummary } from 'admesh-ui-sdk';
 
 <AdMeshConversationSummary
   recommendations={recommendations}
-  conversationSummary="Based on our conversation about payment solutions..."
+  conversationSummary="Based on our conversation..."
   showTopRecommendations={3}
   onRecommendationClick={(adId, link) => window.open(link)}
 />
 ```
 
-### 4. Citation Format
-
-Academic-style citations that reference products like research sources, perfect for research tools and AI platforms.
-
-
-
-**Key Features**:
-- **Academic style**: References products like research citations
-- **Non-intrusive**: Blends naturally into educational content
-- **Numbered references**: Clear citation numbering system
-- **Source attribution**: Shows product information as citations
-- **Perfect for**: Perplexity-style research tools, educational AI, academic platforms
-
-**Code Example**:
+#### Citation - Academic-Style References
 ```tsx
 import { AdMeshCitationUnit } from 'admesh-ui-sdk';
 
@@ -162,76 +135,35 @@ import { AdMeshCitationUnit } from 'admesh-ui-sdk';
   recommendation={recommendation}
   citationNumber={1}
   showSource={true}
-  onClick={(adId, admeshLink) => {
-    window.open(admeshLink, '_blank');
-  }}
+  onClick={(adId, admeshLink) => window.open(admeshLink, '_blank')}
 />
 ```
 
-### 5. Floating Recommendations
-
-Proactive recommendations that appear as floating widgets based on conversation context.
-
-
-
-**Key Features**:
-- **Context-triggered**: Appears automatically when relevant topics are mentioned
-- **Non-blocking**: Floats over content without disrupting user flow
-- **Dismissible**: Users can easily close or ignore recommendations
-- **Positioned**: Configurable positioning (bottom-right, bottom-left, etc.)
-- **Perfect for**: Claude-style assistants, productivity tools, contextual suggestions
-
-**Code Example**:
+#### Floating Recommendations - Context-Aware Widgets
 ```tsx
 import { AdMeshAutoRecommendationWidget } from 'admesh-ui-sdk';
 
 <AdMeshAutoRecommendationWidget
   recommendations={recommendations}
-  trigger="User mentioned project management challenges"
+  trigger="contextual"
   autoShow={true}
   position="bottom-right"
 />
 ```
 
-### 6. Sidebar Format
-
-Persistent recommendation panels that complement main content without interrupting the user experience.
-
-
-
-**Key Features**:
-- **Persistent display**: Always visible alongside main content
-- **Non-intrusive**: Complements rather than interrupts main content
-- **Organized layout**: Clean list of recommendations with titles
-- **Collapsible**: Can be minimized when not needed
-- **Perfect for**: Notion-style productivity tools, dashboard interfaces, workspace applications
-
-**Code Example**:
+#### Sidebar - Persistent Panels
 ```tsx
 import { AdMeshSidebar } from 'admesh-ui-sdk';
 
 <AdMeshSidebar
   recommendations={recommendations}
-  title="Recommended for You"
+  title="Recommended Tools"
   maxDisplayed={4}
   onRecommendationClick={(adId, link) => window.open(link)}
 />
 ```
 
-### 7. Layout Format
-
-Comprehensive layout system that intelligently arranges multiple recommendations in various formats.
-
-
-
-**Key Features**:
-- **Auto-layout**: Intelligently arranges recommendations based on content
-- **Multiple formats**: Supports grid, list, and custom layouts
-- **Responsive design**: Adapts to different screen sizes
-- **Rich information**: Shows features, pricing, and match scores
-- **Perfect for**: Comprehensive recommendation displays, research tools, detailed AI platforms
-
-**Code Example**:
+#### Layout - Comprehensive Displays
 ```tsx
 import { AdMeshLayout } from 'admesh-ui-sdk';
 
@@ -259,13 +191,16 @@ npm install admesh-ui-sdk
 import { AdMeshSimpleAd, AdMeshProductCard, AdMeshLayout } from 'admesh-ui-sdk';
 ```
 
-3. **Add to your AI platform**:
+3. **Add to your platform**:
 ```tsx
-// For ChatGPT-style interfaces
-<AdMeshSimpleAd variation="question" />
+// For code editors
+<AdMeshSimpleAd variation="statement" />
 
-// For research tools
+// For business intelligence tools
 <AdMeshCitationUnit citationNumber={1} />
+
+// For e-commerce platforms
+<AdMeshSidebar title="Store Tools" />
 
 // For comprehensive displays
 <AdMeshLayout autoLayout={true} />
@@ -277,27 +212,37 @@ import { AdMeshSimpleAd, AdMeshProductCard, AdMeshLayout } from 'admesh-ui-sdk';
 
 Explore all ad formats with live, interactive examples. See how each component works in different themes and configurations.
 
-## Best Practices
+## Best Practices by Platform Type
 
-### For ChatGPT-style Platforms
-- Use **One Line Ad** for minimal integration
-- Add **Conversation Summary** at the end of chats
-- Keep recommendations contextual and helpful
-
-### For Research Tools (Perplexity-style)
-- Implement **Citation Format** for academic feel
-- Use **Layout System** for comprehensive results
-- Maintain clean, research-focused design
-
-### For Productivity Tools (Notion-style)
-- Add **Sidebar Recommendations** for persistent visibility
-- Use **Floating Recommendations** for contextual suggestions
-- Focus on workflow-enhancing tools
-
-### For Developer Tools (GitHub Copilot-style)
-- Use **One Line Ad** with statement variation
-- Keep recommendations developer-focused
+### Code Editors (VS Code, Cursor, Replit)
+- Use **One Line Ad** with statement variation for minimal disruption
+- Keep recommendations developer-focused and contextual
 - Integrate naturally into coding workflows
+
+### Design Tools (Figma, Canva, Adobe)
+- Implement **Product Card** for visual asset recommendations
+- Use **Layout System** for showcasing design resources
+- Focus on creative tools and design assets
+
+### Business Intelligence (Tableau, PowerBI, Looker)
+- Use **Citation Format** for data tool references
+- Implement **Layout System** for comprehensive analytics tools
+- Maintain professional, research-focused presentation
+
+### E-commerce Platforms (Shopify, WooCommerce, Magento)
+- Add **Sidebar Recommendations** for persistent store tool visibility
+- Use **Floating Recommendations** for contextual store enhancements
+- Focus on conversion and sales optimization tools
+
+### CRM Systems (Salesforce, HubSpot, Pipedrive)
+- Implement **Conversation Summary** for sales tool recommendations
+- Use **Product Card** for detailed feature comparisons
+- Focus on sales and marketing automation tools
+
+### Project Management (Asana, Monday.com, Linear)
+- Use **Floating Recommendations** for productivity suggestions
+- Implement **Layout System** for comprehensive tool displays
+- Focus on workflow and collaboration enhancements
 
 ## Live Storybook Examples
 
