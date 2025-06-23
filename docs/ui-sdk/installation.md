@@ -38,7 +38,7 @@ The UI SDK is designed to be completely self-contained with no additional setup 
 
 ```tsx
 import React from 'react';
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshLayout, AdMeshSimpleAd } from 'admesh-ui-sdk';
 // No CSS import needed! Styles are auto-injected ✨
 
 function App() {
@@ -54,13 +54,26 @@ function App() {
   ];
 
   return (
-    <AdMeshLayout
-      recommendations={recommendations}
-      autoLayout={true}
-      onProductClick={(adId, admeshLink) => {
-        window.open(admeshLink, '_blank');
-      }}
-    />
+    <div>
+      {/* One Line Ad Format - Perfect for minimal, unobtrusive recommendations */}
+      <AdMeshSimpleAd
+        recommendation={recommendations[0]}
+        variation="question" // "question" or "statement"
+        showPoweredBy={true}
+        onClick={(adId, admeshLink) => {
+          window.open(admeshLink, '_blank');
+        }}
+      />
+
+      {/* Full Layout - Comprehensive recommendation display */}
+      <AdMeshLayout
+        recommendations={recommendations}
+        autoLayout={true}
+        onProductClick={(adId, admeshLink) => {
+          window.open(admeshLink, '_blank');
+        }}
+      />
+    </div>
   );
 }
 ```
@@ -205,7 +218,11 @@ Import only the components you need:
 
 ```tsx
 // ✅ Tree-shakable imports
-import { AdMeshLayout, AdMeshProductCard } from 'admesh-ui-sdk';
+import {
+  AdMeshLayout,
+  AdMeshProductCard,
+  AdMeshSimpleAd
+} from 'admesh-ui-sdk';
 
 // ❌ Imports entire library
 import * as AdMesh from 'admesh-ui-sdk';

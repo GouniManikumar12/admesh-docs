@@ -77,7 +77,41 @@ graph TD
 
 ## 🎨 AdMesh Ad Formats
 
-### 1. Citation-Based Recommendations
+### 1. One Line Ad Format
+
+The most minimal and unobtrusive ad format - perfect for clean, natural product recommendations that blend seamlessly into content.
+
+```tsx
+import { AdMeshSimpleAd } from 'admesh-ui-sdk';
+
+<AdMeshSimpleAd
+  recommendation={recommendation}
+  variation="question" // "question" or "statement"
+  showPoweredBy={true}
+  onClick={(adId, admeshLink) => {
+    window.open(admeshLink, '_blank');
+  }}
+/>
+```
+
+**Question Variation Output**:
+```
+Looking for payment solutions for your business? Try Stripe
+```
+
+**Statement Variation Output**:
+```
+Stripe is offering best payment solutions for small business, visit
+```
+
+**Key Features**:
+- **Ultra-minimal**: Single line of text with product name and simple description
+- **Two variations**: Question format or statement format
+- **Clean integration**: Blends naturally into any content
+- **Powered by branding**: Optional "powered by AdMesh" attribution
+- **Perfect for**: Chat interfaces, content feeds, minimal UI designs
+
+### 2. Citation-Based Recommendations
 
 Display recommendations as numbered references within conversational text, similar to academic papers.
 
@@ -102,25 +136,22 @@ References:
 ² Salesforce - Enterprise-grade CRM with advanced automation
 ```
 
-### 2. Conversational Recommendations
+### 3. Conversational Recommendations
 
 Recommendations that appear naturally within chat interfaces and AI conversations.
 
 ```tsx
-import { AdMeshConversationalUnit } from 'admesh-ui-sdk';
+import { AdMeshConversationSummary } from 'admesh-ui-sdk';
 
-<AdMeshConversationalUnit
+<AdMeshConversationSummary
   recommendations={recommendations}
-  config={{
-    displayMode: 'inline',
-    context: 'chat',
-    maxRecommendations: 3,
-    showPoweredBy: true
-  }}
+  conversationSummary="Here's what we discussed and found for you..."
+  showTopRecommendations={3}
+  onRecommendationClick={(adId, link) => window.open(link)}
 />
 ```
 
-### 3. Auto-Triggered Suggestions
+### 5. Auto-Triggered Suggestions
 
 Proactive recommendations that appear based on conversation context without explicit user requests.
 
@@ -135,7 +166,7 @@ import { AdMeshAutoRecommendationWidget } from 'admesh-ui-sdk';
 />
 ```
 
-### 4. Sidebar Recommendations
+### 6. Sidebar Recommendations
 
 Persistent recommendation panels that complement main content without interrupting it.
 
