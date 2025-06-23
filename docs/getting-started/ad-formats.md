@@ -22,42 +22,42 @@ Choose the right ad format based on your integration needs:
 
 ## Platform Integration Examples
 
-### Code Editors (VS Code, Cursor, Replit)
+### AI Code Editors (Cursor, GitHub Copilot, Replit Ghostwriter)
 Minimal, non-intrusive recommendations for development tools:
 ```tsx
 <AdMeshSimpleAd variation="statement" />
 <AdMeshCitationUnit academicStyle={false} />
 ```
 
-### Design Tools (Figma, Canva, Adobe)
+### AI Design Tools (Adobe Firefly, Canva Magic Design, Figma AI)
 Visual product cards for design assets and tools:
 ```tsx
 <AdMeshProductCard showFeatures={true} />
 <AdMeshLayout autoLayout={true} maxDisplayed={3} />
 ```
 
-### Business Intelligence (Tableau, PowerBI, Looker)
+### AI Business Intelligence (Tableau Einstein, PowerBI Copilot, Looker AI)
 Academic-style citations for data tools and analytics:
 ```tsx
 <AdMeshCitationUnit citationNumber={1} showSource={true} />
 <AdMeshLayout intentType="analytics" />
 ```
 
-### E-commerce Platforms (Shopify, WooCommerce, Magento)
+### AI E-commerce Platforms (Shopify Magic, WooCommerce AI, BigCommerce AI)
 Sidebar recommendations for store enhancement tools:
 ```tsx
 <AdMeshSidebar title="Store Tools" persistentDisplay={true} />
 <AdMeshFloatingRecommendations trigger="contextual" />
 ```
 
-### CRM Systems (Salesforce, HubSpot, Pipedrive)
+### AI CRM Systems (Salesforce Einstein, HubSpot AI, Pipedrive AI)
 Conversation summaries for sales and marketing tools:
 ```tsx
 <AdMeshConversationSummary showTopRecommendations={3} />
 <AdMeshProductCard showPricing={true} />
 ```
 
-### Project Management (Asana, Monday.com, Linear)
+### AI Project Management (Asana AI, Monday.com AI, Notion AI)
 Contextual floating widgets for productivity tools:
 ```tsx
 <AdMeshFloatingRecommendations position="bottom-right" />
@@ -80,12 +80,12 @@ AdMesh provides seven distinct ad formats, each optimized for different integrat
 
 | Component | Use Case | Integration Level | Best For |
 |-----------|----------|------------------|----------|
-| **One Line Ad** | Minimal recommendations | Low | Code editors, minimal interfaces |
-| **Product Card** | Detailed product info | Medium | Design tools, e-commerce platforms |
-| **Conversation Summary** | End-of-session recommendations | Medium | CRM systems, chat interfaces |
-| **Citation** | Academic-style references | Low | Business intelligence, research tools |
-| **Floating Recommendations** | Context-aware suggestions | Medium | Project management, productivity tools |
-| **Sidebar** | Persistent recommendations | Low | Dashboard interfaces, workspace apps |
+| **One Line Ad** | Minimal recommendations | Low | AI code editors, minimal interfaces |
+| **Product Card** | Detailed product info | Medium | AI design tools, e-commerce platforms |
+| **Conversation Summary** | End-of-session recommendations | Medium | AI CRM systems, chat interfaces |
+| **Citation** | Academic-style references | Low | AI business intelligence, research tools |
+| **Floating Recommendations** | Context-aware suggestions | Medium | AI project management, productivity tools |
+| **Sidebar** | Persistent recommendations | Low | AI dashboard interfaces, workspace apps |
 | **Layout** | Comprehensive displays | High | Multi-product showcases, comparison tools |
 
 ### Implementation Examples
@@ -191,15 +191,15 @@ npm install admesh-ui-sdk
 import { AdMeshSimpleAd, AdMeshProductCard, AdMeshLayout } from 'admesh-ui-sdk';
 ```
 
-3. **Add to your platform**:
+3. **Add to your AI platform**:
 ```tsx
-// For code editors
+// For AI code editors
 <AdMeshSimpleAd variation="statement" />
 
-// For business intelligence tools
+// For AI business intelligence tools
 <AdMeshCitationUnit citationNumber={1} />
 
-// For e-commerce platforms
+// For AI e-commerce platforms
 <AdMeshSidebar title="Store Tools" />
 
 // For comprehensive displays
@@ -214,32 +214,32 @@ Explore all ad formats with live, interactive examples. See how each component w
 
 ## Best Practices by Platform Type
 
-### Code Editors (VS Code, Cursor, Replit)
+### AI Code Editors (Cursor, GitHub Copilot, Replit Ghostwriter)
 - Use **One Line Ad** with statement variation for minimal disruption
 - Keep recommendations developer-focused and contextual
 - Integrate naturally into coding workflows
 
-### Design Tools (Figma, Canva, Adobe)
+### AI Design Tools (Adobe Firefly, Canva Magic Design, Figma AI)
 - Implement **Product Card** for visual asset recommendations
 - Use **Layout System** for showcasing design resources
 - Focus on creative tools and design assets
 
-### Business Intelligence (Tableau, PowerBI, Looker)
+### AI Business Intelligence (Tableau Einstein, PowerBI Copilot, Looker AI)
 - Use **Citation Format** for data tool references
 - Implement **Layout System** for comprehensive analytics tools
 - Maintain professional, research-focused presentation
 
-### E-commerce Platforms (Shopify, WooCommerce, Magento)
+### AI E-commerce Platforms (Shopify Magic, WooCommerce AI, BigCommerce AI)
 - Add **Sidebar Recommendations** for persistent store tool visibility
 - Use **Floating Recommendations** for contextual store enhancements
 - Focus on conversion and sales optimization tools
 
-### CRM Systems (Salesforce, HubSpot, Pipedrive)
+### AI CRM Systems (Salesforce Einstein, HubSpot AI, Pipedrive AI)
 - Implement **Conversation Summary** for sales tool recommendations
 - Use **Product Card** for detailed feature comparisons
 - Focus on sales and marketing automation tools
 
-### Project Management (Asana, Monday.com, Linear)
+### AI Project Management (Asana AI, Monday.com AI, Notion AI)
 - Use **Floating Recommendations** for productivity suggestions
 - Implement **Layout System** for comprehensive tool displays
 - Focus on workflow and collaboration enhancements
@@ -261,19 +261,7 @@ The Storybook includes:
 - **Sidebar** - Persistent recommendation panels
 - **Layout** - Comprehensive arrangement systems
 
-### Run Locally
 
-```bash
-# Clone the UI SDK repository
-git clone https://github.com/GouniManikumar12/admesh-ui-sdk.git
-cd admesh-ui-sdk
-
-# Install dependencies and start Storybook
-npm install
-npm run storybook
-```
-
-The Storybook will open at `http://localhost:6007` with all interactive examples.
 
 ## Why AdMesh is Different
 
