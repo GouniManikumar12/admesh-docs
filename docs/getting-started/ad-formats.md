@@ -4,83 +4,88 @@ sidebar_position: 4
 
 # AdMesh Ad Formats
 
-Learn about AdMesh's unique approach to advertising through conversational, citation-based, and contextual ad formats that differ fundamentally from traditional push/pull advertising models.
+AdMesh offers multiple ad formats designed to integrate seamlessly with AI agents and conversational interfaces. Each format is optimized for different use cases and user experiences.
 
-## 🔄 Push vs Pull vs AdMesh's Contextual Model
+## 🎯 Format Selection Guide
 
-### Traditional Push Advertising
-**Definition**: Ads are forced upon users regardless of their current context or intent.
+Choose the right ad format based on your integration needs:
 
-**Examples**:
-- Banner ads on websites
-- Pop-up advertisements
-- TV commercials
-- Social media sponsored posts
+| Format | Best For | Integration Complexity | User Experience |
+|--------|----------|----------------------|------------------|
+| **One Line Ad** | Minimal integration, chat interfaces | Low | Ultra-clean |
+| **Product Card** | Detailed recommendations | Medium | Rich information |
+| **Conversation Summary** | End-of-chat recommendations | Medium | Natural conclusion |
+| **Citation** | Academic AI, Research tools | Low | Non-intrusive |
+| **Floating Recommendations** | Proactive suggestions | Medium | Context-aware |
+| **Sidebar** | Dashboard interfaces | Low | Persistent visibility |
+| **Layout** | Comprehensive displays | High | Flexible arrangement |
 
-**Problems**:
-- Interrupts user experience
-- Often irrelevant to current context
-- Creates ad fatigue
-- Low engagement rates
-- Users develop "banner blindness"
+## 🔧 Real-World AI Platform Examples
 
-```mermaid
-graph LR
-    A[Advertiser] --> B[Push Ad]
-    B --> C[User]
-    C --> D[Ignores/Blocks]
-    D --> E[Low ROI]
+### **ChatGPT-style Interfaces**
+Perfect for conversational flows with natural product mentions:
+```tsx
+<AdMeshSimpleAd variation="question" />
+<AdMeshConversationSummary showTopRecommendations={2} />
 ```
 
-### Traditional Pull Advertising
-**Definition**: Users actively seek out advertising content when they're ready to make a purchase.
-
-**Examples**:
-- Google search ads
-- Product comparison sites
-- Shopping platforms
-- Review websites
-
-**Problems**:
-- Only captures users at bottom of funnel
-- High competition and costs
-- Misses discovery opportunities
-- Limited to explicit search intent
-
-```mermaid
-graph LR
-    A[User Intent] --> B[Search/Browse]
-    B --> C[Pull Ad]
-    C --> D[Conversion]
-    D --> E[Higher ROI]
+### **Perplexity-style Research Tools**
+Ideal for academic-style citations and research contexts:
+```tsx
+<AdMeshCitationUnit citationNumber={1} showSource={true} />
+<AdMeshLayout intentType="research_tools" />
 ```
 
-### AdMesh's Contextual Intelligence Model
-**Definition**: AI-powered recommendations that appear naturally within conversations and content when contextually relevant.
-
-**Key Principles**:
-- **Context-Aware**: Understands conversation flow and user intent
-- **Non-Intrusive**: Appears as helpful suggestions, not ads
-- **Intelligent Timing**: Shows recommendations at optimal moments
-- **Citation-Based**: References products like academic sources
-- **Value-First**: Provides genuine value before monetization
-
-```mermaid
-graph TD
-    A[User Conversation] --> B[AI Intent Detection]
-    B --> C[Context Analysis]
-    C --> D[Relevant Recommendations]
-    D --> E[Citation-Based Display]
-    E --> F[Natural Integration]
-    F --> G[High Engagement]
+### **Claude-style AI Assistants**
+Great for contextual suggestions and helpful recommendations:
+```tsx
+<AdMeshAutoRecommendationWidget trigger="contextual" />
+<AdMeshProductCard showFeatures={true} />
 ```
 
-## 🎨 AdMesh Ad Formats
+### **Notion AI-style Productivity Tools**
+Perfect for sidebar recommendations and workspace integration:
+```tsx
+<AdMeshSidebar title="Suggested Tools" persistentDisplay={true} />
+<AdMeshLayout autoLayout={true} maxDisplayed={4} />
+```
+
+### **GitHub Copilot-style Developer Tools**
+Optimized for developer-focused recommendations:
+```tsx
+<AdMeshSimpleAd variation="statement" />
+<AdMeshCitationUnit academicStyle={false} />
+```
+
+## 📊 Performance Metrics
+
+Each format provides detailed analytics:
+- **Click-through rates (CTR)** - Track user engagement
+- **Conversion tracking** - Monitor successful purchases
+- **User engagement metrics** - Measure interaction quality
+- **Revenue attribution** - Calculate earnings per format
+
+## 🎨 Interactive Ad Format Demos
 
 ### 1. One Line Ad Format
 
 The most minimal and unobtrusive ad format - perfect for clean, natural product recommendations that blend seamlessly into content.
 
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/one-line-ad--default)**
+
+**Example Output:**
+```
+Looking for payment solutions for your business? Try Stripe
+```
+
+**Key Features**:
+- **Ultra-minimal**: Single line of text with product name and simple description
+- **Two variations**: Question format ("Looking for X? Try Y") or statement format ("Y offers X, visit")
+- **Clean integration**: Blends naturally into any content
+- **Powered by branding**: Optional "powered by AdMesh" attribution
+- **Perfect for**: ChatGPT-style interfaces, content feeds, minimal UI designs
+
+**Code Example**:
 ```tsx
 import { AdMeshSimpleAd } from 'admesh-ui-sdk';
 
@@ -94,41 +99,92 @@ import { AdMeshSimpleAd } from 'admesh-ui-sdk';
 />
 ```
 
-**Question Variation Output**:
-```
-Looking for payment solutions for your business? Try Stripe
-```
+### 2. Product Card Format
 
-**Statement Variation Output**:
+Comprehensive product recommendation cards with detailed information, features, and pricing.
+
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/product-card--default)**
+
+**Example Output:**
 ```
-Stripe is offering best payment solutions for small business, visit
+┌─────────────────────────────────────┐
+│ Stripe                              │
+│ Perfect payment solution for your   │
+│ business with excellent developer   │
+│ tools                              │
+│                                    │
+│ Features: Easy integration, Global  │
+│ payments, Developer-friendly        │
+│ Pricing: 2.9% + 30¢ per transaction│
+│ Match Score: 95%                   │
+└─────────────────────────────────────┘
 ```
 
 **Key Features**:
-- **Ultra-minimal**: Single line of text with product name and simple description
-- **Two variations**: Question format or statement format
-- **Clean integration**: Blends naturally into any content
-- **Powered by branding**: Optional "powered by AdMesh" attribution
-- **Perfect for**: Chat interfaces, content feeds, minimal UI designs
+- **Rich information**: Product details, features, pricing, and match scores
+- **Visual appeal**: Clean card design with proper spacing and typography
+- **Interactive elements**: Clickable cards with hover effects
+- **Customizable display**: Show/hide features, pricing, and match scores
+- **Perfect for**: Perplexity-style research tools, detailed AI recommendations
 
-### 2. Citation-Based Recommendations
-
-Display recommendations as numbered references within conversational text, similar to academic papers.
-
+**Code Example**:
 ```tsx
-import { AdMeshCitationUnit } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
-<AdMeshCitationUnit
-  recommendations={recommendations}
-  conversationText="For your startup's CRM needs, I recommend HubSpot for its excellent free tier and Salesforce for enterprise features..."
-  citationStyle="numbered"
-  showCitationList={true}
+<AdMeshProductCard
+  recommendation={recommendation}
+  showFeatures={true}
+  showPricing={true}
+  showMatchScore={true}
+  onClick={(adId, admeshLink) => {
+    window.open(admeshLink, '_blank');
+  }}
 />
 ```
 
-**Output**:
+### 3. Conversation Summary Format
+
+End-of-conversation summaries with top recommendations based on the discussion.
+
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/conversation-summary--default)**
+
+**Example Output:**
 ```
-For your startup's CRM needs, I recommend HubSpot¹ for its excellent 
+Based on our conversation about payment solutions and AI integration,
+here are the top recommendations for your project:
+
+• Stripe - Perfect payment solution for your business
+• OpenAI API - Industry-leading AI models for your applications
+```
+
+**Key Features**:
+- **Natural conclusion**: Appears at the end of conversations
+- **Contextual summary**: Summarizes the conversation and provides relevant recommendations
+- **Top recommendations**: Shows the most relevant products based on discussion
+- **Conversation flow**: Maintains natural chat interface flow
+- **Perfect for**: ChatGPT-style interfaces, AI assistants, conversational tools
+
+**Code Example**:
+```tsx
+import { AdMeshConversationSummary } from 'admesh-ui-sdk';
+
+<AdMeshConversationSummary
+  recommendations={recommendations}
+  conversationSummary="Based on our conversation about payment solutions..."
+  showTopRecommendations={3}
+  onRecommendationClick={(adId, link) => window.open(link)}
+/>
+```
+
+### 4. Citation Format
+
+Academic-style citations that reference products like research sources, perfect for research tools and AI platforms.
+
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/citation--default)**
+
+**Example Output:**
+```
+For your startup's CRM needs, I recommend HubSpot¹ for its excellent
 free tier and Salesforce² for enterprise features...
 
 References:
@@ -136,25 +192,54 @@ References:
 ² Salesforce - Enterprise-grade CRM with advanced automation
 ```
 
-### 3. Conversational Recommendations
+**Key Features**:
+- **Academic style**: References products like research citations
+- **Non-intrusive**: Blends naturally into educational content
+- **Numbered references**: Clear citation numbering system
+- **Source attribution**: Shows product information as citations
+- **Perfect for**: Perplexity-style research tools, educational AI, academic platforms
 
-Recommendations that appear naturally within chat interfaces and AI conversations.
-
+**Code Example**:
 ```tsx
-import { AdMeshConversationSummary } from 'admesh-ui-sdk';
+import { AdMeshCitationUnit } from 'admesh-ui-sdk';
 
-<AdMeshConversationSummary
-  recommendations={recommendations}
-  conversationSummary="Here's what we discussed and found for you..."
-  showTopRecommendations={3}
-  onRecommendationClick={(adId, link) => window.open(link)}
+<AdMeshCitationUnit
+  recommendation={recommendation}
+  citationNumber={1}
+  showSource={true}
+  onClick={(adId, admeshLink) => {
+    window.open(admeshLink, '_blank');
+  }}
 />
 ```
 
-### 5. Auto-Triggered Suggestions
+### 5. Floating Recommendations
 
-Proactive recommendations that appear based on conversation context without explicit user requests.
+Proactive recommendations that appear as floating widgets based on conversation context.
 
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/floating-recommendations--default)**
+
+**Example Output:**
+```
+┌─ Main Content Area ─────────────────┐
+│ This is your main content...        │
+│                                     │
+│                    ┌─ Floating ─┐   │
+│                    │ Stripe      │   │
+│                    │ Payment     │   │
+│                    │ Solutions   │   │
+│                    └─────────────┘   │
+└─────────────────────────────────────┘
+```
+
+**Key Features**:
+- **Context-triggered**: Appears automatically when relevant topics are mentioned
+- **Non-blocking**: Floats over content without disrupting user flow
+- **Dismissible**: Users can easily close or ignore recommendations
+- **Positioned**: Configurable positioning (bottom-right, bottom-left, etc.)
+- **Perfect for**: Claude-style assistants, productivity tools, contextual suggestions
+
+**Code Example**:
 ```tsx
 import { AdMeshAutoRecommendationWidget } from 'admesh-ui-sdk';
 
@@ -166,99 +251,152 @@ import { AdMeshAutoRecommendationWidget } from 'admesh-ui-sdk';
 />
 ```
 
-### 6. Sidebar Recommendations
+### 6. Sidebar Format
 
-Persistent recommendation panels that complement main content without interrupting it.
+Persistent recommendation panels that complement main content without interrupting the user experience.
 
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/sidebar--default)**
+
+**Example Output:**
+```
+┌─ Main Content ─┬─ Sidebar ──────────┐
+│ Your main      │ Recommended for You │
+│ application    │                     │
+│ content goes   │ • Stripe            │
+│ here...        │ • OpenAI API        │
+│                │ • Vercel            │
+└────────────────┴─────────────────────┘
+```
+
+**Key Features**:
+- **Persistent display**: Always visible alongside main content
+- **Non-intrusive**: Complements rather than interrupts main content
+- **Organized layout**: Clean list of recommendations with titles
+- **Collapsible**: Can be minimized when not needed
+- **Perfect for**: Notion-style productivity tools, dashboard interfaces, workspace applications
+
+**Code Example**:
 ```tsx
 import { AdMeshSidebar } from 'admesh-ui-sdk';
 
 <AdMeshSidebar
   recommendations={recommendations}
-  config={{
-    position: 'right',
-    displayMode: 'recommendations',
-    collapsible: true
-  }}
+  title="Recommended for You"
+  maxDisplayed={4}
+  onRecommendationClick={(adId, link) => window.open(link)}
 />
 ```
 
-## 🧠 How AdMesh is Different
+### 7. Layout Format
 
-### Traditional Advertising Platforms
+Comprehensive layout system that intelligently arranges multiple recommendations in various formats.
 
-| Aspect | Traditional Push | Traditional Pull | AdMesh Contextual |
-|--------|------------------|------------------|-------------------|
-| **Timing** | Interrupts user flow | User-initiated only | Context-triggered |
-| **Relevance** | Often irrelevant | High intent match | AI-determined relevance |
-| **User Experience** | Disruptive | Expected | Enhancing |
-| **Integration** | Separate from content | Search-based | Native to conversation |
-| **Intelligence** | Rule-based targeting | Keyword matching | AI intent detection |
-| **Format** | Banner/display ads | Search results | Citation references |
+**🌐 [Try Interactive Demo →](https://storybook.useadmesh.com/?path=/story/layout--default)**
 
-### AdMesh's Unique Advantages
-
-#### 🎯 **Intent Detection Without Explicit Search**
-```python
-# Traditional: User must search "best CRM software"
-# AdMesh: Detects intent from conversation
-
-user_message = "I'm struggling to keep track of my customers"
-# AdMesh AI detects CRM intent and suggests relevant tools
+**Example Output:**
+```
+┌─ Auto Layout ─────────────────────────────────┐
+│ ┌─ Stripe ──┐ ┌─ OpenAI ──┐ ┌─ Vercel ──┐    │
+│ │ Payment   │ │ AI Models │ │ Hosting   │    │
+│ │ Solutions │ │ & APIs    │ │ Platform  │    │
+│ │ 95% match │ │ 92% match │ │ 88% match │    │
+│ └───────────┘ └───────────┘ └───────────┘    │
+└───────────────────────────────────────────────┘
 ```
 
-#### 📚 **Academic-Style Citations**
-```
-Traditional Ad: [🚨 BUY HUBSPOT NOW! 50% OFF! 🚨]
+**Key Features**:
+- **Auto-layout**: Intelligently arranges recommendations based on content
+- **Multiple formats**: Supports grid, list, and custom layouts
+- **Responsive design**: Adapts to different screen sizes
+- **Rich information**: Shows features, pricing, and match scores
+- **Perfect for**: Comprehensive recommendation displays, research tools, detailed AI platforms
 
-AdMesh Citation: "For customer management, consider HubSpot¹ 
-for its user-friendly interface..."
-
-¹ HubSpot CRM - Intuitive customer management platform
-```
-
-#### 🤖 **AI-Native Integration**
+**Code Example**:
 ```tsx
-// Seamlessly integrates with AI applications
-function AIAssistant() {
-  const handleUserQuery = async (query) => {
-    const aiResponse = await getAIResponse(query);
-    const recommendations = await getAdMeshRecommendations(query);
-    
-    return (
-      <div>
-        <AIResponse text={aiResponse} />
-        <AdMeshCitations recommendations={recommendations} />
-      </div>
-    );
-  };
-}
+import { AdMeshLayout } from 'admesh-ui-sdk';
+
+<AdMeshLayout
+  recommendations={recommendations}
+  autoLayout={true}
+  maxDisplayed={6}
+  showMatchScores={true}
+  showFeatures={true}
+  onProductClick={(adId, link) => window.open(link)}
+/>
 ```
 
-#### 🔄 **Contextual Timing**
-```javascript
-// Shows recommendations at optimal moments
-const shouldShowRecommendations = (conversationContext) => {
-  return {
-    afterProblemStatement: true,    // User describes a challenge
-    beforeDecisionMaking: true,     // User weighing options
-    duringResearch: true,           // User gathering information
-    afterFailureStory: true         // User mentions tool limitations
-  };
-};
+## 🚀 Getting Started
+
+### Quick Integration
+
+1. **Install the SDK**:
+```bash
+npm install admesh-ui-sdk
 ```
 
-## 📊 Interactive Storybook Examples
+2. **Import components**:
+```tsx
+import { AdMeshSimpleAd, AdMeshProductCard, AdMeshLayout } from 'admesh-ui-sdk';
+```
 
-### 🎭 **Live Component Showcase**
+3. **Add to your AI platform**:
+```tsx
+// For ChatGPT-style interfaces
+<AdMeshSimpleAd variation="question" />
 
-AdMesh UI SDK includes an interactive **Storybook** where you can see and interact with all the storybook ad formats in real-time.
+// For research tools
+<AdMeshCitationUnit citationNumber={1} />
 
-#### **Access the Storybook**
+// For comprehensive displays
+<AdMeshLayout autoLayout={true} />
+```
+
+### Live Examples
+
+🌐 **Interactive Storybook**: [https://storybook.useadmesh.com/](https://storybook.useadmesh.com/)
+
+Explore all ad formats with live, interactive examples. See how each component works in different themes and configurations.
+
+## 🎯 Best Practices
+
+### For ChatGPT-style Platforms
+- Use **One Line Ad** for minimal integration
+- Add **Conversation Summary** at the end of chats
+- Keep recommendations contextual and helpful
+
+### For Research Tools (Perplexity-style)
+- Implement **Citation Format** for academic feel
+- Use **Layout System** for comprehensive results
+- Maintain clean, research-focused design
+
+### For Productivity Tools (Notion-style)
+- Add **Sidebar Recommendations** for persistent visibility
+- Use **Floating Recommendations** for contextual suggestions
+- Focus on workflow-enhancing tools
+
+### For Developer Tools (GitHub Copilot-style)
+- Use **One Line Ad** with statement variation
+- Keep recommendations developer-focused
+- Integrate naturally into coding workflows
+
+## 🌐 Live Storybook Examples
+
+### Interactive Component Showcase
+
+Explore all AdMesh ad formats with live, interactive examples:
 
 **🌐 Live Hosted Version**: [https://storybook.useadmesh.com/](https://storybook.useadmesh.com/)
 
-Or run locally:
+The Storybook includes:
+- **One Line Ad** - Minimal integration examples
+- **Product Card** - Rich recommendation displays
+- **Conversation Summary** - End-of-chat recommendations
+- **Citation** - Academic-style references
+- **Floating Recommendations** - Context-aware widgets
+- **Sidebar** - Persistent recommendation panels
+- **Layout** - Comprehensive arrangement systems
+
+### Run Locally
 
 ```bash
 # Clone the UI SDK repository
@@ -270,215 +408,29 @@ npm install
 npm run storybook
 ```
 
-The Storybook will open at `http://localhost:6006` with interactive examples of:
+The Storybook will open at `http://localhost:6007` with all interactive examples.
 
-- **📚 Storybook Ad Formats** - Complete narrative examples
-- **📝 Citation Components** - Different citation styles
-- **💬 Conversational Ads** - Chat interface integration
-- **📊 Format Comparisons** - Traditional vs AdMesh side-by-side
+## 📈 Why AdMesh is Different
 
-#### **What You'll Find in Storybook**
+### Traditional vs AdMesh Approach
 
-1. **Interactive Demos** - Click citations to see tracking in action
-2. **Theme Variations** - Light/dark mode examples
-3. **Citation Styles** - Numbered, bracketed, and lettered options
-4. **Real Stories** - Business narratives with contextual recommendations
-5. **Performance Comparisons** - Visual demonstrations of engagement improvements
+| Aspect | Traditional Ads | AdMesh |
+|--------|----------------|---------|
+| **Integration** | Separate from content | Native to conversation |
+| **Timing** | Interrupts user flow | Context-triggered |
+| **Relevance** | Often irrelevant | AI-determined relevance |
+| **User Experience** | Disruptive | Enhancing |
+| **Format** | Banner/display ads | Citation references |
+| **Intelligence** | Rule-based targeting | AI intent detection |
 
-## 📊 Storybook Integration Examples
+### Key Advantages
 
-### Example 1: Business Advice Story
-
-```markdown
-**The Startup Founder's Journey**
-
-Sarah was a brilliant engineer who decided to start her own SaaS company. 
-As her customer base grew, she realized she needed better tools to manage 
-customer relationships¹ and track her sales pipeline².
-
-She also struggled with project management³ as her team expanded, and 
-needed a reliable way to handle customer support tickets⁴.
-
-References:
-¹ HubSpot CRM - Free CRM perfect for growing startups
-² Pipedrive - Visual sales pipeline management
-³ Notion - All-in-one workspace for project management
-⁴ Intercom - Customer support and messaging platform
-```
-
-### Example 2: Technical Tutorial Story
-
-```markdown
-**Building Your First AI Chatbot**
-
-Once upon a time, a developer wanted to build an intelligent chatbot. 
-They needed a framework for natural language processing¹, a database 
-to store conversation history², and a platform to deploy their bot³.
-
-The developer also wanted to add recommendation capabilities⁴ to make 
-their chatbot more helpful and potentially monetize it⁵.
-
-References:
-¹ OpenAI API - Advanced language models for chatbots
-² MongoDB Atlas - Cloud database for conversation storage
-³ Vercel - Easy deployment platform for web applications
-⁴ AdMesh SDK - AI-powered recommendation engine
-⁵ Stripe - Payment processing for monetization
-```
-
-### Example 3: E-commerce Journey Story
-
-```markdown
-**The Online Store Owner's Challenge**
-
-Emma ran a successful online boutique but faced several challenges. 
-Her website needed better analytics¹ to understand customer behavior, 
-and she wanted to improve her email marketing campaigns².
-
-She also needed inventory management software³ and was looking for 
-ways to provide better customer service⁴.
-
-References:
-¹ Google Analytics - Comprehensive website analytics
-² Mailchimp - Email marketing automation platform
-³ TradeGecko - Inventory management for e-commerce
-⁴ Zendesk - Customer service and support platform
-```
-
-## 🎭 Storybook Component Implementation
-
-```tsx
-import React from 'react';
-import { AdMeshCitationUnit } from 'admesh-ui-sdk';
-
-interface StorybookAdProps {
-  story: string;
-  recommendations: AdMeshRecommendation[];
-  title: string;
-}
-
-export function StorybookAd({ story, recommendations, title }: StorybookAdProps) {
-  return (
-    <div className="storybook-container">
-      <h2 className="story-title">{title}</h2>
-      
-      <AdMeshCitationUnit
-        recommendations={recommendations}
-        conversationText={story}
-        citationStyle="numbered"
-        showCitationList={true}
-        onRecommendationClick={(adId, link) => {
-          // Track story-based recommendation clicks
-          trackStorybookClick(adId, title);
-          window.open(link, '_blank');
-        }}
-      />
-      
-      <div className="story-footer">
-        <span className="powered-by">
-          📚 Story-based recommendations powered by AdMesh
-        </span>
-      </div>
-    </div>
-  );
-}
-```
-
-## 🚀 Implementation Guide
-
-### 1. Detect Story Context
-
-```python
-def detect_story_context(content):
-    story_indicators = [
-        "once upon a time", "story", "journey", "challenge",
-        "struggled with", "needed", "wanted to", "faced"
-    ]
-    
-    context_score = sum(1 for indicator in story_indicators 
-                       if indicator in content.lower())
-    
-    return context_score >= 2
-```
-
-### 2. Extract Recommendation Opportunities
-
-```python
-def extract_recommendation_points(story_text):
-    # Look for problem statements and needs
-    patterns = [
-        r"needed (.*?)(?:\.|,|$)",
-        r"struggled with (.*?)(?:\.|,|$)",
-        r"wanted (.*?)(?:\.|,|$)",
-        r"looking for (.*?)(?:\.|,|$)"
-    ]
-    
-    opportunities = []
-    for pattern in patterns:
-        matches = re.findall(pattern, story_text, re.IGNORECASE)
-        opportunities.extend(matches)
-    
-    return opportunities
-```
-
-### 3. Generate Contextual Recommendations
-
-```python
-async def generate_story_recommendations(opportunities):
-    recommendations = []
-    
-    for opportunity in opportunities:
-        # Use AdMesh API to get relevant recommendations
-        response = await admesh_client.recommend.get_recommendations(
-            query=opportunity,
-            format="story_context",
-            max_recommendations=1
-        )
-        recommendations.extend(response.recommendations)
-    
-    return recommendations
-```
-
-## 📈 Benefits of Story-Based Ads
-
-### For Users
-- **Non-Intrusive**: Enhances rather than interrupts the story
-- **Contextually Relevant**: Recommendations match story context
-- **Educational**: Learn about tools through relatable scenarios
-- **Natural Discovery**: Find solutions through storytelling
-
-### For Advertisers
-- **Higher Engagement**: Users more receptive to story-integrated ads
-- **Better Context**: Products shown in relevant use cases
-- **Emotional Connection**: Stories create emotional engagement
-- **Trust Building**: Recommendations feel like helpful suggestions
-
-### For Publishers
-- **Monetization**: Generate revenue without disrupting content
-- **User Experience**: Maintain content quality while monetizing
-- **Flexibility**: Easy integration with existing content
-- **Analytics**: Track story performance and recommendation effectiveness
-
-## 🎯 Best Practices
-
-### Story Integration
-1. **Natural Flow**: Recommendations should feel part of the narrative
-2. **Relevant Timing**: Show recommendations when problems are introduced
-3. **Appropriate Quantity**: Don't overwhelm with too many citations
-4. **Clear Attribution**: Make it clear these are recommendations
-
-### User Experience
-1. **Optional Interaction**: Users can ignore recommendations
-2. **Value First**: Focus on story value, not selling
-3. **Transparent Monetization**: Clear about recommendation nature
-4. **Easy Dismissal**: Allow users to hide recommendations
-
-### Content Quality
-1. **Authentic Stories**: Use real, relatable scenarios
-2. **Problem-Solution Fit**: Ensure recommendations solve story problems
-3. **Diverse Examples**: Cover various industries and use cases
-4. **Regular Updates**: Keep stories and recommendations current
+- **🎯 Intent Detection**: Understands user needs from conversation context
+- **📚 Academic Style**: Citations feel like helpful references, not ads
+- **🤖 AI-Native**: Built specifically for AI platforms and conversational interfaces
+- **🔄 Contextual Timing**: Shows recommendations at optimal moments
+- **💡 Value-First**: Provides genuine value before monetization
 
 ---
 
-This story-based, citation-driven approach makes AdMesh fundamentally different from traditional advertising by creating value through context rather than interruption. It's advertising that enhances rather than disrupts the user experience.
+**Ready to integrate AdMesh into your AI platform?** Start with the [Quick Start Guide](./quick-start) or explore the [live Storybook examples](https://storybook.useadmesh.com/).

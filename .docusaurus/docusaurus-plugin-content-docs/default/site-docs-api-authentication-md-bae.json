@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "AI Agent Integration Overview",
-    "permalink": "/ai-integration/overview"
+    "title": "UI SDK Installation",
+    "permalink": "/ui-sdk/installation"
   },
   "next": {
     "title": "AI Assistant Integration",

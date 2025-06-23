@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "AdMesh vs Traditional Advertising",
-    "permalink": "/getting-started/admesh-vs-traditional"
+    "title": "AdMesh Ad Formats",
+    "permalink": "/getting-started/ad-formats"
   },
   "next": {
     "title": "TypeScript SDK Installation",

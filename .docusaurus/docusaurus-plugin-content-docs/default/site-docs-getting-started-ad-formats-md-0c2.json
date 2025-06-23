@@ -1,7 +1,7 @@
 {
   "id": "getting-started/ad-formats",
   "title": "AdMesh Ad Formats",
-  "description": "Learn about AdMesh's unique approach to advertising through conversational, citation-based, and contextual ad formats that differ fundamentally from traditional push/pull advertising models.",
+  "description": "AdMesh offers multiple ad formats designed to integrate seamlessly with AI agents and conversational interfaces. Each format is optimized for different use cases and user experiences.",
   "source": "@site/docs/getting-started/ad-formats.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/ad-formats",
@@ -21,7 +21,7 @@
     "permalink": "/getting-started/quick-start"
   },
   "next": {
-    "title": "AdMesh vs Traditional Advertising",
-    "permalink": "/getting-started/admesh-vs-traditional"
+    "title": "Python SDK Installation",
+    "permalink": "/python-sdk/installation"
   }
 }

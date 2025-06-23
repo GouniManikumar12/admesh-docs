@@ -68,6 +68,12 @@ export default {
           "label": "Documentation"
         },
         {
+          "href": "https://storybook.useadmesh.com",
+          "label": "Storybook",
+          "position": "left",
+          "target": "_blank"
+        },
+        {
           "href": "https://useadmesh.com",
           "label": "Dashboard",
           "position": "right"

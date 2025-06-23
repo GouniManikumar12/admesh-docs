@@ -28,7 +28,6 @@ const sidebars = {
         'getting-started/api-keys',
         'getting-started/quick-start',
         'getting-started/ad-formats',
-        'getting-started/admesh-vs-traditional',
       ],
     },
     {
@@ -52,13 +51,7 @@ const sidebars = {
         'ui-sdk/installation',
       ],
     },
-    {
-      type: 'category',
-      label: 'AI Agent Integration',
-      items: [
-        'ai-integration/overview',
-      ],
-    },
+
     {
       type: 'category',
       label: 'API Reference',

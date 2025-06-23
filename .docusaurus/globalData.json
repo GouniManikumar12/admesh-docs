@@ -11,11 +11,6 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "ai-integration/overview",
-              "path": "/ai-integration/overview",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "api/authentication",
               "path": "/api/authentication",
               "sidebar": "tutorialSidebar"
@@ -28,11 +23,6 @@
             {
               "id": "getting-started/ad-formats",
               "path": "/getting-started/ad-formats",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "getting-started/admesh-vs-traditional",
-              "path": "/getting-started/admesh-vs-traditional",
               "sidebar": "tutorialSidebar"
             },
             {

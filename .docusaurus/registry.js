@@ -7,7 +7,6 @@ export default {
   "251bced1": [() => import(/* webpackChunkName: "251bced1" */ "@site/docs/ui-sdk/installation.md"), "@site/docs/ui-sdk/installation.md", require.resolveWeak("@site/docs/ui-sdk/installation.md")],
   "588bd741": [() => import(/* webpackChunkName: "588bd741" */ "@site/docs/getting-started/quick-start.md"), "@site/docs/getting-started/quick-start.md", require.resolveWeak("@site/docs/getting-started/quick-start.md")],
   "5e95c892": [() => import(/* webpackChunkName: "5e95c892" */ "@theme/DocsRoot"), "@theme/DocsRoot", require.resolveWeak("@theme/DocsRoot")],
-  "610a76ce": [() => import(/* webpackChunkName: "610a76ce" */ "@site/docs/getting-started/admesh-vs-traditional.md"), "@site/docs/getting-started/admesh-vs-traditional.md", require.resolveWeak("@site/docs/getting-started/admesh-vs-traditional.md")],
   "6d2d061b": [() => import(/* webpackChunkName: "6d2d061b" */ "@site/docs/typescript-sdk/installation.md"), "@site/docs/typescript-sdk/installation.md", require.resolveWeak("@site/docs/typescript-sdk/installation.md")],
   "7a96ca3d": [() => import(/* webpackChunkName: "7a96ca3d" */ "@site/docs/getting-started/overview.md"), "@site/docs/getting-started/overview.md", require.resolveWeak("@site/docs/getting-started/overview.md")],
   "a0ec5393": [() => import(/* webpackChunkName: "a0ec5393" */ "@site/docs/python-sdk/installation.md"), "@site/docs/python-sdk/installation.md", require.resolveWeak("@site/docs/python-sdk/installation.md")],
@@ -17,5 +16,4 @@ export default {
   "ad95bade": [() => import(/* webpackChunkName: "ad95bade" */ "@site/docs/getting-started/api-keys.md"), "@site/docs/getting-started/api-keys.md", require.resolveWeak("@site/docs/getting-started/api-keys.md")],
   "baeff1df": [() => import(/* webpackChunkName: "baeff1df" */ "@site/docs/api/authentication.md"), "@site/docs/api/authentication.md", require.resolveWeak("@site/docs/api/authentication.md")],
   "c141421f": [() => import(/* webpackChunkName: "c141421f" */ "@generated/docusaurus-theme-search-algolia/default/__plugin.json"), "@generated/docusaurus-theme-search-algolia/default/__plugin.json", require.resolveWeak("@generated/docusaurus-theme-search-algolia/default/__plugin.json")],
-  "d16de9df": [() => import(/* webpackChunkName: "d16de9df" */ "@site/docs/ai-integration/overview.md"), "@site/docs/ai-integration/overview.md", require.resolveWeak("@site/docs/ai-integration/overview.md")],
   "d277c36c": [() => import(/* webpackChunkName: "d277c36c" */ "@site/docs/examples/ai-assistant.md"), "@site/docs/examples/ai-assistant.md", require.resolveWeak("@site/docs/examples/ai-assistant.md")],};

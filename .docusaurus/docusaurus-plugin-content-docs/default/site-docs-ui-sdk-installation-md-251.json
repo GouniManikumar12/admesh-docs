@@ -21,7 +21,7 @@
     "permalink": "/typescript-sdk/installation"
   },
   "next": {
-    "title": "AI Agent Integration Overview",
-    "permalink": "/ai-integration/overview"
+    "title": "Authentication",
+    "permalink": "/api/authentication"
   }
 }

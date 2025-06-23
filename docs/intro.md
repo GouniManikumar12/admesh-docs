@@ -105,7 +105,6 @@ AdMesh provides enterprise-grade integration capabilities for AI applications an
 - **[Getting Started](/getting-started/overview)** - Setup and configuration
 - **[Python SDK](/python-sdk/installation)** - Python integration guide
 - **[UI SDK](/ui-sdk/installation)** - React component integration
-- **[AI Integration](/ai-integration/overview)** - AI agent implementation guides
 - **[API Reference](/api/authentication)** - Complete API documentation
 - **[Examples](/examples/ai-assistant)** - Implementation examples
 

@@ -9,22 +9,16 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '642'),
+    component: ComponentCreator('/', 'a9b'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '06c'),
+        component: ComponentCreator('/', '0a5'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'a17'),
+            component: ComponentCreator('/', '7ed'),
             routes: [
-              {
-                path: '/ai-integration/overview',
-                component: ComponentCreator('/ai-integration/overview', '037'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
               {
                 path: '/api/authentication',
                 component: ComponentCreator('/api/authentication', '255'),
@@ -40,12 +34,6 @@ export default [
               {
                 path: '/getting-started/ad-formats',
                 component: ComponentCreator('/getting-started/ad-formats', 'd89'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/getting-started/admesh-vs-traditional',
-                component: ComponentCreator('/getting-started/admesh-vs-traditional', '9ca'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
