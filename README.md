@@ -32,7 +32,7 @@ This command generates static content into the `build` directory and can be serv
 - **Python SDK** - Complete Python integration guide
 - **TypeScript SDK** - Complete TypeScript integration guide
 - **UI SDK** - React components and UI integration
-- **AI Integration** - Guides for AI agents and chatbots
+- **AI Integration** - Guides for AI Platforms and chatbots
 - **API Reference** - Detailed API documentation
 - **Examples** - Real-world implementation examples
 - **Troubleshooting** - Common issues and solutions
@@ -156,7 +156,7 @@ npm run build
 
 ### AI Agent Focus
 
-Since this documentation is for AI agents:
+Since this documentation is for AI Platforms:
 
 1. **Emphasize integration patterns** - Show how to integrate with AI platforms
 2. **Provide conversation examples** - Show realistic AI interactions

@@ -27,6 +27,7 @@ const sidebars = {
         'getting-started/overview',
         'getting-started/api-keys',
         'getting-started/quick-start',
+        'getting-started/earnings',
       ],
     },
     {

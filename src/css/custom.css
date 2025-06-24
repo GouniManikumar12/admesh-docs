@@ -212,3 +212,56 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+/* Earnings Calculator Link Styling */
+.navbar__link--earnings {
+  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%) !important;
+  color: white !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+  margin-left: 8px !important;
+}
+
+.navbar__link--earnings:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3) !important;
+  color: white !important;
+}
+
+[data-theme='dark'] .navbar__link--earnings {
+  background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%) !important;
+}
+
+/* Earnings Calculator Button Component */
+.earnings-calculator-link {
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+}
+
+.earnings-calculator-link:hover {
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
+}
+
+/* Earnings Calculator Feature Box */
+.earnings-calculator-box {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 2px solid #8b5cf6;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.earnings-calculator-box h3 {
+  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+
+[data-theme='dark'] .earnings-calculator-box {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(96, 165, 250, 0.1) 100%);
+  border-color: #a78bfa;
+}

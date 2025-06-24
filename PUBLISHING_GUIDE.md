@@ -279,7 +279,7 @@ npm run serve  # Test locally
 
 ## 🎉 You're Ready!
 
-Your AdMesh documentation is now ready to help AI agents integrate your SDKs. Choose your preferred hosting option and deploy!
+Your AdMesh documentation is now ready to help AI Platforms integrate your SDKs. Choose your preferred hosting option and deploy!
 
 **Recommended Quick Start:**
 1. Push to GitHub repository
@@ -288,7 +288,7 @@ Your AdMesh documentation is now ready to help AI agents integrate your SDKs. Ch
 4. Add analytics and search
 5. Share with the AI development community!
 
-The documentation includes everything AI agents need:
+The documentation includes everything AI Platforms need:
 - Complete SDK integration guides
 - Citation-based conversation ads
 - Auto-recommendation patterns

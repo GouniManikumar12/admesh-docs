@@ -124,6 +124,22 @@ Contextual product recommendations for content platforms:
 - Responsive design implementation
 - Accessibility compliance
 
+## Revenue & Monetization
+
+import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
+
+<div className="earnings-calculator-box">
+  <h3>Calculate Your Potential Earnings</h3>
+  <p>Estimate your revenue potential with AdMesh's AI-powered recommendations. Our earnings calculator helps you understand the monetization opportunities based on your platform's traffic and user engagement.</p>
+  <EarningsCalculatorLink variant="button" text="Open Earnings Calculator" />
+</div>
+
+AdMesh provides revenue sharing for AI platforms through:
+- **Performance-based payouts** - Earn from successful recommendations
+- **Tiered revenue sharing** - Higher percentages for Pro and Enterprise plans
+- **Real-time analytics** - Track clicks, conversions, and earnings
+- **Transparent reporting** - Detailed revenue breakdowns and insights
+
 ## Implementation Checklist
 
 - [ ] Register account at [useadmesh.com/agent](https://useadmesh.com/agent)
@@ -133,6 +149,7 @@ Contextual product recommendations for content platforms:
 - [ ] Execute initial API integration
 - [ ] Implement recommendation display
 - [ ] Configure tracking and analytics
+- [ ] **Calculate earnings potential** - Use the earnings calculator to estimate revenue
 
 ## Next Steps
 

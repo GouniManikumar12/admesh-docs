@@ -70,6 +70,13 @@ export default {
           "target": "_blank"
         },
         {
+          "href": "https://useadmesh.com/agents#earnings-calculator",
+          "label": "Earnings Calculator",
+          "position": "left",
+          "target": "_blank",
+          "className": "navbar__link--earnings"
+        },
+        {
           "href": "https://useadmesh.com",
           "label": "Dashboard",
           "position": "right"
@@ -139,6 +146,10 @@ export default {
             {
               "label": "AdMesh Dashboard",
               "href": "https://useadmesh.com"
+            },
+            {
+              "label": "Earnings Calculator",
+              "href": "https://useadmesh.com/agents#earnings-calculator"
             },
             {
               "label": "GitHub",

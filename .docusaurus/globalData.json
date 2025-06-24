@@ -66,6 +66,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "getting-started/earnings",
+              "path": "/getting-started/earnings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "getting-started/overview",
               "path": "/getting-started/overview",
               "sidebar": "tutorialSidebar"

@@ -316,4 +316,79 @@ export const AllDemosContainer = () => (
   </div>
 );
 
+// Earnings Calculator Link Component
+export const EarningsCalculatorLink = ({
+  variant = 'button',
+  className = '',
+  style = {},
+  text = 'Calculate Your Earnings'
+}) => {
+  const baseStyles = {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '8px',
+    textDecoration: 'none',
+    fontWeight: '600',
+    borderRadius: '6px',
+    transition: 'all 0.2s ease',
+    fontFamily: 'system-ui, -apple-system, sans-serif'
+  };
+
+  const buttonStyles = {
+    ...baseStyles,
+    padding: '12px 24px',
+    backgroundColor: '#8b5cf6',
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '14px',
+    ...style
+  };
+
+  const linkStyles = {
+    ...baseStyles,
+    padding: '8px 16px',
+    color: '#8b5cf6',
+    border: '2px solid #8b5cf6',
+    backgroundColor: 'transparent',
+    fontSize: '14px',
+    ...style
+  };
+
+  const handleClick = () => {
+    window.open('https://useadmesh.com/agents#earnings-calculator', '_blank');
+  };
+
+  const finalStyles = variant === 'button' ? buttonStyles : linkStyles;
+
+  return (
+    <button
+      onClick={handleClick}
+      style={finalStyles}
+      className={`earnings-calculator-link ${className}`}
+      onMouseEnter={(e) => {
+        if (variant === 'button') {
+          e.target.style.backgroundColor = '#7c3aed';
+          e.target.style.transform = 'translateY(-1px)';
+        } else {
+          e.target.style.backgroundColor = '#8b5cf6';
+          e.target.style.color = 'white';
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (variant === 'button') {
+          e.target.style.backgroundColor = '#8b5cf6';
+          e.target.style.transform = 'translateY(0)';
+        } else {
+          e.target.style.backgroundColor = 'transparent';
+          e.target.style.color = '#8b5cf6';
+        }
+      }}
+    >
+      {text}
+      <span style={{ fontSize: '12px' }}>↗</span>
+    </button>
+  );
+};
+
 export default AllDemosContainer;

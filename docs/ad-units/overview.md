@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-AdMesh offers multiple ad formats designed to integrate seamlessly with AI agents and conversational interfaces. Each format is optimized for different use cases and user experiences.
+AdMesh offers multiple ad formats designed to integrate seamlessly with AI Platforms and conversational interfaces. Each format is optimized for different use cases and user experiences.
 
 ## Format Selection Guide
 
@@ -52,13 +52,21 @@ Choose the right ad format based on your integration needs:
 - **Focus**: Productivity tools, collaboration, planning
 - **Examples**: Taskade AI, Tability AI, Magical
 
-## Performance Metrics
+## Performance Metrics & Revenue
 
-Each format provides detailed analytics:
+import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
+
+Each format provides detailed analytics and revenue opportunities:
 - **Click-through rates (CTR)** - Track user engagement
 - **Conversion tracking** - Monitor successful purchases
 - **User engagement metrics** - Measure interaction quality
 - **Revenue attribution** - Calculate earnings per format
+
+<div className="feature-box feature-box--tip">
+  <h4>Optimize Your Revenue</h4>
+  <p>Different ad formats have varying revenue potential. Use our earnings calculator to compare the earning potential of each format for your specific use case.</p>
+  <EarningsCalculatorLink variant="link" text="Calculate Revenue by Format" />
+</div>
 
 ## Ad Format Components
 

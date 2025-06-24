@@ -271,6 +271,18 @@ Each recommendation includes:
 
 </div>
 
+### Calculate Your Earnings
+
+import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
+
+<div className="feature-box feature-box--tip">
+
+Ready to see your revenue potential? Use our earnings calculator to estimate how much you can earn with AdMesh recommendations based on your platform's traffic and engagement.
+
+<EarningsCalculatorLink variant="link" text="Calculate Your Earnings" style={{marginTop: '12px'}} />
+
+</div>
+
 ### 📚 Explore More Features
 
 - **[Ad Units](/ad-units/overview)** - Citation-based recommendations for AI assistants

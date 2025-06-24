@@ -10,7 +10,7 @@ To use AdMesh APIs and SDKs, you'll need an API key. This guide walks you throug
 
 ### Step 1: Sign Up
 
-1. Visit [useadmesh.com/agent](https://useadmesh.com/agent)
+1. Visit [useadmesh.com/agents](https://useadmesh.com/agents)
 2. Click **"Sign Up"** to create a new account
 3. Fill in your details:
    - Email address
@@ -27,7 +27,7 @@ To use AdMesh APIs and SDKs, you'll need an API key. This guide walks you throug
 
 ### Step 1: Access the Dashboard
 
-1. Log in to your AdMesh account at [useadmesh.com/agent](https://useadmesh.com/agent)
+1. Log in to your AdMesh account at [useadmesh.com/agents](https://useadmesh.com/agents)
 2. Navigate to the **API Keys** section in the dashboard
 
 ### Step 2: Generate API Key
@@ -152,15 +152,38 @@ const client = new Admesh(); // Automatically uses ADMESH_API_KEY from .env
 - Don't hardcode keys in your application code
 - Don't expose keys in client-side code
 
+## Revenue & Earnings
+
+import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
+
+Once you have your API key set up, you can start earning revenue from AdMesh recommendations. Our platform provides transparent revenue sharing for AI platforms and applications.
+
+<div className="feature-box feature-box--tip">
+  <h4>Calculate Your Earnings Potential</h4>
+  <p>Use our earnings calculator to estimate your revenue based on your platform's traffic and user engagement patterns.</p>
+  <EarningsCalculatorLink variant="button" text="Open Earnings Calculator" />
+</div>
+
+### Revenue Sharing Model
+
+AdMesh provides competitive revenue sharing across all subscription tiers:
+
+| Plan | Revenue Share | Daily Requests | Monthly Requests | Rate Limit |
+|------|---------------|----------------|------------------|------------|
+| **Free** | 60% | 10,000 | 100,000 | 100/minute |
+| **Pro** | 70% | 50,000 | 1,000,000 | 500/minute |
+| **Enterprise** | 80% | Unlimited | Unlimited | 1000/minute |
+
+### Earnings Features
+
+- **Real-time tracking** - Monitor clicks and conversions as they happen
+- **Transparent reporting** - Detailed revenue breakdowns and analytics
+- **Monthly payouts** - Automatic payments via your preferred method
+- **Performance insights** - Optimize your integration for higher earnings
+
 ## Rate Limits
 
-Different subscription tiers have different rate limits:
-
-| Plan | Daily Requests | Monthly Requests | Rate Limit |
-|------|----------------|------------------|------------|
-| **Free** | 10,000 | 100,000 | 100/minute |
-| **Pro** | 50,000 | 1,000,000 | 500/minute |
-| **Enterprise** | Unlimited | Unlimited | 1000/minute |
+Different subscription tiers have different rate limits as shown in the table above.
 
 ## Managing API Keys
 

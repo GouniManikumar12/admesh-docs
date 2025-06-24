@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'd40'),
+    component: ComponentCreator('/', '4bc'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '63d'),
+        component: ComponentCreator('/', '864'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '1ab'),
+            component: ComponentCreator('/', '415'),
             routes: [
               {
                 path: '/ad-units/citation',
@@ -117,6 +117,12 @@ export default [
               {
                 path: '/getting-started/api-keys',
                 component: ComponentCreator('/getting-started/api-keys', '44b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/getting-started/earnings',
+                component: ComponentCreator('/getting-started/earnings', '4f5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
