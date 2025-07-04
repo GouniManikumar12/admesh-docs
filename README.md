@@ -183,7 +183,7 @@ Since this documentation is for AI Platforms:
 
 - 📖 **Documentation**: You're reading it!
 - 🐛 **Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-protocol/issues)
-- 💬 **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- 💬 **Support**: [mani@useadmesh.com](mailto:mani@useadmesh.com)
 
 ## 📄 License
 

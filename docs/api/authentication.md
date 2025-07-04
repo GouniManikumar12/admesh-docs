@@ -10,17 +10,7 @@ Technical documentation for AdMesh API authentication using API keys and error h
 
 AdMesh implements API key-based authentication for all requests. API keys are account-specific and provide access to the recommendation engine and tracking capabilities.
 
-## API Key Format
 
-AdMesh API keys follow this format:
-```
-admesh_[environment]_[random_string]
-```
-
-Examples:
-- `admesh_prod_abc123xyz789` - Production key
-- `admesh_test_def456uvw012` - Test key
-- `admesh_dev_ghi789rst345` - Development key
 
 ## Authentication Methods
 

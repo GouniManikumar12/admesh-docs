@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "index-algolia": "node scripts/index-algolia.js"
   },
   "dependencies": {
     "@docusaurus/core": "^3.1.0",
@@ -30,6 +31,8 @@
     "@docusaurus/module-type-aliases": "^3.1.0",
     "@docusaurus/tsconfig": "^3.1.0",
     "@docusaurus/types": "^3.1.0",
+    "algoliasearch": "^5.30.0",
+    "gray-matter": "^4.0.3",
     "typescript": "~5.3.0"
   },
   "browserslist": {

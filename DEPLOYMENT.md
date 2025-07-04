@@ -152,4 +152,4 @@ Vercel includes:
 
 - **Vercel Docs**: [vercel.com/docs](https://vercel.com/docs)
 - **Docusaurus Docs**: [docusaurus.io](https://docusaurus.io)
-- **AdMesh Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **AdMesh Support**: [mani@useadmesh.com](mailto:mani@useadmesh.com)

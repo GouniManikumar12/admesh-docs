@@ -1,7 +1,7 @@
 {
   "id": "intro",
-  "title": "AdMesh SDK Documentation",
-  "description": "AdMesh SDK Documentation provides comprehensive technical guidance for integrating AI-powered product recommendation capabilities into enterprise applications and AI systems.",
+  "title": "AdMesh",
+  "description": "Professional AI agent integration platform for intelligent product recommendations",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/",
@@ -14,7 +14,9 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1,
-    "slug": "/"
+    "slug": "/",
+    "title": "AdMesh",
+    "description": "Professional AI agent integration platform for intelligent product recommendations"
   },
   "sidebar": "tutorialSidebar",
   "next": {

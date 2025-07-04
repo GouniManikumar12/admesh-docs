@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '4bc'),
+    component: ComponentCreator('/', '1dd'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '864'),
+        component: ComponentCreator('/', '416'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '415'),
+            component: ComponentCreator('/', 'b6e'),
             routes: [
               {
                 path: '/ad-units/citation',
@@ -141,6 +141,12 @@ export default [
               {
                 path: '/python-sdk/installation',
                 component: ComponentCreator('/python-sdk/installation', '08c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/search-help',
+                component: ComponentCreator('/search-help', 'fa4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

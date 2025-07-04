@@ -19,5 +19,9 @@
   "previous": {
     "title": "Authentication",
     "permalink": "/api/authentication"
+  },
+  "next": {
+    "title": "Search Help",
+    "permalink": "/search-help"
   }
 }

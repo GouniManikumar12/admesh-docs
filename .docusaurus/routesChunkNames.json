@@ -48,17 +48,17 @@
       "plugin": "plugin---searchc-14-0ea"
     }
   },
-  "/-4bc": {
+  "/-1dd": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-864": {
+  "/-416": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-415": {
+  "/-b6e": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/ad-units/citation-1ec": {
@@ -120,6 +120,10 @@
   "/python-sdk/installation-08c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---python-sdk-installationa-0-e-fb4"
+  },
+  "/search-help-fa4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-helpb-2-f-e0f"
   },
   "/typescript-sdk/installation-9b2": {
     "__comp": "__comp---theme-doc-item-178-a40",

@@ -4,11 +4,11 @@ sidebar_position: 4
 
 # Earnings & Revenue
 
-Learn how to monetize your AI platform with AdMesh's revenue sharing program and calculate your earning potential.
+Learn how to monetize your AI platform with AdMesh's performance-based earnings model and calculate your earning potential.
 
-## Revenue Sharing Overview
+## Earnings Overview
 
-AdMesh provides competitive revenue sharing for AI platforms that integrate our recommendation engine. Our transparent model ensures you earn from every successful recommendation.
+AdMesh provides transparent earnings for AI platforms that integrate our recommendation engine. Our performance-based model ensures you earn from every successful recommendation.
 
 import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
 
@@ -18,22 +18,21 @@ import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
   <EarningsCalculatorLink variant="button" text="Open Earnings Calculator" />
 </div>
 
-## How Revenue Sharing Works
+## How Earnings Work
 
-### Revenue Distribution Model
+### Performance-Based Model
 
-AdMesh uses a performance-based revenue sharing model:
+AdMesh uses a transparent performance-based earnings model:
 
-- **User/Platform**: 60-80% (based on subscription tier)
-- **AdMesh**: 20-40% (platform maintenance and operations)
+- **Platform/Agent**: 80% of successful conversions
+- **AdMesh**: 20% (platform maintenance and operations)
 
-### Subscription Tier Benefits
+### Earning Features
 
-| Tier | Revenue Share | Monthly Requests | Additional Benefits |
-|------|---------------|------------------|-------------------|
-| **Free** | 60% | 100,000 | Basic analytics |
-| **Pro** | 70% | 1,000,000 | Advanced analytics, priority support |
-| **Enterprise** | 80% | Unlimited | Custom integrations, dedicated support |
+- **Real-time tracking** - Monitor clicks and conversions as they happen
+- **Transparent reporting** - Detailed revenue breakdowns and analytics
+- **Monthly payouts** - Automatic payments via your preferred method
+- **Performance insights** - Optimize your integration for higher earnings
 
 ## Earning Mechanisms
 
@@ -176,7 +175,7 @@ Track your earnings and optimize based on performance data:
 
 ### Getting Help
 - **Revenue questions**: [revenue@useadmesh.com](mailto:revenue@useadmesh.com)
-- **Technical support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **Technical support**: [mani@useadmesh.com](mailto:mani@useadmesh.com)
 - **Partnership inquiries**: [partnerships@useadmesh.com](mailto:partnerships@useadmesh.com)
 
 ### Additional Resources

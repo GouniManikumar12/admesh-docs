@@ -348,7 +348,7 @@ RateLimitError: Rate limit exceeded
 
 - 📖 **Documentation**: Browse our comprehensive guides
 - 🐛 **Issues**: [Report bugs on GitHub](https://github.com/GouniManikumar12/admesh-python/issues)
-- 💬 **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- 💬 **Support**: [mani@useadmesh.com](mailto:mani@useadmesh.com)
 
 ---
 

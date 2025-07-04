@@ -49,6 +49,8 @@ Your API key will only be shown once. Make sure to copy and store it securely.
 2. Store it in a secure location (password manager, environment variables)
 3. Never commit API keys to version control
 
+
+
 ## API Key Types
 
 AdMesh provides different types of API keys for different environments:
@@ -164,15 +166,16 @@ Once you have your API key set up, you can start earning revenue from AdMesh rec
   <EarningsCalculatorLink variant="button" text="Open Earnings Calculator" />
 </div>
 
-### Revenue Sharing Model
+### Earnings Model
 
-AdMesh provides competitive revenue sharing across all subscription tiers:
+AdMesh provides transparent performance-based earnings:
 
-| Plan | Revenue Share | Daily Requests | Monthly Requests | Rate Limit |
-|------|---------------|----------------|------------------|------------|
-| **Free** | 60% | 10,000 | 100,000 | 100/minute |
-| **Pro** | 70% | 50,000 | 1,000,000 | 500/minute |
-| **Enterprise** | 80% | Unlimited | Unlimited | 1000/minute |
+| Feature | Details |
+|---------|---------|
+| **Revenue Share** | 80% to platform/agent |
+| **Daily Requests** | Generous rate limits |
+| **Monthly Requests** | High volume support |
+| **Rate Limit** | Optimized for performance |
 
 ### Earnings Features
 
@@ -183,7 +186,7 @@ AdMesh provides competitive revenue sharing across all subscription tiers:
 
 ## Rate Limits
 
-Different subscription tiers have different rate limits as shown in the table above.
+AdMesh provides generous rate limits to support high-volume applications with optimized performance.
 
 ## Managing API Keys
 
@@ -248,7 +251,7 @@ If an API key is compromised:
 ### Getting Help
 
 If you're having trouble with API keys:
-- Contact support at [support@useadmesh.com](mailto:support@useadmesh.com)
+- Contact support at [mani@useadmesh.com](mailto:mani@useadmesh.com)
 - Check our [GitHub Issues](https://github.com/GouniManikumar12/admesh-python/issues)
 - Join our community discussions
 

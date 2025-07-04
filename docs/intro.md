@@ -1,127 +1,302 @@
 ---
 sidebar_position: 1
 slug: /
+title: AdMesh
+description: Professional AI agent integration platform for intelligent product recommendations
 ---
 
-# AdMesh SDK Documentation
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-AdMesh SDK Documentation provides comprehensive technical guidance for integrating AI-powered product recommendation capabilities into enterprise applications and AI systems.
+## Why Choose AdMesh?
 
-## What is AdMesh?
+<div className="content-grid content-grid--3">
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">AI-Powered</h3>
+    </div>
+    <div className="card__body">
+      Smart algorithms deliver relevant product recommendations with precision scoring.
+    </div>
+  </div>
 
-AdMesh is an enterprise-grade recommendation engine that enables developers to integrate intelligent product suggestions into applications. The platform supports chatbots, AI assistants, e-commerce platforms, and business applications requiring contextual product recommendations.
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">Developer Ready</h3>
+    </div>
+    <div className="card__body">
+      Production SDKs with TypeScript support and seamless integration.
+    </div>
+  </div>
 
-## Available SDKs
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">Revenue Focused</h3>
+    </div>
+    <div className="card__body">
+      Built-in analytics and optimization tools to maximize earnings.
+    </div>
+  </div>
+</div>
 
-AdMesh provides three production-ready SDKs for different development environments:
+## Choose Your SDK
 
-### Python SDK
-Backend integration for AI applications, data processing pipelines, and server-side implementations.
+<Tabs>
+<TabItem value="python" label="Python SDK" default>
+
+**Perfect for:** AI applications, data processing, server-side implementations
 
 ```python
 from admesh import Admesh
 
+# Initialize client
 client = Admesh(api_key="your-api-key")
+
+# Get intelligent recommendations
 response = client.recommend.get_recommendations(
     query="Enterprise CRM solutions for distributed teams",
-    format="auto"
+    format="auto",
+    limit=5
 )
+
+# Access recommendations
+for rec in response.recommendations:
+    print(f"{rec.title}: {rec.reason}")
 ```
 
-### TypeScript SDK
-Node.js integration for serverless functions, API services, and modern web backends.
+<div className="sdk-actions">
+  <a href="/python-sdk/installation" className="btn btn-primary">
+    Python Documentation
+  </a>
+  <a href="https://github.com/GouniManikumar12/admesh-python" target="_blank" className="btn btn-secondary">
+    GitHub Repository
+  </a>
+</div>
+
+</TabItem>
+<TabItem value="typescript" label="TypeScript SDK">
+
+**Perfect for:** Node.js backends, serverless functions, API services
 
 ```typescript
 import Admesh from 'admesh';
 
-const client = new Admesh({ apiKey: 'your-api-key' });
+// Initialize with full type safety
+const client = new Admesh({
+  apiKey: 'your-api-key',
+  environment: 'production'
+});
+
+// Get recommendations with TypeScript support
 const response = await client.recommend.getRecommendations({
   query: 'Enterprise CRM solutions for distributed teams',
-  format: 'auto'
+  format: 'auto',
+  limit: 5
+});
+
+// Fully typed response
+response.recommendations.forEach(rec => {
+  console.log(`${rec.title}: ${rec.reason}`);
 });
 ```
 
-### UI SDK
-React component library for frontend recommendation display with integrated analytics and tracking.
+<div className="sdk-actions">
+  <a href="/typescript-sdk/installation" className="btn btn-primary">
+    TypeScript Documentation
+  </a>
+  <a href="https://github.com/GouniManikumar12/admesh-typescript" target="_blank" className="btn btn-secondary">
+    GitHub Repository
+  </a>
+</div>
+
+</TabItem>
+<TabItem value="ui" label="UI SDK">
+
+**Perfect for:** React applications, frontend components, user interfaces
 
 ```tsx
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshLayout, AdMeshProductCard } from 'admesh-ui-sdk';
 
-<AdMeshLayout
-  recommendations={recommendations}
-  autoLayout={true}
-  onProductClick={(adId, admeshLink) => {
-    window.open(admeshLink, '_blank');
-  }}
-/>
+function MyApp() {
+  return (
+    <div>
+      {/* Intelligent layout with auto-recommendations */}
+      <AdMeshLayout
+        apiKey="your-api-key"
+        query="Enterprise CRM solutions"
+        autoLayout={true}
+        theme="modern"
+      />
+
+      {/* Individual product cards */}
+      <AdMeshProductCard
+        productId="crm-solution-1"
+        showPricing={true}
+        showFeatures={true}
+      />
+    </div>
+  );
+}
 ```
 
-## AI Agent Integration
+<div className="sdk-actions">
+  <a href="/ui-sdk/installation" className="btn btn-primary">
+    UI SDK Documentation
+  </a>
+  <a href="https://storybook.useadmesh.com" target="_blank" className="btn btn-secondary">
+    Live Examples
+  </a>
+</div>
 
-AdMesh provides enterprise-grade integration capabilities for AI applications and intelligent agents:
+</TabItem>
+</Tabs>
 
-- **Intent Detection Engine** - Automated query analysis and categorization
-- **Contextual Recommendations** - Context-aware product suggestions
-- **Citation Integration** - Numbered reference system for conversational interfaces
-- **Automated Recommendations** - Trigger-based suggestion generation
-- **Conversational Components** - Chat-optimized UI elements
+## Quick Start Guide
+
+<div className="quick-start-grid">
+  <div className="quick-start-card">
+    <div className="quick-start-number">1</div>
+    <h3>Get Your API Key</h3>
+    <p>Sign up for a free AdMesh account and get your API credentials instantly.</p>
+    <a href="https://useadmesh.com/agents" target="_blank" className="btn btn-primary">
+      Get API Key
+    </a>
+  </div>
+
+  <div className="quick-start-card">
+    <div className="quick-start-number">2</div>
+    <h3>Install SDK</h3>
+    <p>Choose your preferred SDK and install it with your package manager.</p>
+    <a href="/getting-started/overview" className="btn btn-primary">
+      Installation Guide
+    </a>
+  </div>
+</div>
 
 ## Key Features
 
-### Smart Recommendation Engine
-- Machine learning-powered intent detection
-- Semantic matching using cosine similarity algorithms
-- Trust score-based quality filtering
-- Real-time recommendation processing
+<div className="content-grid">
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">Smart AI Engine</h3>
+    </div>
+    <div className="card__body">
+      <ul>
+        <li>Machine learning-powered intent detection</li>
+        <li>Semantic matching algorithms</li>
+        <li>Trust score-based filtering</li>
+        <li>Real-time processing</li>
+      </ul>
+    </div>
+  </div>
 
-### Analytics and Tracking
-- Automated view and interaction tracking
-- Conversion monitoring and attribution
-- Performance metrics and reporting
-- Revenue analytics and insights
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">Analytics & Tracking</h3>
+    </div>
+    <div className="card__body">
+      <ul>
+        <li>Automated interaction tracking</li>
+        <li>Conversion monitoring</li>
+        <li>Performance metrics</li>
+        <li>Revenue analytics</li>
+      </ul>
+    </div>
+  </div>
 
-### UI Component Library
-- Production-ready React components
-- Citation-based conversational interfaces
-- Sidebar and floating chat implementations
-- Automated recommendation widgets
-- Theme customization support
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">UI Components</h3>
+    </div>
+    <div className="card__body">
+      <ul>
+        <li>Production-ready React components</li>
+        <li>Citation-based interfaces</li>
+        <li>Customizable themes</li>
+        <li>Mobile-responsive design</li>
+      </ul>
+    </div>
+  </div>
 
-### Developer Experience
-- Full TypeScript support with type safety
-- Comprehensive error handling and validation
-- Asynchronous operation support
-- Complete documentation and implementation examples
+  <div className="card">
+    <div className="card__header">
+      <h3 className="card__title">Developer Experience</h3>
+    </div>
+    <div className="card__body">
+      <ul>
+        <li>Full TypeScript support</li>
+        <li>Comprehensive error handling</li>
+        <li>Async/await support</li>
+        <li>Complete documentation</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-## Quick Start
+## Documentation Navigation
 
-1. **Obtain API credentials** from the [AdMesh Dashboard](https://useadmesh.com/agent)
-2. **Select appropriate SDK** based on your technology stack
-3. **Install SDK** using your package manager
-4. **Implement integration** following our technical guides
+<div className="nav-grid">
+  <div className="nav-card">
+    <h3>Getting Started</h3>
+    <p>Complete setup guide from API keys to first implementation</p>
+    <a href="/getting-started/overview" className="btn btn-primary">
+      Start Building
+    </a>
+  </div>
 
-## Documentation Structure
+  <div className="nav-card">
+    <h3>Ad Units</h3>
+    <p>Explore all available ad formats and UI components</p>
+    <a href="/ad-units/overview" className="btn btn-primary">
+      View Components
+    </a>
+  </div>
 
-- **[Getting Started](/getting-started/overview)** - Setup and configuration
-- **[Python SDK](/python-sdk/installation)** - Python integration guide
-- **[UI SDK](/ui-sdk/installation)** - React component integration
-- **[API Reference](/api/authentication)** - Complete API documentation
-- **[Examples](/examples/ai-assistant)** - Implementation examples
+  <div className="nav-card">
+    <h3>API Reference</h3>
+    <p>Complete API documentation with examples and schemas</p>
+    <a href="/api/authentication" className="btn btn-primary">
+      API Documentation
+    </a>
+  </div>
 
-## Support Resources
+  <div className="nav-card">
+    <h3>Examples</h3>
+    <p>Real-world implementation examples and tutorials</p>
+    <a href="/examples/ai-assistant" className="btn btn-primary">
+      View Examples
+    </a>
+  </div>
+</div>
 
-- **Documentation**: Complete technical documentation
-- **Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-python/issues)
-- **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
-- **Dashboard**: [useadmesh.com](https://useadmesh.com)
+**Calculate Your Potential Revenue:** See how much you can earn by integrating AdMesh into your AI application. <a href="https://useadmesh.com/agents#earnings-calculator" target="_blank" className="btn btn-special">Calculate Earnings</a>
 
-## Resources
+## Support & Community
 
-- [AdMesh Dashboard](https://useadmesh.com) - API key management and analytics
-- [Python SDK Repository](https://github.com/GouniManikumar12/admesh-python)
-- [TypeScript SDK Repository](https://github.com/GouniManikumar12/admesh-typescript)
-- [UI SDK Repository](https://github.com/GouniManikumar12/admesh-ui-sdk)
+<div className="support-grid">
+  <div className="support-card">
+    <h3>Direct Support</h3>
+    <p>Get help directly from our team for technical questions and integration support.</p>
+    <a href="mailto:mani@useadmesh.com" className="btn btn-primary">
+      Contact Support
+    </a>
+  </div>
+
+  <div className="support-card">
+    <h3>Dashboard</h3>
+    <p>Manage your API keys, view analytics, and monitor your integration performance.</p>
+    <a href="https://useadmesh.com" target="_blank" className="btn btn-primary">
+      Open Dashboard
+    </a>
+  </div>
+</div>
 
 ---
 
-Begin integration by following our [Getting Started Guide](/getting-started/overview).
+<div className="">
+  <h2>Ready to get started?</h2>
+  <p>Join thousands of developers building intelligent AI applications with AdMesh</p>
+  <a href="/getting-started/overview" className="btn btn-primary btn-large">
+    Start Building Now
+  </a>
+</div>

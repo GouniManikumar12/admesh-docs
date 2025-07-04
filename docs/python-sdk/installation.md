@@ -302,5 +302,5 @@ After completing Python SDK installation:
 For installation assistance:
 
 - **GitHub Issues**: [Report issues](https://github.com/GouniManikumar12/admesh-python/issues)
-- **Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **Support**: [mani@useadmesh.com](mailto:mani@useadmesh.com)
 - **Documentation**: Complete technical documentation

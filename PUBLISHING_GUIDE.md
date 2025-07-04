@@ -273,7 +273,7 @@ npm run serve  # Test locally
 
 - **Documentation Issues**: [GitHub Issues](https://github.com/GouniManikumar12/admesh-protocol/issues)
 - **Hosting Support**: Contact your hosting provider
-- **AdMesh Support**: [support@useadmesh.com](mailto:support@useadmesh.com)
+- **AdMesh Support**: [mani@useadmesh.com](mailto:mani@useadmesh.com)
 
 ---
 
