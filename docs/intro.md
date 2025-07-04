@@ -297,6 +297,6 @@ function MyApp() {
   <h2>Ready to get started?</h2>
   <p>Join thousands of developers building intelligent AI applications with AdMesh</p>
   <a href="/getting-started/overview" className="btn btn-primary btn-large">
-    Start Building Now
+     Start Building Now
   </a>
 </div>
