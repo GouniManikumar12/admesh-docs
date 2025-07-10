@@ -115,13 +115,13 @@ response.recommendations.forEach(rec => {
 **Perfect for:** React applications, frontend components, user interfaces
 
 ```tsx
-import { AdMeshLayout, AdMeshProductCard } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 function MyApp() {
   return (
     <div>
       {/* Intelligent layout with auto-recommendations */}
-      <AdMeshLayout
+      <AdMeshProductCard
         apiKey="your-api-key"
         query="Enterprise CRM solutions"
         autoLayout={true}

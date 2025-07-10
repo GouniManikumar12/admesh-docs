@@ -1,4 +1,5 @@
 import React from 'react';
+import { AdMeshExpandableUnit } from 'admesh-ui-sdk';
 
 // Demo data for recommendations
 const demoRecommendation = {
@@ -304,12 +305,70 @@ export const LayoutDemo = () => (
   </div>
 );
 
+// Expandable Unit Demo with Temporal-style data
+const temporalRecommendation = {
+  ad_id: 'demo-temporal',
+  product_id: 'temporal-demo',
+  title: 'Temporal',
+  reason: 'Build invincible apps with durable execution for AI applications.',
+  description: 'Temporal is the orchestrator for AI applications. Build reliable, scalable workflows.',
+  intent_match_score: 0.94,
+  url: 'https://temporal.io/Agentic/AI',
+  admesh_link: 'https://useadmesh.com/redirect/temporal-demo',
+  keywords: ['workflow', 'orchestration', 'ai', 'durable'],
+  has_free_tier: true,
+  trial_days: 30
+};
+
+export const ExpandableUnitDemo = () => (
+  <div style={{ padding: '20px', border: '1px solid #e0e0e0', borderRadius: '8px', margin: '10px 0', backgroundColor: '#f9f9f9' }}>
+    <h4>Expandable Unit Demo</h4>
+    <p style={{ fontSize: '14px', color: '#666', margin: '0 0 16px 0' }}>
+      Click the expand button to see all sections. When collapsed, the CTA button appears on the right.
+    </p>
+    <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+      <AdMeshExpandableUnit
+        recommendation={temporalRecommendation}
+        initialExpanded={false}
+        ctaText="Register"
+        sections={[
+          {
+            title: 'Docs',
+            description: 'Documentation. Start Learning Temporal.',
+            icon: '📚'
+          },
+          {
+            title: 'Talk To An Expert',
+            description: 'Ready to learn more about temporal? Reach out to a platform specialist.',
+            icon: '💬'
+          },
+          {
+            title: 'Temporal for AI',
+            description: 'Temporal is the orchestrator for AI applications. Watch a demo.',
+            icon: '🤖'
+          },
+          {
+            title: 'How it Works',
+            description: 'Learn How to Build With Temporal. Start Your Journey.',
+            icon: '🚀'
+          }
+        ]}
+        onClick={(adId, link) => {
+          console.log('Demo click:', adId, link);
+          alert('Demo click! In a real implementation, this would open: ' + link);
+        }}
+      />
+    </div>
+  </div>
+);
+
 export const AllDemosContainer = () => (
   <div>
     <OneLineAdDemo />
     <ProductCardDemo />
     <ConversationSummaryDemo />
     <CitationDemo />
+    <ExpandableUnitDemo />
     <FloatingRecommendationsDemo />
     <SidebarDemo />
     <LayoutDemo />

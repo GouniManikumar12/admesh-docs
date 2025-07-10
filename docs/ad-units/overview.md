@@ -83,6 +83,7 @@ AdMesh provides seven distinct ad formats, each optimized for different integrat
 | **Floating Recommendations** | Context-aware suggestions | Medium | AI project management, productivity tools |
 | **Sidebar** | Persistent recommendations | Low | AI dashboard interfaces, workspace apps |
 | **Layout** | Comprehensive displays | High | Multi-product showcases, comparison tools |
+| **Expandable Unit** | Premium sponsored content | Medium-High | Detailed product showcases, enterprise solutions |
 
 
 
@@ -97,13 +98,13 @@ npm install admesh-ui-sdk
 
 2. **Import components**:
 ```tsx
-import { AdMeshSimpleAd, AdMeshProductCard, AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard, AdMeshExpandableUnit } from 'admesh-ui-sdk';
 ```
 
 3. **Add to your AI platform**:
 ```tsx
-// For AI code editors
-<AdMeshSimpleAd variation="statement" />
+// For AI code editors - simple inline format
+<AdMeshProductCard variation="simple" />
 
 // For AI business intelligence tools
 <AdMeshCitationUnit citationNumber={1} />
@@ -111,8 +112,13 @@ import { AdMeshSimpleAd, AdMeshProductCard, AdMeshLayout } from 'admesh-ui-sdk';
 // For AI e-commerce platforms
 <AdMeshSidebar title="Store Tools" />
 
-// For comprehensive displays
-<AdMeshLayout autoLayout={true} />
+// For premium sponsored content
+<AdMeshExpandableUnit ctaText="Get Started" />
+
+// For comprehensive displays - grid layout
+<div style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+  {recommendations.map(rec => <AdMeshProductCard key={rec.ad_id} recommendation={rec} />)}
+</div>
 ```
 
 ### Live Examples
@@ -125,7 +131,7 @@ Explore all ad formats with live, interactive examples. See how each component w
 
 Experience AdMesh ad units with real demo data below. Each component shows how it would appear in your AI platform with actual product recommendations.
 
-import { OneLineAdDemo, ProductCardDemo, ConversationSummaryDemo, CitationDemo, FloatingRecommendationsDemo, SidebarDemo, LayoutDemo } from '@site/src/components/AdMeshDemo';
+import { OneLineAdDemo, ProductCardDemo, ConversationSummaryDemo, CitationDemo, ExpandableUnitDemo, FloatingRecommendationsDemo, SidebarDemo, LayoutDemo } from '@site/src/components/AdMeshDemo';
 
 ### One Line Ad
 <OneLineAdDemo />
@@ -138,6 +144,9 @@ import { OneLineAdDemo, ProductCardDemo, ConversationSummaryDemo, CitationDemo, 
 
 ### Citation
 <CitationDemo />
+
+### Expandable Unit
+<ExpandableUnitDemo />
 
 ### Floating Recommendations
 <FloatingRecommendationsDemo />

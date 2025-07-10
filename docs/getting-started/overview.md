@@ -82,7 +82,7 @@ const recommendations = await client.recommend.getRecommendations({
 });
 
 // UI component integration
-<AdMeshLayout recommendations={recommendations} />
+<AdMeshProductCard recommendations={recommendations} />
 ```
 
 ### Content-Based Integration
@@ -142,7 +142,7 @@ AdMesh provides revenue sharing for AI platforms through:
 
 ## Implementation Checklist
 
-- [ ] Register account at [useadmesh.com/agent](https://useadmesh.com/agent)
+- [ ] Register account at [useadmesh.com/agent](https://useadmesh.com/agents)
 - [ ] Obtain API credentials from dashboard
 - [ ] Select appropriate SDK (Python or UI)
 - [ ] Install SDK in development environment

@@ -2,13 +2,13 @@
 sidebar_position: 8
 ---
 
-# Layout
+# Layout Patterns
 
-Comprehensive layout system that intelligently arranges multiple recommendations in various formats - perfect for showcasing multiple products and comprehensive recommendation displays.
+Learn how to create comprehensive layouts using AdMeshProductCard components - perfect for showcasing multiple products and comprehensive recommendation displays.
 
 ## Description
 
-Layout provides a flexible system for displaying multiple recommendations in organized, visually appealing arrangements. It automatically adapts to different screen sizes and content types, making it ideal for comprehensive product showcases, comparison tools, and platforms that need to display multiple recommendations simultaneously.
+Create flexible layouts for displaying multiple recommendations using AdMeshProductCard components in organized, visually appealing arrangements. These patterns automatically adapt to different screen sizes and content types, making them ideal for comprehensive product showcases, comparison tools, and platforms that need to display multiple recommendations simultaneously.
 
 ## Key Features
 
@@ -24,10 +24,18 @@ Layout provides a flexible system for displaying multiple recommendations in org
 ### Basic Usage
 
 ```tsx
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
-<AdMeshLayout
-  recommendations={recommendations}
+// Grid Layout Pattern
+<div style={{
+  display: 'grid',
+  gap: '20px',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))'
+}}>
+  {recommendations.map(rec => (
+    <AdMeshProductCard
+      key={rec.ad_id}
+      recommendation={rec}
   autoLayout={true}
   maxDisplayed={6}
   showMatchScores={true}
@@ -57,7 +65,7 @@ import { AdMeshLayout } from 'admesh-ui-sdk';
 
 #### Auto Layout (Recommended)
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   layout="auto"
   maxDisplayed={6}
   // Automatically chooses best layout based on content and screen size
@@ -66,7 +74,7 @@ import { AdMeshLayout } from 'admesh-ui-sdk';
 
 #### Grid Layout
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   layout="grid"
   columns={3}
   showFeatures={true}
@@ -76,7 +84,7 @@ import { AdMeshLayout } from 'admesh-ui-sdk';
 
 #### List Layout
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   layout="list"
   compact={false}
   showMatchScores={true}
@@ -100,7 +108,7 @@ Perfect for product category displays:
 **Examples**: [Checkout Page AI](https://checkoutpage.co), [ConvertMate AI](https://convertmate.io), [Octane AI](https://www.octaneai.com)
 
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   layout="grid"
   columns={4}
   showPricing={true}
@@ -116,7 +124,7 @@ Ideal for tool and service comparisons:
 **Examples**: [Polymer](https://www.polymersearch.com), [Yurts AI](https://www.yurts.ai), [Obviously.AI](https://www.obviously.ai)
 
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   layout="auto"
   maxDisplayed={8}
   showMatchScores={true}
@@ -130,7 +138,7 @@ Ideal for tool and service comparisons:
 Great for comprehensive tool recommendations:
 
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   layout="list"
   showDescriptions={true}
   showMatchScores={true}
@@ -196,7 +204,7 @@ const customSort = (a, b) => {
   return a.customScore - b.customScore;
 };
 
-<AdMeshLayout
+<AdMeshProductCard
   recommendations={recommendations.sort(customSort)}
   sortBy="relevance"
 />
@@ -207,7 +215,7 @@ const customSort = (a, b) => {
 ### Lazy Loading
 
 ```tsx
-<AdMeshLayout
+<AdMeshProductCard
   maxDisplayed={6}
   onLoadMore={loadMoreRecommendations}
   // Loads additional recommendations on demand
@@ -297,7 +305,7 @@ const customItemTemplate = (recommendation) => (
   </div>
 );
 
-<AdMeshLayout
+<AdMeshProductCard
   recommendations={recommendations}
   itemTemplate={customItemTemplate}
 />
@@ -315,7 +323,7 @@ const handleFilter = (criteria) => {
   setFilteredRecs(filtered);
 };
 
-<AdMeshLayout
+<AdMeshProductCard
   recommendations={filteredRecs}
   layout="grid"
 />

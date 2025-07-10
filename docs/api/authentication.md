@@ -87,7 +87,7 @@ const recommendations = await fetch('/api/recommendations', {
 });
 
 // Frontend displays recommendations without API key
-<AdMeshLayout recommendations={recommendations} />
+<AdMeshProductCard recommendations={recommendations} />
 ```
 
 ## Environment-Based Keys

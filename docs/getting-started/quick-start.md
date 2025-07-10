@@ -8,7 +8,7 @@ Get up and running with AdMesh in under 5 minutes! This guide will walk you thro
 
 ## Prerequisites
 
-- ✅ AdMesh account ([sign up here](https://useadmesh.com/agent))
+- ✅ AdMesh account ([sign up here](https://useadmesh.com/agents))
 - ✅ API key ([get yours here](/getting-started/api-keys))
 - ✅ Development environment (Python 3.8+, Node.js 18+, or React app)
 
@@ -147,7 +147,7 @@ yarn add admesh-ui-sdk
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 // Mock recommendations for this example
 const mockRecommendations = [
@@ -192,7 +192,7 @@ function App() {
       <h1>AdMesh Quick Start</h1>
       <p>Here are some CRM recommendations for remote teams:</p>
       
-      <AdMeshLayout
+      <AdMeshProductCard
         recommendations={recommendations}
         autoLayout={true}
         showMatchScores={true}

@@ -38,7 +38,7 @@ The UI SDK is designed to be completely self-contained with no additional setup 
 
 ```tsx
 import React from 'react';
-import { AdMeshLayout, AdMeshSimpleAd } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 // No CSS import needed! Styles are auto-injected ✨
 
 function App() {
@@ -55,24 +55,28 @@ function App() {
 
   return (
     <div>
-      {/* One Line Ad Format - Perfect for minimal, unobtrusive recommendations */}
-      <AdMeshSimpleAd
+      {/* Simple Inline Format - Perfect for minimal, unobtrusive recommendations */}
+      <AdMeshProductCard
         recommendation={recommendations[0]}
-        variation="question" // "question" or "statement"
-        showPoweredBy={true}
+        variation="simple"
         onClick={(adId, admeshLink) => {
           window.open(admeshLink, '_blank');
         }}
       />
 
-      {/* Full Layout - Comprehensive recommendation display */}
-      <AdMeshLayout
-        recommendations={recommendations}
-        autoLayout={true}
-        onProductClick={(adId, admeshLink) => {
-          window.open(admeshLink, '_blank');
-        }}
-      />
+      {/* Grid Layout - Multiple recommendations display */}
+      <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+        {recommendations.map((rec, index) => (
+          <AdMeshProductCard
+            key={rec.ad_id}
+            recommendation={rec}
+            showBadges={true}
+            onClick={(adId, admeshLink) => {
+              window.open(admeshLink, '_blank');
+            }}
+          />
+        ))}
+      </div>
     </div>
   );
 }
@@ -96,13 +100,15 @@ For Next.js applications, no special configuration is needed:
 
 ```tsx
 // pages/recommendations.tsx or app/recommendations/page.tsx
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 export default function RecommendationsPage() {
   return (
     <div>
       <h1>Product Recommendations</h1>
-      <AdMeshLayout recommendations={recommendations} />
+      {recommendations.map(rec =>
+        <AdMeshProductCard key={rec.ad_id} recommendation={rec} />
+      )}
     </div>
   );
 }
@@ -114,12 +120,14 @@ For Vite applications:
 
 ```tsx
 // src/App.tsx
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 function App() {
   return (
     <div className="App">
-      <AdMeshLayout recommendations={recommendations} />
+      {recommendations.map(rec =>
+        <AdMeshProductCard key={rec.ad_id} recommendation={rec} />
+      )}
     </div>
   );
 }
@@ -134,7 +142,7 @@ The UI SDK includes full TypeScript definitions:
 ```tsx
 import React from 'react';
 import { 
-  AdMeshLayout, 
+  AdMeshProductCard, 
   AdMeshRecommendation, 
   AdMeshTheme 
 } from 'admesh-ui-sdk';
@@ -150,11 +158,15 @@ const theme: AdMeshTheme = {
 
 function App({ recommendations }: AppProps) {
   return (
-    <AdMeshLayout
-      recommendations={recommendations}
-      theme={theme}
-      autoLayout={true}
-    />
+    <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+      {recommendations.map(rec => (
+        <AdMeshProductCard
+          key={rec.ad_id}
+          recommendation={rec}
+          theme={theme}
+        />
+      ))}
+    </div>
   );
 }
 ```
@@ -167,7 +179,7 @@ The UI SDK automatically injects its styles - no manual CSS imports needed:
 
 ```tsx
 // ✅ This is all you need
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 // ❌ No need for this
 // import 'admesh-ui-sdk/styles.css';
@@ -178,17 +190,20 @@ import { AdMeshLayout } from 'admesh-ui-sdk';
 Customize the appearance with theme props:
 
 ```tsx
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 const customTheme = {
   mode: 'dark', // 'light' | 'dark'
   accentColor: '#3b82f6', // Custom accent color
 };
 
-<AdMeshLayout
-  recommendations={recommendations}
-  theme={customTheme}
-/>
+{recommendations.map(rec => (
+  <AdMeshProductCard
+    key={rec.ad_id}
+    recommendation={rec}
+    theme={customTheme}
+  />
+))}
 ```
 
 ### CSS Custom Properties
@@ -219,9 +234,9 @@ Import only the components you need:
 ```tsx
 // ✅ Tree-shakable imports
 import {
-  AdMeshLayout,
   AdMeshProductCard,
-  AdMeshSimpleAd
+  AdMeshProductCard,
+  AdMeshProductCard
 } from 'admesh-ui-sdk';
 
 // ❌ Imports entire library
@@ -235,16 +250,18 @@ For code splitting, use dynamic imports:
 ```tsx
 import React, { lazy, Suspense } from 'react';
 
-const AdMeshLayout = lazy(() => 
+const AdMeshProductCard = lazy(() => 
   import('admesh-ui-sdk').then(module => ({ 
-    default: module.AdMeshLayout 
+    default: module.AdMeshProductCard 
   }))
 );
 
 function App() {
   return (
     <Suspense fallback={<div>Loading recommendations...</div>}>
-      <AdMeshLayout recommendations={recommendations} />
+      {recommendations.map(rec =>
+        <AdMeshProductCard key={rec.ad_id} recommendation={rec} />
+      )}
     </Suspense>
   );
 }
@@ -263,12 +280,12 @@ npm install admesh-ui-sdk
 ```tsx
 // src/App.tsx
 import React from 'react';
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 function App() {
   return (
     <div className="App">
-      <AdMeshLayout recommendations={[]} />
+      <AdMeshProductCard recommendations={[]} />
     </div>
   );
 }
@@ -286,13 +303,13 @@ npm install admesh-ui-sdk
 
 ```tsx
 // pages/index.tsx
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 export default function Home() {
   return (
     <main>
       <h1>Welcome to AdMesh</h1>
-      <AdMeshLayout recommendations={[]} />
+      <AdMeshProductCard recommendations={[]} />
     </main>
   );
 }
@@ -332,7 +349,7 @@ def get_recommendations():
 ```tsx
 // frontend/src/App.tsx
 import React, { useState, useEffect } from 'react';
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 function App() {
   const [recommendations, setRecommendations] = useState([]);
@@ -343,7 +360,13 @@ function App() {
       .then(setRecommendations);
   }, []);
 
-  return <AdMeshLayout recommendations={recommendations} />;
+  return (
+    <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+      {recommendations.map(rec =>
+        <AdMeshProductCard key={rec.ad_id} recommendation={rec} />
+      )}
+    </div>
+  );
 }
 ```
 
@@ -377,10 +400,10 @@ If styles aren't appearing:
 
 ```tsx
 // Make sure you're importing from the correct package
-import { AdMeshLayout } from 'admesh-ui-sdk'; // ✅ Correct
+import { AdMeshProductCard } from 'admesh-ui-sdk'; // ✅ Correct
 
 // Not from a different package
-import { AdMeshLayout } from 'admesh-ui-sdk'; // ❌ Wrong package
+import { AdMeshProductCard } from 'admesh-ui-sdk'; // ❌ Wrong package
 ```
 
 #### TypeScript Errors
@@ -402,7 +425,7 @@ If your bundle is too large:
 
 ```tsx
 // Use specific imports instead of barrel imports
-import { AdMeshLayout } from 'admesh-ui-sdk/components/AdMeshLayout';
+import { AdMeshProductCard } from 'admesh-ui-sdk/components/AdMeshProductCard';
 import { AdMeshProductCard } from 'admesh-ui-sdk/components/AdMeshProductCard';
 ```
 
@@ -440,7 +463,7 @@ function App() {
 
 ```tsx
 import React, { memo, useMemo } from 'react';
-import { AdMeshLayout } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
 const MemoizedRecommendations = memo(function Recommendations({ recommendations }) {
   const memoizedRecommendations = useMemo(() => 
@@ -448,7 +471,13 @@ const MemoizedRecommendations = memo(function Recommendations({ recommendations 
     [recommendations]
   );
 
-  return <AdMeshLayout recommendations={memoizedRecommendations} />;
+  return (
+    <div style={{ display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+      {memoizedRecommendations.map(rec =>
+        <AdMeshProductCard key={rec.ad_id} recommendation={rec} />
+      )}
+    </div>
+  );
 });
 ```
 

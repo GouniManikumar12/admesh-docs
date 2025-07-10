@@ -23,11 +23,11 @@ One Line Ad is designed for maximum simplicity and minimal visual impact. It app
 ### Basic Usage
 
 ```tsx
-import { AdMeshSimpleAd } from 'admesh-ui-sdk';
+import { AdMeshProductCard } from 'admesh-ui-sdk';
 
-<AdMeshSimpleAd
+<AdMeshProductCard
   recommendation={recommendation}
-  variation="question" // "question" or "statement"
+  variation="simple" // Creates inline ad format
   showPoweredBy={true}
   onClick={(adId, admeshLink) => window.open(admeshLink, '_blank')}
 />
@@ -70,7 +70,7 @@ Perfect for development environments where minimal disruption is crucial:
 **Examples**: [Cursor](https://www.cursor.so), [Sweep](https://sweep.dev), [Mutable AI](https://mutable.ai)
 
 ```tsx
-<AdMeshSimpleAd
+<AdMeshProductCard
   variation="statement"
   showPoweredBy={false}
   onClick={handleDeveloperToolClick}
@@ -81,7 +81,7 @@ Perfect for development environments where minimal disruption is crucial:
 Ideal for conversational AI platforms:
 
 ```tsx
-<AdMeshSimpleAd
+<AdMeshProductCard
   variation="question"
   showPoweredBy={true}
   onClick={handleChatRecommendationClick}
