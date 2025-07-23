@@ -21,7 +21,7 @@
     "permalink": "/typescript-sdk/installation"
   },
   "next": {
-    "title": "Authentication",
-    "permalink": "/api/authentication"
+    "title": "PII Sanitization & Privacy Protection",
+    "permalink": "/privacy-and-security/pii-sanitization"
   }
 }

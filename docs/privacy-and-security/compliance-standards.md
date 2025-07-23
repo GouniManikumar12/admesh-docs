@@ -259,9 +259,9 @@ AdMesh is designed with privacy-first principles and complies with major interna
 - **As Needed**: Regulatory update reviews
 
 ### Key Metrics
-- PII detection accuracy (target: >95%)
-- Processing time (target: <100ms)
-- False positive rate (target: <2%)
+- PII detection accuracy (target: greater than 95%)
+- Processing time (target: less than 100ms)
+- False positive rate (target: less than 2%)
 - User privacy complaints (target: 0)
 
 ### Documentation Requirements

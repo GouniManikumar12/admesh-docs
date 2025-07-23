@@ -162,7 +162,7 @@ async function getSafeRecommendations(userInput: string) {
 ## 📊 Performance & Accuracy
 
 ### Performance Metrics
-- **Processing Time**: < 100ms for typical inputs
+- **Processing Time**: less than 100ms for typical inputs
 - **Memory Usage**: Minimal (pre-compiled patterns)
 - **Network Impact**: Zero (local processing only)
 - **Thread Safety**: Fully thread-safe in all languages
@@ -171,7 +171,7 @@ async function getSafeRecommendations(userInput: string) {
 - **Name Detection**: 95%+ accuracy across common patterns
 - **Email Detection**: 99%+ accuracy for standard formats
 - **Phone Detection**: 95%+ accuracy for US/international formats
-- **False Positives**: < 2% (common words filtered out)
+- **False Positives**: less than 2% (common words filtered out)
 
 ## 🛡️ Security Standards Compliance
 

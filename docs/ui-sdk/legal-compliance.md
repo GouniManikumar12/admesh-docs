@@ -13,10 +13,10 @@ All AdMesh components automatically include appropriate disclosures and labels t
 ## Key Features
 
 ### ✅ Compliant Labeling
-- **"Smart Pick"** for high-quality matches (>80% match score)
-- **"Partner Match"** for good matches (60-80% match score)  
+- **"Smart Pick"** for high-quality matches (greater than 80% match score)
+- **"Partner Match"** for good matches (60-80% match score)
 - **"Promoted Option"** for lower matches (30-60% match score)
-- **"Related Option"** for expanded results (<30% match score)
+- **"Related Option"** for expanded results (less than 30% match score)
 
 ### ✅ Clear Disclosures
 - Inline disclosure text explaining partner compensation

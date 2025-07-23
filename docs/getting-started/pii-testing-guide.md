@@ -282,7 +282,7 @@ When testing PII sanitization, verify:
 - [ ] Empty/minimal inputs don't cause errors
 
 ### ✅ Performance Requirements
-- [ ] Processing completes in < 100ms
+- [ ] Processing completes in less than 100ms
 - [ ] No external network calls during sanitization
 - [ ] Memory usage remains minimal
 - [ ] Thread safety maintained

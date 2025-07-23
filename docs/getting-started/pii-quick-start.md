@@ -170,7 +170,7 @@ console.log(`Protected PII:`, removedPII);
 
 ## 📊 Performance Metrics
 
-- **Processing Time**: < 100ms for typical inputs
+- **Processing Time**: less than 100ms for typical inputs
 - **Accuracy**: 95%+ PII detection rate
 - **Memory Usage**: Minimal (pre-compiled patterns)
 - **Network Impact**: Zero (local processing only)

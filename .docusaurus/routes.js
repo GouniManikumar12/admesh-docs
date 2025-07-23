@@ -3,56 +3,21 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/search',
     component: ComponentCreator('/search', '5de'),
     exact: true
   },
   {
     path: '/',
-    component: ComponentCreator('/', '1dd'),
+    component: ComponentCreator('/', '4ff'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '416'),
+        component: ComponentCreator('/', '278'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'b6e'),
+            component: ComponentCreator('/', '89b'),
             routes: [
               {
                 path: '/ad-units/citation',
@@ -65,6 +30,11 @@ export default [
                 component: ComponentCreator('/ad-units/conversation-summary', 'f6a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ad-units/expandable-unit',
+                component: ComponentCreator('/ad-units/expandable-unit', '1a4'),
+                exact: true
               },
               {
                 path: '/ad-units/floating-recommendations',
@@ -133,8 +103,32 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/getting-started/pii-quick-start',
+                component: ComponentCreator('/getting-started/pii-quick-start', '8a1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/getting-started/pii-testing-guide',
+                component: ComponentCreator('/getting-started/pii-testing-guide', '93a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/getting-started/quick-start',
                 component: ComponentCreator('/getting-started/quick-start', 'fd2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/privacy-and-security/compliance-standards',
+                component: ComponentCreator('/privacy-and-security/compliance-standards', '7be'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/privacy-and-security/pii-sanitization',
+                component: ComponentCreator('/privacy-and-security/pii-sanitization', '6cd'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -157,10 +151,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/ui-sdk/customization',
+                component: ComponentCreator('/ui-sdk/customization', '405'),
+                exact: true
+              },
+              {
                 path: '/ui-sdk/installation',
                 component: ComponentCreator('/ui-sdk/installation', '3ac'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ui-sdk/legal-compliance',
+                component: ComponentCreator('/ui-sdk/legal-compliance', '136'),
+                exact: true
               },
               {
                 path: '/',

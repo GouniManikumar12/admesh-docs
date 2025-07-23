@@ -54,19 +54,17 @@ Choose the right ad format based on your integration needs:
 
 ## Performance Metrics & Revenue
 
-import { EarningsCalculatorLink } from '@site/src/components/AdMeshDemo';
-
 Each format provides detailed analytics and revenue opportunities:
 - **Click-through rates (CTR)** - Track user engagement
 - **Conversion tracking** - Monitor successful purchases
 - **User engagement metrics** - Measure interaction quality
 - **Revenue attribution** - Calculate earnings per format
 
-<div className="feature-box feature-box--tip">
-  <h4>Optimize Your Revenue</h4>
-  <p>Different ad formats have varying revenue potential. Use our earnings calculator to compare the earning potential of each format for your specific use case.</p>
-  <EarningsCalculatorLink variant="link" text="Calculate Revenue by Format" />
-</div>
+:::tip Optimize Your Revenue
+Different ad formats have varying revenue potential. Use our earnings calculator to compare the earning potential of each format for your specific use case.
+
+[Calculate Revenue by Format →](https://useadmesh.com/dashboard/earnings)
+:::
 
 ## Ad Format Components
 
@@ -129,33 +127,22 @@ Explore all ad formats with live, interactive examples. See how each component w
 
 ## Live Demo Components
 
-Experience AdMesh ad units with real demo data below. Each component shows how it would appear in your AI platform with actual product recommendations.
+Experience AdMesh ad units with real demo data. Each component shows how it would appear in your AI platform with actual product recommendations.
 
-import { OneLineAdDemo, ProductCardDemo, ConversationSummaryDemo, CitationDemo, ExpandableUnitDemo, FloatingRecommendationsDemo, SidebarDemo, LayoutDemo } from '@site/src/components/AdMeshDemo';
+:::info Interactive Demos Available
+Visit our [interactive demo page](https://useadmesh.com/demo) to see live examples of all ad formats in action.
+:::
 
-### One Line Ad
-<OneLineAdDemo />
+### Available Ad Formats
 
-### Product Card
-<ProductCardDemo />
-
-### Conversation Summary
-<ConversationSummaryDemo />
-
-### Citation
-<CitationDemo />
-
-### Expandable Unit
-<ExpandableUnitDemo />
-
-### Floating Recommendations
-<FloatingRecommendationsDemo />
-
-### Sidebar
-<SidebarDemo />
-
-### Layout
-<LayoutDemo />
+1. **One Line Ad** - Minimal, single-line recommendations
+2. **Product Card** - Rich product information with features and pricing
+3. **Conversation Summary** - End-of-conversation recommendations
+4. **Citation** - Academic-style references with source attribution
+5. **Expandable Unit** - Collapsible detailed recommendations
+6. **Floating Recommendations** - Context-aware overlay suggestions
+7. **Sidebar** - Persistent recommendation panel
+8. **Layout** - Flexible grid-based arrangement
 
 ## Key Advantages
 

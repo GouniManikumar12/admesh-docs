@@ -21,6 +21,10 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ad-units/expandable-unit",
+              "path": "/ad-units/expandable-unit"
+            },
+            {
               "id": "ad-units/floating-recommendations",
               "path": "/ad-units/floating-recommendations",
               "sidebar": "tutorialSidebar"
@@ -76,6 +80,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "getting-started/pii-quick-start",
+              "path": "/getting-started/pii-quick-start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/pii-testing-guide",
+              "path": "/getting-started/pii-testing-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "getting-started/quick-start",
               "path": "/getting-started/quick-start",
               "sidebar": "tutorialSidebar"
@@ -83,6 +97,16 @@
             {
               "id": "intro",
               "path": "/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "privacy-and-security/compliance-standards",
+              "path": "/privacy-and-security/compliance-standards",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "privacy-and-security/pii-sanitization",
+              "path": "/privacy-and-security/pii-sanitization",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -101,9 +125,17 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ui-sdk/customization",
+              "path": "/ui-sdk/customization"
+            },
+            {
               "id": "ui-sdk/installation",
               "path": "/ui-sdk/installation",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ui-sdk/legal-compliance",
+              "path": "/ui-sdk/legal-compliance"
             }
           ],
           "draftIds": [],
