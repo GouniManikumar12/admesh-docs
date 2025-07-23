@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Earnings & Revenue
 
 Learn how to monetize your AI platform with AdMesh's performance-based earnings model and calculate your earning potential.

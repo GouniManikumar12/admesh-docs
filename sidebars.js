@@ -30,6 +30,8 @@ const sidebars = {
         'getting-started/overview',
         'getting-started/api-keys',
         'getting-started/quick-start',
+        'getting-started/pii-quick-start',
+        'getting-started/pii-testing-guide',
         'getting-started/earnings',
       ],
     },
@@ -82,6 +84,16 @@ const sidebars = {
     },
 
 
+
+    // Privacy & Security
+    {
+      type: 'category',
+      label: 'Privacy & Security',
+      items: [
+        'privacy-and-security/pii-sanitization',
+        'privacy-and-security/compliance-standards',
+      ],
+    },
 
     // API Reference
     {
