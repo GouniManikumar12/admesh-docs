@@ -2862,12 +2862,114 @@ li {
   border-bottom-color: var(--ifm-border-color) !important;
 }
 
+[data-theme='dark'] .theme-doc-sidebar-menu {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .menu__list {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .menu__list-item {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .menu__link {
+  background: var(--ifm-background-color) !important;
+}
+
 [data-theme='dark'] .menu__link:hover {
   background: var(--ifm-color-emphasis-100) !important;
 }
 
 [data-theme='dark'] .menu__link--active {
   background: var(--ifm-color-emphasis-200) !important;
+}
+
+[data-theme='dark'] .main-wrapper {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .container {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .row {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .col {
+  background: var(--ifm-background-color) !important;
+}
+
+/* Dark mode hero section fixes */
+[data-theme='dark'] .hero-section {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.2) 100%) !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+
+/* Dark mode card fixes */
+[data-theme='dark'] .modern-card {
+  background: var(--ifm-background-surface-color) !important;
+  border-color: var(--ifm-border-color) !important;
+}
+
+[data-theme='dark'] .quick-start-card {
+  background: var(--ifm-background-surface-color) !important;
+  border-color: var(--ifm-border-color) !important;
+}
+
+[data-theme='dark'] .nav-card {
+  background: var(--ifm-background-surface-color) !important;
+  border-color: var(--ifm-border-color) !important;
+}
+
+[data-theme='dark'] .support-card {
+  background: var(--ifm-background-surface-color) !important;
+  border-color: var(--ifm-border-color) !important;
+}
+
+[data-theme='dark'] .cta-section {
+  background: linear-gradient(135deg, var(--ifm-background-surface-color) 0%, var(--ifm-background-color) 100%) !important;
+  border-color: var(--ifm-border-color) !important;
+}
+
+/* Dark mode navbar fixes */
+[data-theme='dark'] .navbar__brand {
+  color: var(--ifm-navbar-link-color) !important;
+}
+
+[data-theme='dark'] .navbar__item {
+  color: var(--ifm-navbar-link-color) !important;
+}
+
+[data-theme='dark'] .navbar__link {
+  color: var(--ifm-navbar-link-color) !important;
+  background: transparent !important;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: var(--ifm-navbar-link-hover-color) !important;
+  background: var(--ifm-color-emphasis-100) !important;
+}
+
+/* Dark mode footer fixes */
+[data-theme='dark'] .footer {
+  background: var(--ifm-background-color) !important;
+  border-top-color: var(--ifm-border-color) !important;
+}
+
+/* Dark mode content area fixes */
+[data-theme='dark'] .markdown {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .theme-doc-markdown {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] article {
+  background: var(--ifm-background-color) !important;
 }
 
 /* ===== MODERN CARD ENHANCEMENTS ===== */
