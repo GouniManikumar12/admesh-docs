@@ -19,10 +19,10 @@ import TabItem from '@theme/TabItem';
     </p>
     <div className="hero-actions">
       <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
-        🚀 Quick Start
+        ⚡ Quick Start
       </a>
       <a href="https://useadmesh.com/agents" target="_blank" className="btn btn-outline btn-large">
-        📊 Get API Key
+        🔑 Get API Key
       </a>
     </div>
   </div>
@@ -32,7 +32,7 @@ import TabItem from '@theme/TabItem';
 
 <div className="content-grid content-grid--3">
   <div className="card modern-card modern-card--blue">
-    <div className="card__icon">🤖</div>
+    <div className="card__icon">🧠</div>
     <div className="card__header">
       <h3 className="card__title">AI-Powered Intelligence</h3>
     </div>
@@ -52,7 +52,7 @@ import TabItem from '@theme/TabItem';
   </div>
 
   <div className="card modern-card modern-card--green">
-    <div className="card__icon">💰</div>
+    <div className="card__icon">💎</div>
     <div className="card__header">
       <h3 className="card__title">Revenue Focused</h3>
     </div>
@@ -197,7 +197,7 @@ function MyApp() {
 
   <div className="quick-start-card modern-card modern-card--green">
     <div className="quick-start-number">3</div>
-    <h3>🚀 Start Earning</h3>
+    <h3>💎 Start Earning</h3>
     <p>Integrate recommendations and start earning revenue from day one with our transparent revenue sharing.</p>
     <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
       Quick Start →
@@ -224,7 +224,7 @@ function MyApp() {
   </div>
 
   <div className="card modern-card modern-card--purple">
-    <div className="card__icon">📊</div>
+    <div className="card__icon">📈</div>
     <div className="card__header">
       <h3 className="card__title">Analytics & Tracking</h3>
     </div>
@@ -239,7 +239,7 @@ function MyApp() {
   </div>
 
   <div className="card modern-card modern-card--green">
-    <div className="card__icon">🎨</div>
+    <div className="card__icon">🎯</div>
     <div className="card__header">
       <h3 className="card__title">UI Components</h3>
     </div>
@@ -273,7 +273,7 @@ function MyApp() {
 
 <div className="nav-grid">
   <div className="nav-card modern-card modern-card--blue">
-    <div className="card__icon">🚀</div>
+    <div className="card__icon">⚡</div>
     <h3>Getting Started</h3>
     <p>Complete setup guide from API keys to first implementation. Get up and running in minutes.</p>
     <a href="/getting-started/overview" className="btn btn-primary btn-large">
@@ -291,7 +291,7 @@ function MyApp() {
   </div>
 
   <div className="nav-card modern-card modern-card--green">
-    <div className="card__icon">📚</div>
+    <div className="card__icon">📋</div>
     <h3>API Reference</h3>
     <p>Complete API documentation with examples, schemas, and interactive testing.</p>
     <a href="/api/authentication" className="btn btn-primary btn-large">
@@ -324,7 +324,7 @@ function MyApp() {
   </div>
 
   <div className="support-card modern-card modern-card--purple">
-    <div className="card__icon">📊</div>
+    <div className="card__icon">📈</div>
     <h3>Dashboard</h3>
     <p>Manage your API keys, view analytics, and monitor your integration performance in real-time.</p>
     <a href="https://useadmesh.com" target="_blank" className="btn btn-primary btn-large">
@@ -340,10 +340,10 @@ function MyApp() {
   <p>Join thousands of developers building intelligent AI applications with AdMesh. Start earning revenue from your recommendations today.</p>
   <div className="hero-actions">
     <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
-      🚀 Start Building Now
+      ⚡ Start Building Now
     </a>
     <a href="https://useadmesh.com/agents#earnings-calculator" target="_blank" className="btn btn-special btn-large">
-      💰 Calculate Earnings
+      💎 Calculate Earnings
     </a>
   </div>
 </div>
