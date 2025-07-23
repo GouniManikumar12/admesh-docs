@@ -404,7 +404,7 @@
 
 [data-theme='dark'] .menu__link--active {
   background: var(--ifm-color-primary);
-  color: var(--ifm-background-color);
+  color: #ffffff !important;
 }
 
 [data-theme='dark'] .menu__link--sublist {
@@ -2890,6 +2890,7 @@ li {
 
 [data-theme='dark'] .menu__link--active {
   background: var(--ifm-color-emphasis-200) !important;
+  color: #ffffff !important;
 }
 
 [data-theme='dark'] .main-wrapper {
