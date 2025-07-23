@@ -5,17 +5,17 @@
       "plugin": "c141421f"
     }
   },
-  "/-4ff": {
+  "/-4b8": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/-278": {
+  "/-2ad": {
     "__comp": "a7bd4aaa",
     "__props": "22dd74f7"
   },
-  "/-89b": {
+  "/-53e": {
     "__comp": "a94703ab"
   },
   "/ad-units/citation-1ec": {
@@ -54,7 +54,7 @@
     "__comp": "17896441",
     "content": "843dce77"
   },
-  "/api/authentication-255": {
+  "/api/authentication-e30": {
     "__comp": "17896441",
     "content": "baeff1df"
   },
@@ -66,21 +66,9 @@
     "__comp": "17896441",
     "content": "ad95bade"
   },
-  "/getting-started/earnings-4f5": {
-    "__comp": "17896441",
-    "content": "af552b4b"
-  },
   "/getting-started/overview-204": {
     "__comp": "17896441",
     "content": "7a96ca3d"
-  },
-  "/getting-started/pii-quick-start-8a1": {
-    "__comp": "17896441",
-    "content": "8c3d6f57"
-  },
-  "/getting-started/pii-testing-guide-93a": {
-    "__comp": "17896441",
-    "content": "c5b6c918"
   },
   "/getting-started/quick-start-fd2": {
     "__comp": "17896441",
@@ -98,7 +86,7 @@
     "__comp": "17896441",
     "content": "a0ec5393"
   },
-  "/search-help-fa4": {
+  "/search-help-84f": {
     "__comp": "17896441",
     "content": "b2f06689"
   },

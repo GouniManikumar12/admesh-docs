@@ -1,7 +1,7 @@
 {
   "id": "typescript-sdk/installation",
-  "title": "TypeScript SDK Installation",
-  "description": "Technical guide for installing and configuring the AdMesh TypeScript SDK for Node.js applications and serverless functions.",
+  "title": "TypeScript SDK",
+  "description": "Simple TypeScript/Node.js integration for AdMesh.",
   "source": "@site/docs/typescript-sdk/installation.md",
   "sourceDirName": "typescript-sdk",
   "slug": "/typescript-sdk/installation",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Python SDK Installation",
+    "title": "Python SDK",
     "permalink": "/python-sdk/installation"
   },
   "next": {

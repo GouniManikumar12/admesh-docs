@@ -14,14 +14,5 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1
-  },
-  "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Privacy & Security Compliance Standards",
-    "permalink": "/privacy-and-security/compliance-standards"
-  },
-  "next": {
-    "title": "AI Assistant Integration",
-    "permalink": "/examples/ai-assistant"
   }
 }

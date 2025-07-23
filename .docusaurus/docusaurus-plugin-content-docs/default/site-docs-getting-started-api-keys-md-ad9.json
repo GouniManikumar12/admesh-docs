@@ -1,7 +1,7 @@
 {
   "id": "getting-started/api-keys",
   "title": "Getting Your API Key",
-  "description": "To use AdMesh APIs and SDKs, you'll need an API key. This guide walks you through the process of creating an account and obtaining your API key.",
+  "description": "Get your API key to start using AdMesh.",
   "source": "@site/docs/getting-started/api-keys.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/api-keys",

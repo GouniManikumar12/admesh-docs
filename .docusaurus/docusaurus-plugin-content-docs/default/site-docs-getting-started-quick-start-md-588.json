@@ -1,7 +1,7 @@
 {
   "id": "getting-started/quick-start",
   "title": "Quick Start Guide",
-  "description": "Get up and running with AdMesh in under 5 minutes! This guide will walk you through making your first recommendation request using any of our SDKs.",
+  "description": "Make your first API call in 2 minutes.",
   "source": "@site/docs/getting-started/quick-start.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/quick-start",
@@ -21,7 +21,7 @@
     "permalink": "/getting-started/api-keys"
   },
   "next": {
-    "title": "PII Sanitization Quick Start",
-    "permalink": "/getting-started/pii-quick-start"
+    "title": "Python SDK",
+    "permalink": "/python-sdk/installation"
   }
 }

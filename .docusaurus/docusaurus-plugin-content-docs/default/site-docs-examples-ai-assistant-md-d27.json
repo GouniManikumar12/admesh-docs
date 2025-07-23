@@ -17,11 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Authentication",
-    "permalink": "/api/authentication"
-  },
-  "next": {
-    "title": "Search Help",
-    "permalink": "/search-help"
+    "title": "Privacy & Security Compliance Standards",
+    "permalink": "/privacy-and-security/compliance-standards"
   }
 }

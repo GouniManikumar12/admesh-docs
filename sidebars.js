@@ -30,9 +30,18 @@ const sidebars = {
         'getting-started/overview',
         'getting-started/api-keys',
         'getting-started/quick-start',
-        'getting-started/pii-quick-start',
-        'getting-started/pii-testing-guide',
-        'getting-started/earnings',
+      ],
+    },
+
+    // SDK Documentation
+    {
+      type: 'category',
+      label: 'SDKs',
+      collapsed: true,
+      items: [
+        'python-sdk/installation',
+        'typescript-sdk/installation',
+        'ui-sdk/installation',
       ],
     },
 
@@ -59,32 +68,6 @@ const sidebars = {
       ],
     },
 
-    // SDK Documentation
-    {
-      type: 'category',
-      label: 'Python SDK',
-      items: [
-        'python-sdk/installation',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'TypeScript SDK',
-      items: [
-        'typescript-sdk/installation',
-      ],
-    },
-
-    {
-      type: 'category',
-      label: 'UI SDK',
-      items: [
-        'ui-sdk/installation',
-      ],
-    },
-
-
-
     // Privacy & Security
     {
       type: 'category',
@@ -92,15 +75,6 @@ const sidebars = {
       items: [
         'privacy-and-security/pii-sanitization',
         'privacy-and-security/compliance-standards',
-      ],
-    },
-
-    // API Reference
-    {
-      type: 'category',
-      label: 'API Reference',
-      items: [
-        'api/authentication',
       ],
     },
 
@@ -123,11 +97,6 @@ const sidebars = {
           label: 'GitHub Issues',
           href: 'https://github.com/GouniManikumar12/admesh-docs/issues',
         },
-        {
-          type: 'link',
-          label: 'Status Page',
-          href: 'https://status.useadmesh.com',
-        },
       ],
     },
 
@@ -136,7 +105,6 @@ const sidebars = {
       type: 'category',
       label: 'Help & Support',
       items: [
-        'search-help',
         {
           type: 'link',
           label: 'Support',

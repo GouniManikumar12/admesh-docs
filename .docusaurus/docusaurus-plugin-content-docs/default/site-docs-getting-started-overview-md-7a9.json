@@ -1,7 +1,7 @@
 {
   "id": "getting-started/overview",
   "title": "Overview",
-  "description": "This guide provides technical overview and core concepts for integrating AdMesh AI-powered product recommendation capabilities into enterprise applications.",
+  "description": "AdMesh is an AI-powered recommendation engine that helps you monetize your platform by suggesting relevant products to your users.",
   "source": "@site/docs/getting-started/overview.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/overview",

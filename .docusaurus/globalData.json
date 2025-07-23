@@ -56,8 +56,7 @@
             },
             {
               "id": "api/authentication",
-              "path": "/api/authentication",
-              "sidebar": "tutorialSidebar"
+              "path": "/api/authentication"
             },
             {
               "id": "examples/ai-assistant",
@@ -70,23 +69,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "getting-started/earnings",
-              "path": "/getting-started/earnings",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "getting-started/overview",
               "path": "/getting-started/overview",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "getting-started/pii-quick-start",
-              "path": "/getting-started/pii-quick-start",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "getting-started/pii-testing-guide",
-              "path": "/getting-started/pii-testing-guide",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -116,8 +100,7 @@
             },
             {
               "id": "search-help",
-              "path": "/search-help",
-              "sidebar": "tutorialSidebar"
+              "path": "/search-help"
             },
             {
               "id": "typescript-sdk/installation",

@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '4ff'),
+    component: ComponentCreator('/', '4b8'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '278'),
+        component: ComponentCreator('/', '2ad'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '89b'),
+            component: ComponentCreator('/', '53e'),
             routes: [
               {
                 path: '/ad-units/citation',
@@ -74,9 +74,8 @@ export default [
               },
               {
                 path: '/api/authentication',
-                component: ComponentCreator('/api/authentication', '255'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/api/authentication', 'e30'),
+                exact: true
               },
               {
                 path: '/examples/ai-assistant',
@@ -91,26 +90,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/getting-started/earnings',
-                component: ComponentCreator('/getting-started/earnings', '4f5'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/getting-started/overview',
                 component: ComponentCreator('/getting-started/overview', '204'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/getting-started/pii-quick-start',
-                component: ComponentCreator('/getting-started/pii-quick-start', '8a1'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/getting-started/pii-testing-guide',
-                component: ComponentCreator('/getting-started/pii-testing-guide', '93a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -140,9 +121,8 @@ export default [
               },
               {
                 path: '/search-help',
-                component: ComponentCreator('/search-help', 'fa4'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/search-help', '84f'),
+                exact: true
               },
               {
                 path: '/typescript-sdk/installation',

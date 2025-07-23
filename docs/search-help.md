@@ -59,7 +59,7 @@ Learn how to effectively search the AdMesh documentation to find exactly what yo
 - [AI Assistant Integration](/examples/ai-assistant)
 
 ### **💰 Revenue**
-- [Earnings Calculator](/getting-started/earnings)
+- [Earnings Calculator](https://useadmesh.com/agents#earnings-calculator)
 
 ## Search Tips
 
