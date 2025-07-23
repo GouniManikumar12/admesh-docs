@@ -115,6 +115,13 @@ async function indexDocumentation() {
 
     // Upload records to Algolia
     console.log('📤 Uploading records to Algolia...');
+
+    // Debug: Log some sample records
+    console.log('📋 Sample records being indexed:');
+    records.slice(0, 5).forEach(record => {
+      console.log(`- ${record.title} (${record.category}) - Keywords: ${record.keywords.substring(0, 100)}...`);
+    });
+
     const response = await client.saveObjects({ indexName: ALGOLIA_INDEX_NAME, objects: records });
 
     console.log(`✅ Successfully indexed ${records.length} records`);

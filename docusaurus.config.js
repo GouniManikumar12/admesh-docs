@@ -285,11 +285,18 @@ const config = {
             'anchor',
             'url',
             'url_without_anchor',
-            'type'
+            'type',
+            'title',
+            'category',
+            'keywords',
+            'description'
           ],
-          attributesToSnippet: ['content:10'],
-          attributesToHighlight: ['hierarchy', 'content'],
+          attributesToSnippet: ['content:15', 'description:10'],
+          attributesToHighlight: ['hierarchy', 'content', 'title', 'keywords'],
           snippetEllipsisText: '...',
+          typoTolerance: true,
+          ignorePlurals: true,
+          removeStopWords: true,
         },
 
         // Optional: path for search page that enabled by default (`false` to disable it)
