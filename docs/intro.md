@@ -8,33 +8,56 @@ description: Professional AI agent integration platform for intelligent product 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+<div className="hero-section">
+  <div className="hero-content">
+    <h1 className="hero-title">
+      AI-Powered Product Recommendations
+    </h1>
+    <p className="hero-description">
+      Integrate intelligent product recommendations into your AI applications with our modern SDKs.
+      Earn revenue while providing value to your users.
+    </p>
+    <div className="hero-actions">
+      <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
+        🚀 Quick Start
+      </a>
+      <a href="https://useadmesh.com/agents" target="_blank" className="btn btn-outline btn-large">
+        📊 Get API Key
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Why Choose AdMesh?
 
 <div className="content-grid content-grid--3">
-  <div className="card">
+  <div className="card modern-card modern-card--blue">
+    <div className="card__icon">🤖</div>
     <div className="card__header">
-      <h3 className="card__title">AI-Powered</h3>
+      <h3 className="card__title">AI-Powered Intelligence</h3>
     </div>
     <div className="card__body">
-      Smart algorithms deliver relevant product recommendations with precision scoring.
+      Advanced machine learning algorithms deliver contextually relevant product recommendations with precision scoring and semantic matching.
     </div>
   </div>
 
-  <div className="card">
+  <div className="card modern-card modern-card--purple">
+    <div className="card__icon">⚡</div>
     <div className="card__header">
       <h3 className="card__title">Developer Ready</h3>
     </div>
     <div className="card__body">
-      Production SDKs with TypeScript support and seamless integration.
+      Production-grade SDKs with full TypeScript support, comprehensive error handling, and seamless integration patterns.
     </div>
   </div>
 
-  <div className="card">
+  <div className="card modern-card modern-card--green">
+    <div className="card__icon">💰</div>
     <div className="card__header">
       <h3 className="card__title">Revenue Focused</h3>
     </div>
     <div className="card__body">
-      Built-in analytics and optimization tools to maximize earnings.
+      Built-in analytics, conversion tracking, and revenue optimization tools to maximize your earnings potential.
     </div>
   </div>
 </div>
@@ -154,21 +177,30 @@ function MyApp() {
 ## Quick Start Guide
 
 <div className="quick-start-grid">
-  <div className="quick-start-card">
+  <div className="quick-start-card modern-card modern-card--blue">
     <div className="quick-start-number">1</div>
-    <h3>Get Your API Key</h3>
-    <p>Sign up for a free AdMesh account and get your API credentials instantly.</p>
-    <a href="https://useadmesh.com/agents" target="_blank" className="btn btn-primary">
-      Get API Key
+    <h3>🔑 Get Your API Key</h3>
+    <p>Sign up for a free AdMesh account and get your API credentials instantly. No credit card required.</p>
+    <a href="https://useadmesh.com/agents" target="_blank" className="btn btn-primary btn-large">
+      Get API Key →
     </a>
   </div>
 
-  <div className="quick-start-card">
+  <div className="quick-start-card modern-card modern-card--purple">
     <div className="quick-start-number">2</div>
-    <h3>Install SDK</h3>
-    <p>Choose your preferred SDK and install it with your package manager.</p>
-    <a href="/getting-started/overview" className="btn btn-primary">
-      Installation Guide
+    <h3>⚡ Install SDK</h3>
+    <p>Choose your preferred SDK and install it with your package manager. Full TypeScript support included.</p>
+    <a href="/getting-started/overview" className="btn btn-primary btn-large">
+      Installation Guide →
+    </a>
+  </div>
+
+  <div className="quick-start-card modern-card modern-card--green">
+    <div className="quick-start-number">3</div>
+    <h3>🚀 Start Earning</h3>
+    <p>Integrate recommendations and start earning revenue from day one with our transparent revenue sharing.</p>
+    <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
+      Quick Start →
     </a>
   </div>
 </div>
@@ -176,58 +208,62 @@ function MyApp() {
 ## Key Features
 
 <div className="content-grid">
-  <div className="card">
+  <div className="card modern-card modern-card--blue">
+    <div className="card__icon">🧠</div>
     <div className="card__header">
       <h3 className="card__title">Smart AI Engine</h3>
     </div>
     <div className="card__body">
       <ul>
-        <li>Machine learning-powered intent detection</li>
-        <li>Semantic matching algorithms</li>
-        <li>Trust score-based filtering</li>
-        <li>Real-time processing</li>
+        <li>Advanced intent detection algorithms</li>
+        <li>Semantic matching with precision scoring</li>
+        <li>Trust score-based quality filtering</li>
+        <li>Real-time processing and optimization</li>
       </ul>
     </div>
   </div>
 
-  <div className="card">
+  <div className="card modern-card modern-card--purple">
+    <div className="card__icon">📊</div>
     <div className="card__header">
       <h3 className="card__title">Analytics & Tracking</h3>
     </div>
     <div className="card__body">
       <ul>
         <li>Automated interaction tracking</li>
-        <li>Conversion monitoring</li>
-        <li>Performance metrics</li>
-        <li>Revenue analytics</li>
+        <li>Real-time conversion monitoring</li>
+        <li>Comprehensive performance metrics</li>
+        <li>Revenue analytics and insights</li>
       </ul>
     </div>
   </div>
 
-  <div className="card">
+  <div className="card modern-card modern-card--green">
+    <div className="card__icon">🎨</div>
     <div className="card__header">
       <h3 className="card__title">UI Components</h3>
     </div>
     <div className="card__body">
       <ul>
         <li>Production-ready React components</li>
-        <li>Citation-based interfaces</li>
-        <li>Customizable themes</li>
-        <li>Mobile-responsive design</li>
+        <li>Citation-based conversational interfaces</li>
+        <li>Customizable themes and styling</li>
+        <li>Mobile-responsive design system</li>
       </ul>
     </div>
   </div>
 
-  <div className="card">
+  <div className="card modern-card modern-card--orange">
+    <div className="card__icon">⚡</div>
     <div className="card__header">
       <h3 className="card__title">Developer Experience</h3>
     </div>
     <div className="card__body">
       <ul>
-        <li>Full TypeScript support</li>
+        <li>Full TypeScript support and type safety</li>
         <li>Comprehensive error handling</li>
-        <li>Async/await support</li>
-        <li>Complete documentation</li>
+        <li>Modern async/await patterns</li>
+        <li>Complete documentation and examples</li>
       </ul>
     </div>
   </div>
@@ -236,35 +272,39 @@ function MyApp() {
 ## Documentation Navigation
 
 <div className="nav-grid">
-  <div className="nav-card">
+  <div className="nav-card modern-card modern-card--blue">
+    <div className="card__icon">🚀</div>
     <h3>Getting Started</h3>
-    <p>Complete setup guide from API keys to first implementation</p>
-    <a href="/getting-started/overview" className="btn btn-primary">
-      Start Building
+    <p>Complete setup guide from API keys to first implementation. Get up and running in minutes.</p>
+    <a href="/getting-started/overview" className="btn btn-primary btn-large">
+      Start Building →
     </a>
   </div>
 
-  <div className="nav-card">
+  <div className="nav-card modern-card modern-card--purple">
+    <div className="card__icon">🎯</div>
     <h3>Ad Units</h3>
-    <p>Explore all available ad formats and UI components</p>
-    <a href="/ad-units/overview" className="btn btn-primary">
-      View Components
+    <p>Explore all available ad formats and UI components for seamless integration.</p>
+    <a href="/ad-units/overview" className="btn btn-primary btn-large">
+      View Components →
     </a>
   </div>
 
-  <div className="nav-card">
+  <div className="nav-card modern-card modern-card--green">
+    <div className="card__icon">📚</div>
     <h3>API Reference</h3>
-    <p>Complete API documentation with examples and schemas</p>
-    <a href="/api/authentication" className="btn btn-primary">
-      API Documentation
+    <p>Complete API documentation with examples, schemas, and interactive testing.</p>
+    <a href="/api/authentication" className="btn btn-primary btn-large">
+      API Documentation →
     </a>
   </div>
 
-  <div className="nav-card">
+  <div className="nav-card modern-card modern-card--orange">
+    <div className="card__icon">💡</div>
     <h3>Examples</h3>
-    <p>Real-world implementation examples and tutorials</p>
-    <a href="/examples/ai-assistant" className="btn btn-primary">
-      View Examples
+    <p>Real-world implementation examples and step-by-step tutorials.</p>
+    <a href="/examples/ai-assistant" className="btn btn-primary btn-large">
+      View Examples →
     </a>
   </div>
 </div>
@@ -274,29 +314,36 @@ function MyApp() {
 ## Support & Community
 
 <div className="support-grid">
-  <div className="support-card">
+  <div className="support-card modern-card modern-card--blue">
+    <div className="card__icon">💬</div>
     <h3>Direct Support</h3>
-    <p>Get help directly from our team for technical questions and integration support.</p>
-    <a href="mailto:mani@useadmesh.com" className="btn btn-primary">
-      Contact Support
+    <p>Get help directly from our team for technical questions and integration support. We're here to help you succeed.</p>
+    <a href="mailto:mani@useadmesh.com" className="btn btn-primary btn-large">
+      Contact Support →
     </a>
   </div>
 
-  <div className="support-card">
+  <div className="support-card modern-card modern-card--purple">
+    <div className="card__icon">📊</div>
     <h3>Dashboard</h3>
-    <p>Manage your API keys, view analytics, and monitor your integration performance.</p>
-    <a href="https://useadmesh.com" target="_blank" className="btn btn-primary">
-      Open Dashboard
+    <p>Manage your API keys, view analytics, and monitor your integration performance in real-time.</p>
+    <a href="https://useadmesh.com" target="_blank" className="btn btn-primary btn-large">
+      Open Dashboard →
     </a>
   </div>
 </div>
 
 ---
 
-<div className="">
+<div className="cta-section">
   <h2>Ready to get started?</h2>
-  <p>Join thousands of developers building intelligent AI applications with AdMesh</p>
-  <a href="/getting-started/overview" className="btn btn-primary btn-large">
-    Start Building Now
-  </a>
+  <p>Join thousands of developers building intelligent AI applications with AdMesh. Start earning revenue from your recommendations today.</p>
+  <div className="hero-actions">
+    <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
+      🚀 Start Building Now
+    </a>
+    <a href="https://useadmesh.com/agents#earnings-calculator" target="_blank" className="btn btn-special btn-large">
+      💰 Calculate Earnings
+    </a>
+  </div>
 </div>

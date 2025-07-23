@@ -6,22 +6,29 @@
 /* Import Inter font for modern typography */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* Modern Design System Variables - Black & White Minimal */
+/* Modern Design System Variables - Professional with Strategic Color */
 :root {
-  /* Brand Colors - Professional Black & White */
-  --ifm-color-primary: #000000;
-  --ifm-color-primary-dark: #000000;
-  --ifm-color-primary-darker: #000000;
-  --ifm-color-primary-darkest: #000000;
-  --ifm-color-primary-light: #333333;
-  --ifm-color-primary-lighter: #666666;
-  --ifm-color-primary-lightest: #999999;
+  /* Brand Colors - Modern Blue Primary with Black/White Base */
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
 
-  /* Semantic Colors - Minimal Grayscale */
-  --ifm-color-success: #000000;
-  --ifm-color-warning: #333333;
-  --ifm-color-danger: #000000;
-  --ifm-color-info: #000000;
+  /* Semantic Colors - Modern Professional Palette */
+  --ifm-color-success: #10b981;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+  --ifm-color-info: #06b6d4;
+
+  /* Accent Colors for Visual Interest */
+  --admesh-color-purple: #8b5cf6;
+  --admesh-color-indigo: #6366f1;
+  --admesh-color-pink: #ec4899;
+  --admesh-color-emerald: #10b981;
+  --admesh-color-orange: #f97316;
 
   /* Typography */
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -72,16 +79,22 @@
   --ifm-heading-color: #000000;
 }
 
-/* Dark Mode Variables - Black & White */
+/* Dark Mode Variables - Modern Dark with Color Accents */
 [data-theme='dark'] {
-  /* Brand Colors - Black & White for dark mode */
-  --ifm-color-primary: #ffffff;
-  --ifm-color-primary-dark: #e5e5e5;
-  --ifm-color-primary-darker: #d4d4d4;
-  --ifm-color-primary-darkest: #a3a3a3;
-  --ifm-color-primary-light: #ffffff;
-  --ifm-color-primary-lighter: #ffffff;
-  --ifm-color-primary-lightest: #ffffff;
+  /* Brand Colors - Bright Blue for dark mode */
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+
+  /* Enhanced Semantic Colors for Dark Mode */
+  --ifm-color-success: #34d399;
+  --ifm-color-warning: #fbbf24;
+  --ifm-color-danger: #f87171;
+  --ifm-color-info: #22d3ee;
 
   /* Dark Mode Backgrounds */
   --ifm-background-color: #0a0a0a;
@@ -2774,5 +2787,134 @@ li {
   .status-indicator {
     font-size: 0.75rem;
     padding: 0.125rem 0.5rem;
+  }
+}
+
+/* ===== MODERN CARD ENHANCEMENTS ===== */
+
+/* Modern Card System with Colorful Accents */
+.modern-card {
+  position: relative;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.modern-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--admesh-color-purple) 100%);
+  border-radius: 16px 16px 0 0;
+}
+
+.modern-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] .modern-card {
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .modern-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Icon */
+.card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+
+/* Card Color Variants */
+.modern-card--blue::before {
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--admesh-color-indigo) 100%);
+}
+
+.modern-card--blue .card__icon {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--admesh-color-indigo) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modern-card--purple::before {
+  background: linear-gradient(90deg, var(--admesh-color-purple) 0%, var(--admesh-color-pink) 100%);
+}
+
+.modern-card--purple .card__icon {
+  background: linear-gradient(135deg, var(--admesh-color-purple) 0%, var(--admesh-color-pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modern-card--green::before {
+  background: linear-gradient(90deg, var(--admesh-color-emerald) 0%, var(--ifm-color-success) 100%);
+}
+
+.modern-card--green .card__icon {
+  background: linear-gradient(135deg, var(--admesh-color-emerald) 0%, var(--ifm-color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modern-card--orange::before {
+  background: linear-gradient(90deg, var(--admesh-color-orange) 0%, var(--ifm-color-warning) 100%);
+}
+
+.modern-card--orange .card__icon {
+  background: linear-gradient(135deg, var(--admesh-color-orange) 0%, var(--ifm-color-warning) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced Card Title */
+.modern-card .card__title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+  line-height: 1.3;
+}
+
+/* Enhanced Card Body */
+.modern-card .card__body {
+  color: var(--ifm-color-content);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Mobile Responsive for Modern Cards */
+@media (max-width: 768px) {
+  .modern-card {
+    padding: 1.5rem;
+  }
+
+  .card__icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .modern-card .card__title {
+    font-size: 1.25rem;
+  }
+
+  .modern-card .card__body {
+    font-size: 0.9375rem;
   }
 }
