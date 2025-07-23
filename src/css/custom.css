@@ -49,7 +49,7 @@
   /* Borders and Radius */
   --ifm-border-radius: 8px;
   --ifm-border-width: 1px;
-  --ifm-border-color: #e5e5e5;
+  --ifm-border-color: #f1f5f9;
 
   /* Shadows - Minimal */
   --ifm-box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -59,19 +59,19 @@
 
   /* Code */
   --ifm-code-font-size: 0.875rem;
-  --ifm-code-background: #f5f5f5;
+  --ifm-code-background: #f8fafc;
   --ifm-code-border-radius: 6px;
   --ifm-code-padding-horizontal: 0.5rem;
   --ifm-code-padding-vertical: 0.25rem;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.05);
 
-  /* Background Colors - Black & White */
+  /* Background Colors - Pure White */
   --ifm-background-color: #ffffff;
-  --ifm-background-surface-color: #fafafa;
-  --ifm-color-emphasis-0: #fafafa;
-  --ifm-color-emphasis-100: #f5f5f5;
-  --ifm-color-emphasis-200: #e5e5e5;
-  --ifm-color-emphasis-300: #d4d4d4;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-color-emphasis-0: #ffffff;
+  --ifm-color-emphasis-100: #f8fafc;
+  --ifm-color-emphasis-200: #f1f5f9;
+  --ifm-color-emphasis-300: #e2e8f0;
 
   /* Text Colors - Black & White */
   --ifm-color-content: #000000;
@@ -2788,6 +2788,86 @@ li {
     font-size: 0.75rem;
     padding: 0.125rem 0.5rem;
   }
+}
+
+/* ===== SIDEBAR AND NAVIGATION FIXES ===== */
+
+/* Ensure sidebar has pure white background */
+.theme-doc-sidebar-container {
+  background: #ffffff !important;
+}
+
+.menu {
+  background: #ffffff !important;
+}
+
+.navbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+/* Fix any grey backgrounds in light mode */
+.theme-doc-sidebar-menu {
+  background: #ffffff !important;
+}
+
+.menu__list {
+  background: #ffffff !important;
+}
+
+.menu__list-item {
+  background: #ffffff !important;
+}
+
+.menu__link {
+  background: #ffffff !important;
+}
+
+.menu__link:hover {
+  background: #f8fafc !important;
+}
+
+.menu__link--active {
+  background: #f1f5f9 !important;
+}
+
+/* Ensure main content area is pure white */
+.main-wrapper {
+  background: #ffffff !important;
+}
+
+.container {
+  background: #ffffff !important;
+}
+
+.row {
+  background: #ffffff !important;
+}
+
+.col {
+  background: #ffffff !important;
+}
+
+/* Dark mode overrides */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .menu {
+  background: var(--ifm-background-color) !important;
+}
+
+[data-theme='dark'] .navbar {
+  background: var(--ifm-navbar-background-color) !important;
+  border-bottom-color: var(--ifm-border-color) !important;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background: var(--ifm-color-emphasis-100) !important;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background: var(--ifm-color-emphasis-200) !important;
 }
 
 /* ===== MODERN CARD ENHANCEMENTS ===== */
