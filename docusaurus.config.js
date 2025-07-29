@@ -55,6 +55,11 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // Google Analytics Configuration
+        gtag: {
+          trackingID: 'G-C30NMN6PCH',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -312,12 +317,6 @@ const config = {
         searchBoxProps: {
           placeholder: 'Search documentation...',
         },
-      },
-
-      // Google Analytics Configuration
-      gtag: {
-        trackingID: 'G-C30NMN6PCH',
-        anonymizeIP: true,
       },
 
     }),
