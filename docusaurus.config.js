@@ -314,6 +314,12 @@ const config = {
         },
       },
 
+      // Google Analytics Configuration
+      gtag: {
+        trackingID: 'G-C30NMN6PCH',
+        anonymizeIP: true,
+      },
+
     }),
 };
 

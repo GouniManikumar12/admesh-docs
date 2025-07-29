@@ -1,5 +1,18 @@
 import React, { useState } from 'react';
 
+// Analytics tracking function for documentation
+const trackDocEvent = (action, category, label, value) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  }
+};
+
 const InteractiveDemo = ({ 
   title = "Interactive Demo",
   description = "Try out the AdMesh SDK with live examples",
@@ -12,7 +25,10 @@ const InteractiveDemo = ({
   const runExample = async (example) => {
     setIsLoading(true);
     setResult(null);
-    
+
+    // Track demo interaction
+    trackDocEvent('demo_run', 'documentation_interaction', example.title || `Example ${activeExample + 1}`, activeExample);
+
     // Simulate API call
     setTimeout(() => {
       setResult({
@@ -55,7 +71,10 @@ const InteractiveDemo = ({
             <button
               key={index}
               className={`interactive-demo__tab ${activeExample === index ? 'interactive-demo__tab--active' : ''}`}
-              onClick={() => setActiveExample(index)}
+              onClick={() => {
+                setActiveExample(index);
+                trackDocEvent('demo_tab_click', 'documentation_interaction', example.name, index);
+              }}
             >
               {example.name}
             </button>

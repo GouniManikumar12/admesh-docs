@@ -1,6 +1,19 @@
 import React from 'react';
 import { AdMeshExpandableUnit } from 'admesh-ui-sdk';
 
+// Analytics tracking function for documentation
+const trackDocEvent = (action, category, label, value) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  }
+};
+
 // Demo data for recommendations
 const demoRecommendation = {
   ad_id: 'demo-1',
@@ -355,6 +368,7 @@ export const ExpandableUnitDemo = () => (
         ]}
         onClick={(adId, link) => {
           console.log('Demo click:', adId, link);
+          trackDocEvent('demo_ad_click', 'documentation_interaction', adId, 1);
           alert('Demo click! In a real implementation, this would open: ' + link);
         }}
       />
@@ -383,6 +397,7 @@ export const EarningsCalculatorLink = ({
   text = 'Calculate Your Earnings'
 }) => {
   const handleClick = () => {
+    trackDocEvent('earnings_calculator_click', 'documentation_interaction', 'earnings_calculator_link', 1);
     window.open('https://useadmesh.com/agents#earnings-calculator', '_blank');
   };
 
