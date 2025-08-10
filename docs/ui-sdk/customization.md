@@ -2,6 +2,15 @@
 
 The AdMesh UI SDK provides extensive customization options to give AI platforms complete freedom over the appearance and behavior of ad components.
 
+## Consistent Styling Principles
+
+The AdMesh UI SDK follows these consistent styling principles:
+
+- **Consistent Colors & Themes**: All components use the same color palette and theme system
+- **Unified Font Family**: All components inherit the same font family for consistency
+- **Standardized Width**: All components use 100% width except ecommerce cards (which maintain their specific width behavior)
+- **Responsive Design**: All components are mobile-responsive and adapt to different screen sizes
+
 ## Enhanced Theme System
 
 ### Basic Theme Configuration
@@ -16,13 +25,26 @@ const customTheme = createAdMeshTheme({
   accentColor: '#45b7d1',
   borderRadius: '16px',
   fontFamily: '"Poppins", sans-serif'
+  // Width settings are automatically applied for consistency
+  // All components will use 100% width except ecommerce cards
 });
 
-<AdMeshProductCard 
+<AdMeshProductCard
   recommendation={recommendation}
   theme={customTheme}
 />
 ```
+
+### Consistent Width Behavior
+
+The AdMesh UI SDK automatically ensures consistent width settings:
+
+- **Product Cards**: 100% width
+- **Citation Units**: 100% width
+- **Inline Recommendations**: 100% width
+- **Expandable Units**: 100% width
+- **Compare Tables**: 100% width
+- **Ecommerce Cards**: Auto width (maintains horizontal scrolling behavior)
 
 ### Complete Theme Interface
 
