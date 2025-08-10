@@ -41,7 +41,17 @@ const sidebars = {
       items: [
         'python-sdk/installation',
         'typescript-sdk/installation',
-        'ui-sdk/installation',
+        {
+          type: 'category',
+          label: 'UI SDK',
+          collapsed: false,
+          items: [
+            'ui-sdk/installation',
+            'ui-sdk/layout-component',
+            'ui-sdk/customization',
+            'ui-sdk/legal-compliance',
+          ],
+        },
       ],
     },
 
@@ -58,10 +68,8 @@ const sidebars = {
           items: [
             'ad-units/one-line-ad',
             'ad-units/product-card',
-            'ad-units/conversation-summary',
             'ad-units/citation',
-            'ad-units/floating-recommendations',
-            'ad-units/sidebar',
+            'ad-units/expandable-unit',
             'ad-units/layout',
           ],
         },

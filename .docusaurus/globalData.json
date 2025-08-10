@@ -16,17 +16,12 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "ad-units/conversation-summary",
-              "path": "/ad-units/conversation-summary",
-              "sidebar": "tutorialSidebar"
+              "id": "ad-units/ecommerce-cards",
+              "path": "/ad-units/ecommerce-cards"
             },
             {
               "id": "ad-units/expandable-unit",
-              "path": "/ad-units/expandable-unit"
-            },
-            {
-              "id": "ad-units/floating-recommendations",
-              "path": "/ad-units/floating-recommendations",
+              "path": "/ad-units/expandable-unit",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -47,11 +42,6 @@
             {
               "id": "ad-units/product-card",
               "path": "/ad-units/product-card",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "ad-units/sidebar",
-              "path": "/ad-units/sidebar",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -115,6 +105,10 @@
               "id": "ui-sdk/installation",
               "path": "/ui-sdk/installation",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ui-sdk/layout-component",
+              "path": "/ui-sdk/layout-component"
             },
             {
               "id": "ui-sdk/legal-compliance",

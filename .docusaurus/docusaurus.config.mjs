@@ -48,6 +48,10 @@ export default {
         "blog": false,
         "theme": {
           "customCss": "./src/css/custom.css"
+        },
+        "gtag": {
+          "trackingID": "G-C30NMN6PCH",
+          "anonymizeIP": true
         }
       }
     ]

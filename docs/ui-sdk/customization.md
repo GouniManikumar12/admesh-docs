@@ -86,6 +86,7 @@ interface AdMeshTheme {
     button?: React.CSSProperties;
     expandableUnit?: React.CSSProperties;
     productCard?: React.CSSProperties;
+    ecommerceCards?: React.CSSProperties;
   };
   
   // Disable defaults for full control

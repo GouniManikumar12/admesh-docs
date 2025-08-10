@@ -38,29 +38,40 @@ The UI SDK is designed to be completely self-contained with no additional setup 
 
 ```tsx
 import React from 'react';
-import { AdMeshProductCard } from 'admesh-ui-sdk';
+import { AdMeshLayout } from 'admesh-ui-sdk';
 // No CSS import needed! Styles are auto-injected ✨
 
 function App() {
   const recommendations = [
     {
-      title: "HubSpot CRM",
-      reason: "Perfect for remote teams with excellent collaboration features",
-      intent_match_score: 0.92,
-      admesh_link: "https://useadmesh.com/track?ad_id=hubspot-123",
-      ad_id: "hubspot-123",
-      product_id: "hubspot-crm"
+      id: "walmart_15840257186",
+      title: "HP 15.6 inch Windows Touch Laptop",
+      price: 279.0,
+      original_price: 469.0,
+      image_url: "https://i5.walmartimages.com/asr/...",
+      brand: "HP",
+      rating: 4.4,
+      review_count: 97,
+      availability: "in_stock",
+      discount_percentage: 40.5,
+      source: "walmart",
+      ad_id: "walmart_15840257186",
+      reason: "Perfect match for laptop search",
+      admesh_link: "https://goto.walmart.com/c/...",
+      intent_match_score: 0.9
     }
   ];
 
   return (
     <div>
-      {/* Simple Inline Format - Perfect for minimal, unobtrusive recommendations */}
-      <AdMeshProductCard
-        recommendation={recommendations[0]}
-        variation="simple"
-        onClick={(adId, admeshLink) => {
-          window.open(admeshLink, '_blank');
+      {/* Intelligent Layout - Automatically detects best display format */}
+      <AdMeshLayout
+        recommendations={recommendations}
+        layout="auto" // Automatically chooses ecommerce, product, or citation layout
+        showTitle={true}
+        title="Recommended Products"
+        onProductClick={(product) => {
+          window.open(product.admesh_link, '_blank');
         }}
       />
 
@@ -235,8 +246,8 @@ Import only the components you need:
 // ✅ Tree-shakable imports
 import {
   AdMeshProductCard,
-  AdMeshProductCard,
-  AdMeshProductCard
+  AdMeshEcommerceCards,
+  AdMeshBadge
 } from 'admesh-ui-sdk';
 
 // ❌ Imports entire library
@@ -426,7 +437,7 @@ If your bundle is too large:
 ```tsx
 // Use specific imports instead of barrel imports
 import { AdMeshProductCard } from 'admesh-ui-sdk/components/AdMeshProductCard';
-import { AdMeshProductCard } from 'admesh-ui-sdk/components/AdMeshProductCard';
+import { AdMeshEcommerceCards } from 'admesh-ui-sdk/components/AdMeshEcommerceCards';
 ```
 
 #### React Version Conflicts
@@ -448,12 +459,12 @@ npm update react react-dom
 ```tsx
 import React, { lazy, Suspense } from 'react';
 
-const AdMeshSidebar = lazy(() => import('admesh-ui-sdk/components/AdMeshSidebar'));
+const AdMeshEcommerceCards = lazy(() => import('admesh-ui-sdk/components/AdMeshEcommerceCards'));
 
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <AdMeshSidebar recommendations={recommendations} />
+      <AdMeshEcommerceCards products={products} />
     </Suspense>
   );
 }

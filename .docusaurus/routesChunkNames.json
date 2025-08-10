@@ -48,34 +48,30 @@
       "plugin": "plugin---searchc-14-0ea"
     }
   },
-  "/-4b8": {
+  "/-54d": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-2ad": {
+  "/-c31": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-53e": {
+  "/-46c": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/ad-units/citation-1ec": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ad-units-citation-5-ce-256"
   },
-  "/ad-units/conversation-summary-f6a": {
+  "/ad-units/ecommerce-cards-59a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ad-units-conversation-summaryfba-0ed"
+    "content": "content---ad-units-ecommerce-cards-606-59e"
   },
-  "/ad-units/expandable-unit-1a4": {
+  "/ad-units/expandable-unit-0a7": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ad-units-expandable-unitabf-fe7"
-  },
-  "/ad-units/floating-recommendations-ff8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ad-units-floating-recommendationsde-5-0c4"
   },
   "/ad-units/layout-dc4": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -92,10 +88,6 @@
   "/ad-units/product-card-e9c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ad-units-product-card-951-75d"
-  },
-  "/ad-units/sidebar-234": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ad-units-sidebar-843-89c"
   },
   "/api/authentication-e30": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -144,6 +136,10 @@
   "/ui-sdk/installation-3ac": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ui-sdk-installation-251-d69"
+  },
+  "/ui-sdk/layout-component-0e5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ui-sdk-layout-componenta-64-f8b"
   },
   "/ui-sdk/legal-compliance-136": {
     "__comp": "__comp---theme-doc-item-178-a40",

@@ -14,11 +14,9 @@ Choose the right ad format based on your integration needs:
 |--------|----------|----------------------|------------------|
 | **One Line Ad** | Minimal integration, chat interfaces | Low | Ultra-clean |
 | **Product Card** | Detailed recommendations | Medium | Rich information |
-| **Conversation Summary** | End-of-chat recommendations | Medium | Natural conclusion |
 | **Citation** | Academic AI, Research tools | Low | Non-intrusive |
-| **Floating Recommendations** | Proactive suggestions | Medium | Context-aware |
-| **Sidebar** | Dashboard interfaces | Low | Persistent visibility |
 | **Layout** | Comprehensive displays | High | Flexible arrangement |
+| **Expandable Unit** | Premium sponsored content | Medium-High | Rich showcases |
 
 ## Platform Integration Guide
 
@@ -38,17 +36,17 @@ Choose the right ad format based on your integration needs:
 - **Examples**: Polymer, Yurts AI, Obviously.AI
 
 ### AI E-commerce Platforms
-- **Recommended**: Floating Recommendations, Sidebar
+- **Recommended**: Layout, Ecommerce Cards
 - **Focus**: Store optimization, conversion tools
 - **Examples**: Checkout Page AI, ConvertMate AI, Octane AI
 
 ### AI CRM Systems
-- **Recommended**: Conversation Summary, Product Card
+- **Recommended**: Product Card, Citation
 - **Focus**: Sales automation, customer management
 - **Examples**: Regie.ai, CoPilot AI, Nooks
 
 ### AI Project Management
-- **Recommended**: Floating Recommendations, Layout
+- **Recommended**: Layout, Product Card
 - **Focus**: Productivity tools, collaboration, planning
 - **Examples**: Taskade AI, Tability AI, Magical
 
@@ -76,12 +74,10 @@ AdMesh provides seven distinct ad formats, each optimized for different integrat
 |-----------|----------|------------------|----------|
 | **One Line Ad** | Minimal recommendations | Low | AI code editors, minimal interfaces |
 | **Product Card** | Detailed product info | Medium | AI design tools, e-commerce platforms |
-| **Conversation Summary** | End-of-session recommendations | Medium | AI CRM systems, chat interfaces |
 | **Citation** | Academic-style references | Low | AI business intelligence, research tools |
-| **Floating Recommendations** | Context-aware suggestions | Medium | AI project management, productivity tools |
-| **Sidebar** | Persistent recommendations | Low | AI dashboard interfaces, workspace apps |
 | **Layout** | Comprehensive displays | High | Multi-product showcases, comparison tools |
 | **Expandable Unit** | Premium sponsored content | Medium-High | Detailed product showcases, enterprise solutions |
+| **Ecommerce Cards** | Product grids | Medium | Shopping interfaces, product comparisons |
 
 
 
@@ -96,7 +92,7 @@ npm install admesh-ui-sdk
 
 2. **Import components**:
 ```tsx
-import { AdMeshProductCard, AdMeshExpandableUnit } from 'admesh-ui-sdk';
+import { AdMeshProductCard, AdMeshExpandableUnit, AdMeshEcommerceCards } from 'admesh-ui-sdk';
 ```
 
 3. **Add to your AI platform**:
@@ -108,7 +104,7 @@ import { AdMeshProductCard, AdMeshExpandableUnit } from 'admesh-ui-sdk';
 <AdMeshCitationUnit citationNumber={1} />
 
 // For AI e-commerce platforms
-<AdMeshSidebar title="Store Tools" />
+<AdMeshEcommerceCards products={products} />
 
 // For premium sponsored content
 <AdMeshExpandableUnit ctaText="Get Started" />
@@ -137,12 +133,10 @@ Visit our [interactive demo page](https://useadmesh.com/demo) to see live exampl
 
 1. **One Line Ad** - Minimal, single-line recommendations
 2. **Product Card** - Rich product information with features and pricing
-3. **Conversation Summary** - End-of-conversation recommendations
-4. **Citation** - Academic-style references with source attribution
-5. **Expandable Unit** - Collapsible detailed recommendations
-6. **Floating Recommendations** - Context-aware overlay suggestions
-7. **Sidebar** - Persistent recommendation panel
-8. **Layout** - Flexible grid-based arrangement
+3. **Citation** - Academic-style references with source attribution
+4. **Expandable Unit** - Collapsible detailed recommendations
+5. **Layout** - Flexible grid-based arrangement
+6. **Ecommerce Cards** - Product grid displays for shopping interfaces
 
 ## Key Advantages
 

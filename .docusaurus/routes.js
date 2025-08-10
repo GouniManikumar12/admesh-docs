@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '4b8'),
+    component: ComponentCreator('/', '54d'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '2ad'),
+        component: ComponentCreator('/', 'c31'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '53e'),
+            component: ComponentCreator('/', '46c'),
             routes: [
               {
                 path: '/ad-units/citation',
@@ -61,19 +61,13 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ad-units/conversation-summary',
-                component: ComponentCreator('/ad-units/conversation-summary', 'f6a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/ad-units/expandable-unit',
-                component: ComponentCreator('/ad-units/expandable-unit', '1a4'),
+                path: '/ad-units/ecommerce-cards',
+                component: ComponentCreator('/ad-units/ecommerce-cards', '59a'),
                 exact: true
               },
               {
-                path: '/ad-units/floating-recommendations',
-                component: ComponentCreator('/ad-units/floating-recommendations', 'ff8'),
+                path: '/ad-units/expandable-unit',
+                component: ComponentCreator('/ad-units/expandable-unit', '0a7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -98,12 +92,6 @@ export default [
               {
                 path: '/ad-units/product-card',
                 component: ComponentCreator('/ad-units/product-card', 'e9c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/ad-units/sidebar',
-                component: ComponentCreator('/ad-units/sidebar', '234'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -175,6 +163,11 @@ export default [
                 component: ComponentCreator('/ui-sdk/installation', '3ac'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/ui-sdk/layout-component',
+                component: ComponentCreator('/ui-sdk/layout-component', '0e5'),
+                exact: true
               },
               {
                 path: '/ui-sdk/legal-compliance',
