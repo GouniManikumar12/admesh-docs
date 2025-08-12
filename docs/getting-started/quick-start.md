@@ -1,144 +1,238 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Quick Start Guide
 
-Make your first API call in 2 minutes.
+Get AdMesh recommendations in 3 simple steps.
 
-## Prerequisites
+## Step 1: Get Your API Key
 
-- API key from [dashboard.useadmesh.com](https://dashboard.useadmesh.com)
+Sign up at [dashboard.useadmesh.com](https://dashboard.useadmesh.com) to get your free API key.
 
-## Step 1: Remove PII (if needed)
+## Step 2: Make Your First API Call
 
-If your user query contains personal information, clean it first:
+<details>
+<summary><strong>📋 Basic Example (Click to expand)</strong></summary>
 
 ```bash
-curl -X POST https://api.useadmesh.com/v1/pii/remove \
+curl -X POST "https://api.useadmesh.com/recommend" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "text": "I am John Doe from john@example.com looking for best laptop for programming"
+    "query": "best CRM for startups",
+    "format": "auto"
   }'
 ```
 
-Response:
+**Response:**
 ```json
 {
-  "cleaned_text": "I am looking for best laptop for programming",
-  "pii_detected": true,
-  "pii_types": ["name", "email"]
+  "response": {
+    "recommendations": [
+      {
+        "title": "HubSpot CRM",
+        "reason": "Perfect for startups with excellent free tier",
+        "admesh_link": "https://useadmesh.com/track?ad_id=hubspot-123",
+        "pricing": "Free tier available, paid plans from $45/month"
+      }
+    ]
+  }
 }
 ```
 
-## Step 2: Get Recommendations
+</details>
 
-Use the cleaned text (or original query if no PII) to get recommendations:
+## Step 3: Choose Your Language
 
-```bash
-curl -X POST https://api.useadmesh.com/v1/recommendations \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "query": "best laptop for programming",
-    "agent_id": "your_agent_id"
-  }'
-```
-
-## Complete JavaScript Example
+<details>
+<summary><strong>🟨 JavaScript</strong></summary>
 
 ```javascript
-async function getRecommendations(userQuery, agentId) {
-  // Step 1: Remove PII if needed
-  const piiResponse = await fetch('https://api.useadmesh.com/v1/pii/remove', {
+const getRecommendations = async (query) => {
+  const response = await fetch('https://api.useadmesh.com/recommend', {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer YOUR_API_KEY',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ text: userQuery })
-  });
-
-  const piiData = await piiResponse.json();
-  const cleanQuery = piiData.cleaned_text;
-
-  // Step 2: Get recommendations
-  const response = await fetch('https://api.useadmesh.com/v1/recommendations', {
-    method: 'POST',
-    headers: {
-      'Authorization': 'Bearer YOUR_API_KEY',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      query: cleanQuery,
-      agent_id: agentId
-    })
+    body: JSON.stringify({ query, format: 'auto' })
   });
 
   const data = await response.json();
-  return data.recommendations;
-}
+  return data.response.recommendations;
+};
 
 // Usage
-const recommendations = await getRecommendations(
-  "I am John from john@example.com looking for best laptop for programming",
-  "your_agent_id"
-);
+const recommendations = await getRecommendations('best CRM for startups');
 ```
 
-## Complete Python Example
+</details>
+
+<details>
+<summary><strong>🐍 Python</strong></summary>
 
 ```python
 import requests
 
-def get_recommendations(user_query, agent_id):
-    # Step 1: Remove PII if needed
-    pii_response = requests.post(
-        'https://api.useadmesh.com/v1/pii/remove',
-        headers={'Authorization': 'Bearer YOUR_API_KEY'},
-        json={'text': user_query}
-    )
-
-    pii_data = pii_response.json()
-    clean_query = pii_data['cleaned_text']
-
-    # Step 2: Get recommendations
+def get_recommendations(query):
     response = requests.post(
-        'https://api.useadmesh.com/v1/recommendations',
+        'https://api.useadmesh.com/recommend',
         headers={'Authorization': 'Bearer YOUR_API_KEY'},
-        json={
-            'query': clean_query,
-            'agent_id': agent_id
-        }
+        json={'query': query, 'format': 'auto'}
     )
-
-    return response.json()['recommendations']
+    return response.json()['response']['recommendations']
 
 # Usage
-recommendations = get_recommendations(
-    "I am John from john@example.com looking for best laptop for programming",
-    "your_agent_id"
-)
+recommendations = get_recommendations('best CRM for startups')
 ```
 
-## Response Format
+</details>
 
-```json
-{
-  "recommendations": [
-    {
-      "offer_title": "MacBook Pro M3",
-      "offer_description": "Professional laptop for developers",
-      "offer_url": "https://useadmesh.com/track/abc123",
-      "match_reason": "Perfect for programming with M3 chip"
-    }
-  ]
+<details>
+<summary><strong>🐘 PHP</strong></summary>
+
+```php
+<?php
+function getRecommendations($query) {
+    $data = json_encode(['query' => $query, 'format' => 'auto']);
+
+    $context = stream_context_create([
+        'http' => [
+            'method' => 'POST',
+            'header' => [
+                'Authorization: Bearer YOUR_API_KEY',
+                'Content-Type: application/json'
+            ],
+            'content' => $data
+        ]
+    ]);
+
+    $response = file_get_contents('https://api.useadmesh.com/recommend', false, $context);
+    $result = json_decode($response, true);
+    return $result['response']['recommendations'];
+}
+
+// Usage
+$recommendations = getRecommendations('best CRM for startups');
+?>
+```
+
+</details>
+
+## Next Steps (Optional)
+
+<details>
+<summary><strong>🎨 Display Recommendations (Frontend)</strong></summary>
+
+If you're building a frontend, you can use our React components to display recommendations:
+
+```bash
+npm install admesh-ui-sdk
+```
+
+```tsx
+import { AdMeshLayout } from 'admesh-ui-sdk';
+
+function MyApp() {
+  const [recommendations, setRecommendations] = useState([]);
+
+  const fetchRecommendations = async (query) => {
+    // Call your backend API (which calls AdMesh)
+    const response = await fetch('/api/recommendations', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query })
+    });
+    const recs = await response.json();
+    setRecommendations(recs);
+  };
+
+  return (
+    <AdMeshLayout
+      recommendations={recommendations}
+      layout="auto"
+      onRecommendationClick={(adId, admeshLink) => window.open(admeshLink)}
+    />
+  );
 }
 ```
 
-## Next Steps
+[Learn more about UI components →](/ui-sdk/installation)
 
-- [API Reference](../api/authentication) - Complete API documentation
-- [React Components](../ui-sdk/installation) - UI components
-- [Examples](../examples/ai-assistant) - More examples
+</details>
+
+<details>
+<summary><strong>🔧 Backend Integration Examples</strong></summary>
+
+### Express.js API Route
+```javascript
+app.post('/api/recommendations', async (req, res) => {
+  const { query } = req.body;
+
+  const response = await fetch('https://api.useadmesh.com/recommend', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${process.env.ADMESH_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ query, format: 'auto' })
+  });
+
+  const data = await response.json();
+  res.json(data.response.recommendations);
+});
+```
+
+### Flask API Route
+```python
+@app.route('/api/recommendations', methods=['POST'])
+def get_recommendations():
+    data = request.get_json()
+    query = data.get('query')
+
+    response = requests.post(
+        'https://api.useadmesh.com/recommend',
+        headers={'Authorization': f'Bearer {os.environ.get("ADMESH_API_KEY")}'},
+        json={'query': query, 'format': 'auto'}
+    )
+
+    return jsonify(response.json()['response']['recommendations'])
+```
+
+[See more backend examples →](/examples/integration-examples)
+
+</details>
+
+<details>
+<summary><strong>🔍 Understanding the Response</strong></summary>
+
+Each recommendation includes:
+
+- **`title`** - Product/service name
+- **`reason`** - Why it's recommended for this query
+- **`admesh_link`** - Tracking URL (use this for clicks)
+- **`pricing`** - Cost information
+- **`features`** - Key features list
+- **`trial_days`** - Free trial period
+
+[View complete API reference →](/api/recommendations)
+
+</details>
+
+## ✅ You're Ready!
+
+That's it! You now have AdMesh recommendations working in your application.
+
+### What's Next?
+
+- **Need help?** → [Contact Support](mailto:mani@useadmesh.com)
+- **Want UI components?** → [Frontend Integration Guide](/ui-sdk/installation)
+- **More examples?** → [Integration Examples](/examples/integration-examples)
+- **Complete API docs?** → [API Reference](/api/recommendations)
+
+### Quick Links
+
+- 🔑 [Get API Key](https://dashboard.useadmesh.com)
+- 📊 [View Dashboard](https://dashboard.useadmesh.com)
+- 🎨 [Live Examples](https://storybook.useadmesh.com)

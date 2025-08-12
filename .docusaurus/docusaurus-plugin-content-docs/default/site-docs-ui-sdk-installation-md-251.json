@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "TypeScript SDK",
-    "permalink": "/typescript-sdk/installation"
+    "title": "Recommendations API",
+    "permalink": "/api/recommendations"
   },
   "next": {
-    "title": "Overview",
-    "permalink": "/ad-units/overview"
+    "title": "AdMeshLayout Component",
+    "permalink": "/ui-sdk/layout-component"
   }
 }

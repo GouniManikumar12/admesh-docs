@@ -17,7 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Privacy & Security Compliance Standards",
-    "permalink": "/privacy-and-security/compliance-standards"
+    "title": "Integration Examples",
+    "permalink": "/examples/integration-examples"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/ad-units/overview"
   }
 }

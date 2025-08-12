@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
       AI-Powered Product Recommendations
     </h1>
     <p className="hero-description">
-      Integrate intelligent product recommendations into your AI applications with our modern SDKs.
+      Simple API for intelligent product recommendations. One endpoint, any language, copy-paste integration.
       Earn revenue while providing value to your users.
     </p>
     <div className="hero-actions">
@@ -44,10 +44,10 @@ import TabItem from '@theme/TabItem';
   <div className="card modern-card modern-card--purple">
     <div className="card__icon">⚡</div>
     <div className="card__header">
-      <h3 className="card__title">Developer Ready</h3>
+      <h3 className="card__title">Simple Integration</h3>
     </div>
     <div className="card__body">
-      Production SDKs with TypeScript support and seamless integration.
+      One API endpoint with copy-paste examples for JavaScript, Python, PHP, and more.
     </div>
   </div>
 
@@ -62,187 +62,93 @@ import TabItem from '@theme/TabItem';
   </div>
 </div>
 
-## Choose Your SDK
+## Quick Example
 
-<Tabs>
-<TabItem value="python" label="Python SDK" default>
-
-**Perfect for:** AI applications, data processing, server-side implementations
-
-```python
-from admesh import Admesh
-
-# Initialize client
-client = Admesh(api_key="your-api-key")
-
-# Get intelligent recommendations
-response = client.recommend.get_recommendations(
-    query="Enterprise CRM solutions for distributed teams",
-    format="auto",
-    limit=5
-)
-
-# Access recommendations
-for rec in response.recommendations:
-    print(f"{rec.title}: {rec.reason}")
+```bash
+# Simple API call
+curl -X POST "https://api.useadmesh.com/recommend" \
+  -H "Authorization: Bearer your-api-key" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "best CRM for startups", "format": "auto"}'
 ```
 
-<div className="sdk-actions">
-  <a href="/python-sdk/installation" className="btn btn-primary">
-    Python Documentation
-  </a>
-  <a href="https://github.com/GouniManikumar12/admesh-python" target="_blank" className="btn btn-secondary">
-    GitHub Repository
-  </a>
-</div>
+<details>
+<summary><strong>📋 See response format</strong></summary>
 
-</TabItem>
-<TabItem value="typescript" label="TypeScript SDK">
-
-**Perfect for:** Node.js backends, serverless functions, API services
-
-```typescript
-import Admesh from 'admesh';
-
-// Initialize with full type safety
-const client = new Admesh({
-  apiKey: 'your-api-key',
-  environment: 'production'
-});
-
-// Get recommendations with TypeScript support
-const response = await client.recommend.getRecommendations({
-  query: 'Enterprise CRM solutions for distributed teams',
-  format: 'auto',
-  limit: 5
-});
-
-// Fully typed response
-response.recommendations.forEach(rec => {
-  console.log(`${rec.title}: ${rec.reason}`);
-});
-```
-
-<div className="sdk-actions">
-  <a href="/typescript-sdk/installation" className="btn btn-primary">
-    TypeScript Documentation
-  </a>
-  <a href="https://github.com/GouniManikumar12/admesh-typescript" target="_blank" className="btn btn-secondary">
-    GitHub Repository
-  </a>
-</div>
-
-</TabItem>
-<TabItem value="ui" label="UI SDK">
-
-**Perfect for:** React applications, frontend components, user interfaces
-
-```tsx
-import { AdMeshProductCard } from 'admesh-ui-sdk';
-
-function MyApp() {
-  return (
-    <div>
-      {/* Intelligent layout with auto-recommendations */}
-      <AdMeshProductCard
-        apiKey="your-api-key"
-        query="Enterprise CRM solutions"
-        autoLayout={true}
-        theme="modern"
-      />
-
-      {/* Individual product cards */}
-      <AdMeshProductCard
-        productId="crm-solution-1"
-        showPricing={true}
-        showFeatures={true}
-      />
-    </div>
-  );
+```json
+{
+  "response": {
+    "recommendations": [
+      {
+        "title": "HubSpot CRM",
+        "reason": "Perfect for startups with excellent free tier",
+        "admesh_link": "https://useadmesh.com/track?ad_id=hubspot-123",
+        "pricing": "Free tier available, paid plans from $45/month"
+      }
+    ]
+  }
 }
 ```
 
-<div className="sdk-actions">
-  <a href="/ui-sdk/installation" className="btn btn-primary">
-    UI SDK Documentation
+</details>
+
+<div className="hero-actions" style={{marginTop: '2rem'}}>
+  <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
+    📚 Full Quick Start Guide
   </a>
-  <a href="https://storybook.useadmesh.com" target="_blank" className="btn btn-secondary">
-    Live Examples
+  <a href="/api/recommendations" className="btn btn-outline btn-large">
+    📖 API Documentation
   </a>
 </div>
 
-</TabItem>
-</Tabs>
-
-## Quick Start Guide
+## How It Works
 
 <div className="quick-start-grid">
   <div className="quick-start-card modern-card modern-card--blue">
     <div className="quick-start-number">1</div>
     <h3>🔑 Get API Key</h3>
-    <p>Sign up for free and get credentials instantly.</p>
-    <a href="https://useadmesh.com/agents" target="_blank" className="btn btn-primary btn-large">
-      Get API Key →
-    </a>
+    <p>Sign up for free at dashboard.useadmesh.com</p>
   </div>
 
   <div className="quick-start-card modern-card modern-card--purple">
     <div className="quick-start-number">2</div>
-    <h3>⚡ Install SDK</h3>
-    <p>Choose your SDK and install with your package manager.</p>
-    <a href="/getting-started/overview" className="btn btn-primary btn-large">
-      Installation Guide →
-    </a>
+    <h3>⚡ Make API Call</h3>
+    <p>Send user queries to get recommendations</p>
   </div>
 
   <div className="quick-start-card modern-card modern-card--green">
     <div className="quick-start-number">3</div>
-    <h3>💎 Start Earning</h3>
-    <p>Integrate recommendations and start earning revenue.</p>
-    <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
-      Quick Start →
-    </a>
+    <h3>💎 Display Results</h3>
+    <p>Show recommendations in your app</p>
   </div>
+</div>
+
+<div className="hero-actions" style={{marginTop: '2rem', textAlign: 'center'}}>
+  <a href="/getting-started/quick-start" className="btn btn-primary btn-large">
+    🚀 Start Building Now
+  </a>
 </div>
 
 
 
-## Documentation Navigation
+## Explore Documentation
 
 <div className="nav-grid">
   <div className="nav-card modern-card modern-card--blue">
-    <div className="card__icon">⚡</div>
-    <h3>Getting Started</h3>
-    <p>Setup guide and first implementation.</p>
-    <a href="/getting-started/overview" className="btn btn-primary btn-large">
-      Start Building →
+    <div className="card__icon">📖</div>
+    <h3>API Reference</h3>
+    <p>Complete endpoint documentation</p>
+    <a href="/api/recommendations" className="btn btn-primary">
+      View API Docs
     </a>
   </div>
 
   <div className="nav-card modern-card modern-card--purple">
-    <div className="card__icon">🎯</div>
-    <h3>Ad Units</h3>
-    <p>Available ad formats and UI components.</p>
-    <a href="/ad-units/overview" className="btn btn-primary btn-large">
-      View Components →
-    </a>
-  </div>
-
-  <div className="nav-card modern-card modern-card--green">
-    <div className="card__icon">📋</div>
-    <h3>API Reference</h3>
-    <p>Complete API documentation and examples.</p>
-    <a href="/api/authentication" className="btn btn-primary btn-large">
-      API Documentation →
-    </a>
-  </div>
-
-  <div className="nav-card modern-card modern-card--orange">
-    <div className="card__icon">💡</div>
-    <h3>Examples</h3>
-    <p>Implementation examples and tutorials.</p>
-    <a href="/examples/ai-assistant" className="btn btn-primary btn-large">
-      View Examples →
+    <div className="card__icon">🎨</div>
+    <h3>UI Components</h3>
+    <p>React components for frontend</p>
+    <a href="/ui-sdk/installation" className="btn btn-primary">
+      View Components
     </a>
   </div>
 </div>

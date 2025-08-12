@@ -1,7 +1,7 @@
 {
   "id": "api/authentication",
   "title": "Authentication",
-  "description": "Technical documentation for AdMesh API authentication using API keys and error handling procedures.",
+  "description": "Simple API key authentication for AdMesh recommendations API.",
   "source": "@site/docs/api/authentication.md",
   "sourceDirName": "api",
   "slug": "/api/authentication",
@@ -14,5 +14,14 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quick Start Guide",
+    "permalink": "/getting-started/quick-start"
+  },
+  "next": {
+    "title": "Recommendations API",
+    "permalink": "/api/recommendations"
   }
 }

@@ -13,7 +13,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  // Modern, organized sidebar structure
+  // Clean, user-friendly sidebar structure
   tutorialSidebar: [
     {
       type: 'doc',
@@ -21,110 +21,56 @@ const sidebars = {
       label: 'Introduction',
     },
 
-    // Quick Start Section
+    // Essential Getting Started
     {
       type: 'category',
       label: 'Getting Started',
       collapsed: false,
       items: [
-        'getting-started/overview',
-        'getting-started/api-keys',
         'getting-started/quick-start',
+        'getting-started/api-keys',
       ],
     },
 
-    // SDK Documentation
+    // Core API Documentation
     {
       type: 'category',
-      label: 'SDKs',
-      collapsed: true,
-      items: [
-        'python-sdk/installation',
-        'typescript-sdk/installation',
-        {
-          type: 'category',
-          label: 'UI SDK',
-          collapsed: false,
-          items: [
-            'ui-sdk/installation',
-            'ui-sdk/layout-component',
-            'ui-sdk/customization',
-            'ui-sdk/legal-compliance',
-          ],
-        },
-      ],
-    },
-
-    // Ad Units Section
-    {
-      type: 'category',
-      label: 'Ad Units',
+      label: 'API Reference',
       collapsed: false,
       items: [
-        'ad-units/overview',
-        {
-          type: 'category',
-          label: 'Components',
-          items: [
-            'ad-units/one-line-ad',
-            'ad-units/product-card',
-            'ad-units/citation',
-            'ad-units/expandable-unit',
-            'ad-units/layout',
-          ],
-        },
+        'api/authentication',
+        'api/recommendations',
       ],
     },
 
-    // Privacy & Security
+    // Frontend Integration
     {
       type: 'category',
-      label: 'Privacy & Security',
+      label: 'Frontend Integration',
+      collapsed: true,
       items: [
-        'privacy-and-security/pii-sanitization',
-        'privacy-and-security/compliance-standards',
+        'ui-sdk/installation',
+        'ui-sdk/layout-component',
+        'ui-sdk/customization',
       ],
     },
 
-    // Examples & Tutorials
+    // Examples & Guides
     {
       type: 'category',
-      label: 'Examples',
+      label: 'Examples & Guides',
+      collapsed: true,
       items: [
+        'examples/integration-examples',
         'examples/ai-assistant',
       ],
     },
 
-    // Advanced Topics
-    {
-      type: 'category',
-      label: 'Advanced',
-      items: [
-        {
-          type: 'link',
-          label: 'GitHub Issues',
-          href: 'https://github.com/GouniManikumar12/admesh-docs/issues',
-        },
-      ],
-    },
-
-    // Help & Support
-    {
-      type: 'category',
-      label: 'Help & Support',
-      items: [
-        {
-          type: 'link',
-          label: 'Support',
-          href: 'mailto:mani@useadmesh.com',
-        },
-      ],
-    },
-
-    // External Links
+    // Resources
     {
       type: 'category',
       label: 'Resources',
+      collapsed: true,
       items: [
         {
           type: 'link',
@@ -133,13 +79,13 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: 'Earnings Calculator',
-          href: 'https://useadmesh.com/agents#earnings-calculator',
+          label: 'Get API Key',
+          href: 'https://dashboard.useadmesh.com',
         },
         {
           type: 'link',
-          label: 'Dashboard',
-          href: 'https://useadmesh.com',
+          label: 'Support',
+          href: 'mailto:mani@useadmesh.com',
         },
       ],
     },

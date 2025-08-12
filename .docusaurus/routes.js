@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '54d'),
+    component: ComponentCreator('/', '498'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', 'c31'),
+        component: ComponentCreator('/', '9b0'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '46c'),
+            component: ComponentCreator('/', '3a2'),
             routes: [
               {
                 path: '/ad-units/citation',
@@ -97,12 +97,25 @@ export default [
               },
               {
                 path: '/api/authentication',
-                component: ComponentCreator('/api/authentication', 'e30'),
-                exact: true
+                component: ComponentCreator('/api/authentication', '255'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/api/recommendations',
+                component: ComponentCreator('/api/recommendations', 'b46'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/examples/ai-assistant',
                 component: ComponentCreator('/examples/ai-assistant', 'bb8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/examples/integration-examples',
+                component: ComponentCreator('/examples/integration-examples', 'cba'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -155,8 +168,9 @@ export default [
               },
               {
                 path: '/ui-sdk/customization',
-                component: ComponentCreator('/ui-sdk/customization', '405'),
-                exact: true
+                component: ComponentCreator('/ui-sdk/customization', 'ea7'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/ui-sdk/installation',
@@ -166,13 +180,15 @@ export default [
               },
               {
                 path: '/ui-sdk/layout-component',
-                component: ComponentCreator('/ui-sdk/layout-component', '0e5'),
-                exact: true
+                component: ComponentCreator('/ui-sdk/layout-component', 'ec6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/ui-sdk/legal-compliance',
-                component: ComponentCreator('/ui-sdk/legal-compliance', '136'),
-                exact: true
+                component: ComponentCreator('/ui-sdk/legal-compliance', 'd53'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/',

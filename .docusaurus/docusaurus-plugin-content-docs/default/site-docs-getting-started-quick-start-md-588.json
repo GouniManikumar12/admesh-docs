@@ -1,7 +1,7 @@
 {
   "id": "getting-started/quick-start",
   "title": "Quick Start Guide",
-  "description": "Make your first API call in 2 minutes.",
+  "description": "Get AdMesh recommendations in 3 simple steps.",
   "source": "@site/docs/getting-started/quick-start.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/quick-start",
@@ -11,9 +11,9 @@
   "editUrl": "https://github.com/GouniManikumar12/admesh-docs/tree/main/docs/docs/getting-started/quick-start.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_position": 3
+    "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
   "previous": {
@@ -21,7 +21,7 @@
     "permalink": "/getting-started/api-keys"
   },
   "next": {
-    "title": "Python SDK",
-    "permalink": "/python-sdk/installation"
+    "title": "Authentication",
+    "permalink": "/api/authentication"
   }
 }

@@ -209,7 +209,7 @@ function RelatedProducts({ currentProduct, recommendations }) {
 ## Legal Compliance
 
 The component automatically includes FTC-compliant disclosures:
-- "Partner Recommendation" labels for sponsored content
+- "Sponsored" labels for sponsored content
 - Clear indication of commercial relationships
 - Transparent pricing and source information
 

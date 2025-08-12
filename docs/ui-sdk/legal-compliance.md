@@ -146,7 +146,7 @@ const sectionDisclosure = getSectionDisclosure(hasHighMatches);
 ### Lower-Quality Matches
 - **Label:** "Promoted Option"
 - **Tooltip:** "This partner solution may be relevant to your needs. The partner compensates us when you take qualifying actions."
-- **Inline:** "Partner recommendation • Compensated placement"
+- **Inline:** "Sponsored • Compensated placement"
 
 ### Expanded Results
 - **Label:** "Related Option"

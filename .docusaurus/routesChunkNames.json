@@ -48,17 +48,17 @@
       "plugin": "plugin---searchc-14-0ea"
     }
   },
-  "/-54d": {
+  "/-498": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-c31": {
+  "/-9b0": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-46c": {
+  "/-3a2": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/ad-units/citation-1ec": {
@@ -89,13 +89,21 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ad-units-product-card-951-75d"
   },
-  "/api/authentication-e30": {
+  "/api/authentication-255": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---api-authenticationbae-6a4"
+  },
+  "/api/recommendations-b46": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---api-recommendations-5-f-0-6f5"
   },
   "/examples/ai-assistant-bb8": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---examples-ai-assistantd-27-403"
+  },
+  "/examples/integration-examples-cba": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---examples-integration-examples-0-a-7-7e4"
   },
   "/getting-started/api-keys-44b": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -129,7 +137,7 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---typescript-sdk-installation-6-d-2-a71"
   },
-  "/ui-sdk/customization-405": {
+  "/ui-sdk/customization-ea7": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ui-sdk-customization-2-c-0-08f"
   },
@@ -137,11 +145,11 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ui-sdk-installation-251-d69"
   },
-  "/ui-sdk/layout-component-0e5": {
+  "/ui-sdk/layout-component-ec6": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ui-sdk-layout-componenta-64-f8b"
   },
-  "/ui-sdk/legal-compliance-136": {
+  "/ui-sdk/legal-compliance-d53": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---ui-sdk-legal-compliance-89-f-e6f"
   },

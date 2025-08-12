@@ -46,11 +46,22 @@
             },
             {
               "id": "api/authentication",
-              "path": "/api/authentication"
+              "path": "/api/authentication",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/recommendations",
+              "path": "/api/recommendations",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "examples/ai-assistant",
               "path": "/examples/ai-assistant",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "examples/integration-examples",
+              "path": "/examples/integration-examples",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -99,7 +110,8 @@
             },
             {
               "id": "ui-sdk/customization",
-              "path": "/ui-sdk/customization"
+              "path": "/ui-sdk/customization",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "ui-sdk/installation",
@@ -108,11 +120,13 @@
             },
             {
               "id": "ui-sdk/layout-component",
-              "path": "/ui-sdk/layout-component"
+              "path": "/ui-sdk/layout-component",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "ui-sdk/legal-compliance",
-              "path": "/ui-sdk/legal-compliance"
+              "path": "/ui-sdk/legal-compliance",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],
