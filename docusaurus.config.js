@@ -149,7 +149,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/getting-started/overview',
+                to: '/getting-started/quick-start',
               },
               {
                 label: 'Ad Units',

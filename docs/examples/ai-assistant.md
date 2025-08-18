@@ -600,8 +600,8 @@ ADMESH_BASE_URL=https://api.useadmesh.com
 ## Next Steps
 
 - **[Ad Units Guide](/ad-units/overview)** - Complete AI integration guide
-- **[Python SDK](/python-sdk/installation)** - Backend SDK implementation
-- **[UI SDK](/ui-sdk/installation)** - Frontend component integration
 - **[API Reference](/api/authentication)** - Complete API documentation
+- **[UI SDK](/ui-sdk/installation)** - Frontend component integration
+- **[Integration Examples](/examples/integration-examples)** - More implementation examples
 
 This implementation provides a production-ready foundation for AI assistants with intelligent product recommendations. Customize based on specific enterprise requirements and use cases.

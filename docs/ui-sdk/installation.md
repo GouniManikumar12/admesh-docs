@@ -496,9 +496,9 @@ const MemoizedRecommendations = memo(function Recommendations({ recommendations 
 
 After completing UI SDK installation:
 
-1. **[Getting Started](/getting-started/overview)** - Core concepts and setup
-2. **[Python SDK](/python-sdk/installation)** - Backend SDK integration
-3. **[TypeScript SDK](/typescript-sdk/installation)** - Node.js SDK integration
+1. **[Getting Started](/getting-started/quick-start)** - Core concepts and setup
+2. **[API Reference](/api/authentication)** - Backend API integration
+3. **[Layout Component](/ui-sdk/layout-component)** - Component configuration
 4. **[Examples](/examples/ai-assistant)** - Implementation examples
 
 ## Support Resources
