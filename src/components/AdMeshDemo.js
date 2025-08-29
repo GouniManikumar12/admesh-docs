@@ -101,7 +101,7 @@ const SimpleAdFallback = ({ recommendation }) => (
       Looking for payment solutions for your business? Try <strong>{recommendation.title}</strong>
     </p>
     <p style={{ margin: '8px 0 0 0', fontSize: '12px', color: '#666' }}>
-      powered by AdMesh
+      
     </p>
   </div>
 );

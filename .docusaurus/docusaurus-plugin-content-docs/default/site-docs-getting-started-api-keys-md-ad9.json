@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Overview",
-    "permalink": "/getting-started/overview"
-  },
-  "next": {
     "title": "Quick Start Guide",
     "permalink": "/getting-started/quick-start"
+  },
+  "next": {
+    "title": "Authentication",
+    "permalink": "/api/authentication"
   }
 }

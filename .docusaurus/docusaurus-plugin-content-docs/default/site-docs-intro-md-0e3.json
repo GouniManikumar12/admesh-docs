@@ -20,7 +20,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Overview",
-    "permalink": "/getting-started/overview"
+    "title": "Quick Start Guide",
+    "permalink": "/getting-started/quick-start"
   }
 }

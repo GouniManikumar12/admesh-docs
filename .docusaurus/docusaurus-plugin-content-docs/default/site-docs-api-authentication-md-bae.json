@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Quick Start Guide",
-    "permalink": "/getting-started/quick-start"
+    "title": "Getting Your API Key",
+    "permalink": "/getting-started/api-keys"
   },
   "next": {
     "title": "Recommendations API",

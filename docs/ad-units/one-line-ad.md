@@ -15,7 +15,7 @@ One Line Ad is designed for maximum simplicity and minimal visual impact. It app
 - **Ultra-minimal**: Single line of text with product name and simple description
 - **Two variations**: Question format ("Looking for X? Try Y") or statement format ("Y offers X, visit")
 - **Clean integration**: Blends naturally into any content
-- **Powered by branding**: Optional "powered by AdMesh" attribution
+- **Powered by branding**: Optional "" attribution
 - **Non-intrusive**: Maintains user focus while providing value
 
 ## Implementation
@@ -39,7 +39,7 @@ import { AdMeshProductCard } from 'admesh-ui-sdk';
 |------|------|---------|-------------|
 | `recommendation` | `Recommendation` | Required | The recommendation data object |
 | `variation` | `"question" \| "statement"` | `"question"` | Display format variation |
-| `showPoweredBy` | `boolean` | `true` | Show "powered by AdMesh" attribution |
+| `showPoweredBy` | `boolean` | `true` | Show "" attribution |
 | `onClick` | `(adId: string, admeshLink: string) => void` | Required | Click handler function |
 
 ### Variations

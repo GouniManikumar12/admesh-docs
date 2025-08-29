@@ -12,8 +12,7 @@
           "docs": [
             {
               "id": "ad-units/citation",
-              "path": "/ad-units/citation",
-              "sidebar": "tutorialSidebar"
+              "path": "/ad-units/citation"
             },
             {
               "id": "ad-units/ecommerce-cards",
@@ -21,28 +20,23 @@
             },
             {
               "id": "ad-units/expandable-unit",
-              "path": "/ad-units/expandable-unit",
-              "sidebar": "tutorialSidebar"
+              "path": "/ad-units/expandable-unit"
             },
             {
               "id": "ad-units/layout",
-              "path": "/ad-units/layout",
-              "sidebar": "tutorialSidebar"
+              "path": "/ad-units/layout"
             },
             {
               "id": "ad-units/one-line-ad",
-              "path": "/ad-units/one-line-ad",
-              "sidebar": "tutorialSidebar"
+              "path": "/ad-units/one-line-ad"
             },
             {
               "id": "ad-units/overview",
-              "path": "/ad-units/overview",
-              "sidebar": "tutorialSidebar"
+              "path": "/ad-units/overview"
             },
             {
               "id": "ad-units/product-card",
-              "path": "/ad-units/product-card",
-              "sidebar": "tutorialSidebar"
+              "path": "/ad-units/product-card"
             },
             {
               "id": "api/authentication",
@@ -70,11 +64,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "getting-started/overview",
-              "path": "/getting-started/overview",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "getting-started/quick-start",
               "path": "/getting-started/quick-start",
               "sidebar": "tutorialSidebar"
@@ -86,27 +75,11 @@
             },
             {
               "id": "privacy-and-security/compliance-standards",
-              "path": "/privacy-and-security/compliance-standards",
-              "sidebar": "tutorialSidebar"
+              "path": "/privacy-and-security/compliance-standards"
             },
             {
               "id": "privacy-and-security/pii-sanitization",
-              "path": "/privacy-and-security/pii-sanitization",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "python-sdk/installation",
-              "path": "/python-sdk/installation",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "search-help",
-              "path": "/search-help"
-            },
-            {
-              "id": "typescript-sdk/installation",
-              "path": "/typescript-sdk/installation",
-              "sidebar": "tutorialSidebar"
+              "path": "/privacy-and-security/pii-sanitization"
             },
             {
               "id": "ui-sdk/customization",
@@ -125,8 +98,7 @@
             },
             {
               "id": "ui-sdk/legal-compliance",
-              "path": "/ui-sdk/legal-compliance",
-              "sidebar": "tutorialSidebar"
+              "path": "/ui-sdk/legal-compliance"
             }
           ],
           "draftIds": [],
@@ -141,6 +113,15 @@
         }
       ],
       "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": [
+        "G-C30NMN6PCH"
+      ],
+      "anonymizeIP": true,
+      "id": "default"
     }
   }
 }

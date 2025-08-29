@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Getting Your API Key",
-    "permalink": "/getting-started/api-keys"
+    "title": "Introduction",
+    "permalink": "/"
   },
   "next": {
-    "title": "Authentication",
-    "permalink": "/api/authentication"
+    "title": "Getting Your API Key",
+    "permalink": "/getting-started/api-keys"
   }
 }
